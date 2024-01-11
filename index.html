@@ -1,13 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Staff</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-info">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 68 60" fill="none">
+                    <g clip-path="url(#clip0_1699_116)">
+                        <path d="M16.7049 60.0005L6.26172 40.7928L17.1226 22.4219H25.4717L14.6145 40.7928L25.0526 60.0005H16.7049Z"
+                            fill="#767B7C" />
+                        <path d="M67.227 30.7711L63.4689 23.6738L52.6129 42.0457H30.8975L35.0743 49.1434H56.3707L67.227 30.7711Z"
+                            fill="#F57F2B" />
+                        <path
+                            d="M34.2397 9.06084H12.5283L17.122 1.54492H38.4156L42.5929 9.06084L40.0847 14.9045H46.3502L49.6884 19.9186L45.0961 27.0159L34.2397 9.06084Z"
+                            fill="#AEB1B2" />
+                        <path d="M0 30.5224L11.275 11.9824H32.1523L36.7441 19.0815H15.4509L4.5941 37.6211L0 30.5224Z" fill="#AEB1B2" />
+                        <path d="M28.8099 60.0006L18.624 41.3787L22.549 34.1133L32.8204 52.4856H54.7009L50.5254 60.0006H28.8099Z"
+                            fill="#767B7C" />
+                        <path
+                            d="M43.5079 12.8169H48.8529L53.0283 19.9165L42.1729 38.7047H50.9415L61.3815 20.3342L49.9397 0.291016L43.5079 12.8169Z"
+                            fill="#F57F2B" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1699_116">
+                            <rect width="158.182" height="60" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="d-flex flex-column align-items-center ms-2">
+                    <span class="fs-4 text-black">Staff.4tochki.ru</span>
+                    <span class="logo-text text-tochki">Корпоративный портал</span>
+                </div>
+            </a>
+            <ul class="nav nav-pills d-flex align-items-center">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Обучение</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Help desk</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Телефонный справочник</a></li>
+            </ul>
+            <div class="dropdown text-end d-flex align-items-center ps-3">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-black"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small">
+                    <li>
+                        <a class="dropdown-item" href="#">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Уведомления</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Profile</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item text-danger" href="#">Выход</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="vh-100"></div>
+    <!-- footer -->
+
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-info">
+        <a href="/"
+            class=" d-flex align-items-center justify-content-center mb-3 mb-md-0  link-body-emphasis text-decoration-none">
+            <svg width="40" height="40" viewBox="0 0 1289 1146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M830.388 240.015L953.83 0L1174.01 376.687L977.181 736.706H810.372L1017.21 380.019L936.14 241.25L830.388 240.015Z"
+                    fill="#EF7A1C" />
+                <path d="M593.104 801.678L673.133 940.747H1080.23L1289 586.121L1214.2 452.264L1008.28 800.897L593.104 801.678Z"
+                    fill="#EF7A1C" />
+                <path d="M1048.86 1002.26L971.492 1146H552.019L356.18 783.63L431.13 653.168L633.012 998.633L1048.86 1002.26Z"
+                    fill="#818282" />
+                <path d="M486.126 424.267H327.312L118.779 781.662L320.407 1143.2H477.84L277.593 780.282L486.126 424.267Z"
+                    fill="#818282" />
+                <path
+                    d="M240.303 166.209L330.073 25.4609H737.461L817.563 166.209L770.607 279.358H887.998L950.137 377.336L865.901 504.284L653.225 168.969L240.303 166.209Z"
+                    fill="#BABABA" />
+                <path d="M0 579.658L88.8883 713.66L294.732 363.066H703.302L619.092 224.388H212.085L0 579.658Z" fill="#BABABA" />
+            </svg>
+        </a>
+            <p class=" mb-0 text-body-secondary">© 2015-2024 Staff.4tochki.ru.</p>
+            <ul class="nav col-6 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Главная</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Новости</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Обучение</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Help desk</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Телефонный справочник</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
