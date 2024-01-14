@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/news.css">
+    <title>Новости</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg class="d-none d-sm-flex" width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                        <svg class="d-sm-none d-flex" width="45" height="35">
+                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="ps-3 dropdown text-end d-flex align-items-center">
+                            <span class="text-info me-2">im_evsikov</span>
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1  ">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="#">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burder__menu">
+                            <div class="js-burder__icon burder__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burder__body burder__body d-lg-none d-flex">
+                                <ul class="burder__list nav nav-pills align-items-start">
+                                    <li class="nav-item burder__item"><a href="#" class="nav-link ms-0">Главная</a>
+                                    </li>
+                                    <li class="nav-item burder__item"><a href="#" class="nav-link ms-0">Help
+                                            desk</a></li>
+                                    <li class="nav-item burder__item"><a href="#" class="nav-link ms-0">Телефонный</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container mt-5">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                                <h3 class="mb-0">Featured post</h3>
+                                <div class="mb-1 text-body-secondary">Nov 12</div>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                    natural lead-in to
+                                    additional content.</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                        fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                                <h3 class="mb-0">Post title</h3>
+                                <div class="mb-1 text-body-secondary">Nov 11</div>
+                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in
+                                    to additional
+                                    content.</p>
+                                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                                    Continue reading
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <svg class="bd-placeholder-img" width="200" height="250"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                        fill="#eceeef" dy=".3em">Thumbnail</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 class="pb-4 m-0 border-bottom-info">Новости</h3>
+                        <!-- Новости -->
+                        <div class="js-news-list">
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Michelin опередил Bridgestone в рейтинге Brand
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1502.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Michelin опередил Bridgestone в рейтинге Brand
+                                            Finance
+                                            Global 500
+                                            Полные данные не опубликованы, но предварительный просмотр Brand Finance
+                                            Global
+                                            500
+                                            дает четкое представление о том, что
+                                            мы можем извлечь из рейтинга шин исследовательской компании, когда он будет
+                                            опубликован в ближайшие недели.Главная
+                                            новость заключается в том, что Michelin значительно расширил свое лидерство
+                                            в
+                                            рейтинге брендов</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Nexen повышает цены на зимние шины по всей
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1501.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Nexen повышает цены на зимние шины по всей Европе
+                                            Nexen Tire повысила цены на зимние шины всех собственных брендов компании на
+                                            рынке запасных частей.Новый прайс-лист на
+                                            зимние шины будет действителен для всего европейского рынка, включая
+                                            Великобританию и</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">20.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Mintex расширяет ассортимент тормозных дисв
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1500.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Mintex расширяет ассортимент тормозных дисков и
+                                            колодок
+                                            Компания TMD Friction UK представила шесть новых тормозных колодок и три
+                                            новых
+                                            тормозных диска в своем ассортименте
+                                            продукции Mintex.Шесть новых тормозных колодок подходят для многих
+                                            популярных
+                                            марок и моделей легковых и легких
+                                            коммерческих автомобилей.Новые детали включают колодку MDB3389, подходящую
+                                            для
+                                            автомобилей BMW 2 Coupe, 3 Series, 4
+                                            Coupe и кабриолет, Z4 Roadster и Toyota Supra все…</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Michelin опередил Bridgestone в рейтинге Brand
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1502.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Michelin опередил Bridgestone в рейтинге Brand
+                                            Finance
+                                            Global 500
+                                            Полные данные не опубликованы, но предварительный просмотр Brand Finance
+                                            Global
+                                            500
+                                            дает четкое представление о том, что
+                                            мы можем извлечь из рейтинга шин исследовательской компании, когда он будет
+                                            опубликован в ближайшие недели.Главная
+                                            новость заключается в том, что Michelin значительно расширил свое лидерство
+                                            в
+                                            рейтинге брендов</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Nexen повышает цены на зимние шины по всей
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1501.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Nexen повышает цены на зимние шины по всей Европе
+                                            Nexen Tire повысила цены на зимние шины всех собственных брендов компании на
+                                            рынке запасных частей.Новый
+                                            прайс-лист на
+                                            зимние шины будет действителен для всего европейского рынка, включая
+                                            Великобританию и</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">20.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Mintex расширяет ассортимент тормозных дисв
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1500.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Mintex расширяет ассортимент тормозных дисков и
+                                            колодок
+                                            Компания TMD Friction UK представила шесть новых тормозных колодок и три
+                                            новых
+                                            тормозных диска в своем
+                                            ассортименте
+                                            продукции Mintex.Шесть новых тормозных колодок подходят для многих
+                                            популярных
+                                            марок и моделей легковых и
+                                            легких
+                                            коммерческих автомобилей.Новые детали включают колодку MDB3389, подходящую
+                                            для
+                                            автомобилей BMW 2 Coupe,
+                                            3 Series, 4
+                                            Coupe и кабриолет, Z4 Roadster и Toyota Supra все…</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Michelin опередил Bridgestone в рейтинге Brand
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1502.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Michelin опередил Bridgestone в рейтинге Brand
+                                            Finance
+                                            Global 500
+                                            Полные данные не опубликованы, но предварительный просмотр Brand Finance
+                                            Global
+                                            500
+                                            дает четкое представление о том, что
+                                            мы можем извлечь из рейтинга шин исследовательской компании, когда он будет
+                                            опубликован в ближайшие недели.Главная
+                                            новость заключается в том, что Michelin значительно расширил свое лидерство
+                                            в
+                                            рейтинге брендов</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Nexen повышает цены на зимние шины по всей
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1501.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Nexen повышает цены на зимние шины по всей Европе
+                                            Nexen Tire повысила цены на зимние шины всех собственных брендов компании на
+                                            рынке запасных частей.Новый
+                                            прайс-лист на
+                                            зимние шины будет действителен для всего европейского рынка, включая
+                                            Великобританию и</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">20.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Mintex расширяет ассортимент тормозных дисв
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1500.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Mintex расширяет ассортимент тормозных дисков и
+                                            колодок
+                                            Компания TMD Friction UK представила шесть новых тормозных колодок и три
+                                            новых
+                                            тормозных диска в своем
+                                            ассортименте
+                                            продукции Mintex.Шесть новых тормозных колодок подходят для многих
+                                            популярных
+                                            марок и моделей легковых и
+                                            легких
+                                            коммерческих автомобилей.Новые детали включают колодку MDB3389, подходящую
+                                            для
+                                            автомобилей BMW 2 Coupe,
+                                            3 Series, 4
+                                            Coupe и кабриолет, Z4 Roadster и Toyota Supra все…</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Michelin опередил Bridgestone в рейтинге Brand
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1502.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Michelin опередил Bridgestone в рейтинге Brand
+                                            Finance
+                                            Global 500
+                                            Полные данные не опубликованы, но предварительный просмотр Brand Finance
+                                            Global
+                                            500
+                                            дает четкое представление о том, что
+                                            мы можем извлечь из рейтинга шин исследовательской компании, когда он будет
+                                            опубликован в ближайшие недели.Главная
+                                            новость заключается в том, что Michelin значительно расширил свое лидерство
+                                            в
+                                            рейтинге брендов</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">21.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Nexen повышает цены на зимние шины по всей
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1501.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Nexen повышает цены на зимние шины по всей Европе
+                                            Nexen Tire повысила цены на зимние шины всех собственных брендов компании на
+                                            рынке запасных частей.Новый
+                                            прайс-лист на
+                                            зимние шины будет действителен для всего европейского рынка, включая
+                                            Великобританию и</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsBlock border-bottom-info">
+                                <div class="newsBlock__date">20.03.2023</div>
+                                <a class="newsBlock__name" href="#">
+                                    Mintex расширяет ассортимент тормозных дисв
+                                </a>
+                                <div class="d-flex flex-column flex-lg-row align-items-stretch">
+                                    <a class="newsBlock__image me-lg-3 mb-0" href="#">
+                                        <img width="200" height="135" class="img-fluid" src="/img/news/1500.jpg"
+                                            alt="Michelin опередил Bridgestone в рейтинге Brand">
+                                    </a>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <p class="newsBlock__text">Mintex расширяет ассортимент тормозных дисков и
+                                            колодок
+                                            Компания TMD Friction UK представила шесть новых тормозных колодок и три
+                                            новых
+                                            тормозных диска в своем
+                                            ассортименте
+                                            продукции Mintex.Шесть новых тормозных колодок подходят для многих
+                                            популярных
+                                            марок и моделей легковых и
+                                            легких
+                                            коммерческих автомобилей.Новые детали включают колодку MDB3389, подходящую
+                                            для
+                                            автомобилей BMW 2 Coupe,
+                                            3 Series, 4
+                                            Coupe и кабриолет, Z4 Roadster и Toyota Supra все…</p>
+                                        <div class="newsBlock__tags">
+                                            <span>Теги: </span>
+                                            <a href="#" class="link no-visited">цифровизация</a>,
+                                            <a href="#" class="link no-visited">управление шинами</a>,
+                                            <a href="#" class="link no-visited">ZF cubiX</a>,
+                                            <a href="#" class="link no-visited">Goodyear SightLine</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="pagination-arrows w-100 d-flex justify-content-between py-4">
+                            <a class="text-decoration-none text-info" href="#">
+                                Следующие новости
+                            </a>
+                        </div>
+                    </div>
+                    <aside class="col-md-3">
+                        <div class="position-sticky" style="top: 90px">
+                            <form class="d-flex form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2 form-control-search" type="search" placeholder="Поиск" aria-label="Search">
+                                <button class="btn btn-outline-secondary btn-control-search my-2 my-sm-0" type="submit">Поиск</button>
+                            </form>
+                            <div class="my-5">
+                                <h4>Архив</h4>
+                                <div class="row collapse show" id="collapseYears">
+                                    <div class="news-years">
+                                        <div class="d-flex m-0 flex-wrap">
+                                            <div class="pe-3">
+                                                <a href="/news/all/2024/" class="w-100 ">
+                                                    <span class="link">2024</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2023/" class="w-100 active">
+                                                    <span class="link">2023</span>
+                                                </a>
+                                            </div>
+                                            <div class="news-years__inner d-none">
+                                                <a href="/news/all/2023/dekabr/"
+                                                    class="d-inline-block mt-0 mb-2 active">
+                                                    <span class="link">Декабрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/noyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Ноябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/oktyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Октябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/sentyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Сентябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/avgust/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Август</span>
+                                                </a>
+                                                <a href="/news/all/2023/iyul/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Июль</span>
+                                                </a>
+                                                <a href="/news/all/2023/iyun/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Июнь</span>
+                                                </a>
+                                                <a href="/news/all/2023/may/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Май</span>
+                                                </a>
+                                                <a href="/news/all/2023/aprel/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Апрель</span>
+                                                </a>
+                                                <a href="/news/all/2023/mart/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Март</span>
+                                                </a>
+                                                <a href="/news/all/2023/fevral/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Февраль</span>
+                                                </a>
+                                                <a href="/news/all/2023/yanvar/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Январь</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2022/" class="w-100 ">
+                                                    <span class="link">2022</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2021/" class="w-100 ">
+                                                    <span class="link">2021</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2020/" class="w-100 ">
+                                                    <span class="link">2020</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2019/" class="w-100 ">
+                                                    <span class="link">2019</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2018/" class="w-100 ">
+                                                    <span class="link">2018</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2017/" class="w-100 ">
+                                                    <span class="link">2017</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2016/" class="w-100 ">
+                                                    <span class="link">2016</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2015/" class="w-100 ">
+                                                    <span class="link">2015</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2014/" class="w-100 ">
+                                                    <span class="link">2014</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2013/" class="w-100 ">
+                                                    <span class="link">2013</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2012/" class="w-100 ">
+                                                    <span class="link">2012</span>
+                                                </a>
+                                            </div>
+                                            <div class="pe-3">
+                                                <a href="/news/all/2011/" class="w-100 ">
+                                                    <span class="link">2011</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="news-years__months">
+                                            <div class="news-years__inner">
+                                                <a href="/news/all/2023/dekabr/"
+                                                    class="d-inline-block mt-0 mb-2 active">
+                                                    <span class="link">Декабрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/noyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Ноябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/oktyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Октябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/sentyabr/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Сентябрь</span>
+                                                </a>
+                                                <a href="/news/all/2023/avgust/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Август</span>
+                                                </a>
+                                                <a href="/news/all/2023/iyul/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Июль</span>
+                                                </a>
+                                                <a href="/news/all/2023/iyun/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Июнь</span>
+                                                </a>
+                                                <a href="/news/all/2023/may/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Май</span>
+                                                </a>
+                                                <a href="/news/all/2023/aprel/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Апрель</span>
+                                                </a>
+                                                <a href="/news/all/2023/mart/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Март</span>
+                                                </a>
+                                                <a href="/news/all/2023/fevral/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Февраль</span>
+                                                </a>
+                                                <a href="/news/all/2023/yanvar/" class="d-inline-block mt-0 mb-2 ">
+                                                    <span class="link">Январь</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Мы в социальных сетях</h4>
+                                <div class="d-flex">
+                                    <a class="icon" href="https://www.youtube.com/c/%D0%A8%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82">
+                                        <svg width="90" height="22">
+                                            <use href="/svg/common.bundle.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="icon" href="https://vk.com/4tochki_carclub">
+                                        <svg width="26" height="26">
+                                            <use href="/svg/common.bundle.svg#social-vk"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="icon" href="https://t.me/tyresexpert">
+                                        <svg width="26" height="26">
+                                            <use href="/svg/common.bundle.svg#social-tg"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
