@@ -60,7 +60,7 @@
         overflow: hidden;
     }
 
-    .burder__icon {
+    .burger__icon {
         display : block;
         width   : 30px;
         height  : 18px;
@@ -69,11 +69,11 @@
         cursor  : pointer;
     }
 
-    .burder__icon span:first-child {
+    .burger__icon span:first-child {
         top: 0;
     }
 
-    .burder__icon span {
+    .burger__icon span {
         position          : absolute;
         top               : calc(50% - 1px);
         left              : 0;
@@ -84,27 +84,27 @@
         background-color  : #64748B;
     }
 
-    .burder__icon span:last-child {
+    .burger__icon span:last-child {
         top   : auto;
         bottom: 0;
     }
 
-    .burder__icon.active span:first-child {
+    .burger__icon.active span:first-child {
         -webkit-transform: rotate(-45deg);
         transform        : rotate(-45deg);
         top              : calc(50% - 1px);
     }
 
-    .burder__icon.active span {
+    .burger__icon.active span {
         transform: scale(0);
     }
 
-    .burder__icon.active span:last-child {
+    .burger__icon.active span:last-child {
         transform: rotate(45deg);
         bottom   : calc(50% - 1px);
     }
 
-    .burder__body {
+    .burger__body {
         position        : absolute;
         top             : 0;
         left            : -100%;
@@ -114,11 +114,11 @@
         transition      : all 0.2s;
     }
 
-    .burder__body.active {
+    .burger__body.active {
         left: 0;
     }
 
-    .burder__list {
+    .burger__list {
         -ms-flex-direction: column;
         flex-direction    : column;
         padding           : 30px;

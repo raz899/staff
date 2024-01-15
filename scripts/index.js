@@ -1,5 +1,5 @@
-const $menu = document.querySelector('.burder__body');
-const $menuBtn = document.querySelector('.js-burder__icon');
+const $menu = document.querySelector('.burger__body');
+const $menuBtn = document.querySelector('.js-burger__icon');
 const body = document.body;
 
 $menuBtn.addEventListener('click', function(e) {
@@ -9,7 +9,7 @@ $menuBtn.addEventListener('click', function(e) {
 });
 
 $menu.addEventListener('click', function(e) {
-    if (e.target.classList.contains('burder__body')) {
+    if (e.target.classList.contains('burger__body')) {
         $menu.classList.remove('active');
         $menuBtn.classList.remove('active');
         body.classList.remove('lock');
