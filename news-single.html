@@ -27,32 +27,27 @@
         </script>
     <!-- /script -->
     <div class="wrapper">
-        <header class="header">
+      <header class="header">
             <div class="container">
                 <div class="row">
                     <a class="col" href="/">
-                        <svg class="d-none d-sm-flex" width="190" height="39">
+                        <svg width="190" height="39">
                             <use href="/svg/common.bundle.svg#logo"></use>
-                        </svg>
-                        <svg class="d-sm-none d-flex" width="45" height="35">
-                            <use href="/svg/common.bundle.svg#logo-mini"></use>
                         </svg>
                     </a>
                     <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
-                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Главная</a>
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Help desk</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Телефонный справочник</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
                     </ul>
                     <div class="col d-flex align-items-center justify-content-end">
-                        <div class="ps-3 dropdown text-end d-flex align-items-center">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
                             <span class="text-info me-2">im_evsikov</span>
                             <a href="#"
                                 class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="32" height="33">
-                                    <use href="/svg/common.bundle.svg#foto"></use>
-                                </svg>
+                                <img width="32px" height="32px" src="img/staff-img/person-circle 1.png">
                                 <!-- событие по клику повернуть стрелку, добавить класс rotate -->
                                 <svg width="14" height="6" class="ms-1  ">
                                     <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
@@ -83,15 +78,41 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <nav class="burger__body burger__body d-lg-none d-flex">
-                                <ul class="burger__list nav nav-pills align-items-start">
-                                    <li class="nav-item burger__item"><a href="#" class="nav-link ms-0">Главная</a>
-                                    </li>
-                                    <li class="nav-item burger__item"><a href="#" class="nav-link ms-0">Help
-                                            desk</a></li>
-                                    <li class="nav-item burger__item"><a href="#" class="nav-link ms-0">Телефонный</a>
-                                    </li>
-                                </ul>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <img width="32px" height="32px" src="img/staff-img/person-circle 1.png">
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </nav>
                         </div>
                         <!--  -->

@@ -9,7 +9,7 @@ $menuBtn.addEventListener('click', function(e) {
 });
 
 $menu.addEventListener('click', function(e) {
-    if (e.target.classList.contains('burger__body')) {
+    if (e.target.classList.contains('.burger__body')) {
         $menu.classList.remove('active');
         $menuBtn.classList.remove('active');
         body.classList.remove('lock');

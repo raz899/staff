@@ -119,14 +119,16 @@
     }
 
     .burger__list {
-        -ms-flex-direction: column;
         flex-direction    : column;
-        padding           : 30px;
+        padding           : 21px;
         gap               : 0;
         height            : 100%;
-        width             : 60%;
+        width             : 80%;
         background-color  : #fff;
         overflow          : auto;
+    }
+    .burger__list .nav-link {
+        font-size: 18px;
     }
 
     /*/ burger */
