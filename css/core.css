@@ -93,7 +93,9 @@ body {
 .border-top-info {
     border-top: 1px solid #bababa !important;
 }
-
+.container-youTube iframe{
+    border-radius: 12px;
+}
 /* /border */
 
 
