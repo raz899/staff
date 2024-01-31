@@ -19,3 +19,35 @@ $menu.addEventListener('click', function(e) {
         body.classList.remove('lock');
     }
 });
+
+// const pdfLinks = document.querySelectorAll("a[href$='.pdf']");
+
+// pdfLinks.forEach(link => {
+//     const pdfIcon = document.createElement('svg');
+//     pdfIcon.setAttribute("width", "32");
+//     pdfIcon.setAttribute("height", "33");
+//     pdfIcon.setAttribute("class", "me-2");
+
+//     const useElement = document.createElement('use');
+//     useElement.setAttribute('href', "/svg/common.bundle.svg#news");
+
+//     pdfIcon.appendChild(useElement);
+//     link.appendChild(pdfIcon);
+// });
+
+const pdfLinks = document.querySelectorAll("a[href$='.pdf']");
+const wordLinks = document.querySelectorAll("a[href$='.doc'], a[href$='.docx']");
+
+pdfLinks.forEach(link => {
+    link.insertAdjacentHTML('beforeend', `<svg class="ms-2" width="16" height="16">
+        <use href = "/svg/common.bundle.svg#pdf"></use></svg >`);
+});
+
+wordLinks.forEach(link => {
+
+    link.insertAdjacentHTML('beforeend', `<svg class="ms-2" width="16" height="16">
+        <use href = "/svg/common.bundle.svg#word"></use></svg >`);
+});
+
+
+

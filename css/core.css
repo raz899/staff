@@ -27,6 +27,13 @@ h6 {
     color           : #ef7a1c;
     background-color: #fff;
 }
+a {
+    color: #64748B;
+}
+a:hover,
+a:focus {
+    color: #ef7a1c;
+}
 
 /* --------------------------------------------- */
 /* colors */
