@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/section-files.css">
+    <title>Обучающие материалы по 1С</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <span class="text-info me-2">im_evsikov</span>
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="education.html">Обучение</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Обучающие материалы по 1С</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <h2 class="mb-4">Обучающие материалы по 1С</h2>
+                <div class="section-files">
+                    <h4>Инструкции по 1С</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="https://drive.google.com/drive/folders/1bbZREzEk4MS4ZrGKE1Ojnkkb1peWWlla">Инструкция
+                            по 1С комплексной автоматизации 2ПИШ</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Оформление заказа в ТК</h4>
+                    <p><a class="section-files__link" target="_blank"
+                            href="word/Оформление отправки заказа через ТК.docx">Оформление отправки
+                            заказа через ТК</a></p>
+                </div>
+                <div class="section-files">
+                    <h4>Оформление заказа на перемещение</h4>
+                    <p><a class="section-files__link" target="_blank"
+                            href="word/Оформление заказа на перемещение.docx">Оформление заказа на
+                            перемещение</a></p>
+                </div>
+                <div class="section-files">
+                    <h4>Возврат с доставки при перемещениях</h4>
+                    <p><a class="section-files__link" target="_blank"
+                            href="word/Возврат с доставки при перемещениях.docx">Возврат с доставки
+                            при
+                            перемещениях</a></p>
+                </div>
+                <div class="section-files">
+                    <h4>Возврат аванса и отгрузка товара юр лицу (оплата корпоративной картой или наличными)</h4>
+                    <p><a class="section-files__link" target="_blank"
+                            href="word/Возврат аванса и отгрузка товара юр лицу ) оплата корпоративной картой или наличными) (3).docx">Возврат
+                            аванса и отгрузка товара юр лицу</a></p>
+                </div>
+                <div class="section-files">
+                    <h4>Прямые машины от постащика, перемещения и возврат с доставки, типичные ошибки и способы
+                        исправления.</h4>
+                    <p>
+                        <a class="section-files__link text-danger" target="_blank" href="">Прямые
+                            машины от постащика</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Ошибки при отправке заказов через рейс и способы их решения</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="word/Ошибки при отправке заказов через рейс и способы их решения.docx">отправке
+                            заказов через рейс и способы их решения</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>ПДСК - начало работы</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/Запуск панели для склада.pdf">1. Запуск
+                            панели для склада</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инструкция по настройке типов считываемых кодов на ТСД.pdf">2.
+                            Инструкция по настройке типов считываемых кодов на ТСД</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Переход на единый графический код DataMatrix.pdf">3. Переход на
+                            единый графический код DataMatrix</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Отгрузка товара</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/ТСД - Сканирование кодов маркировки при отгрузке товара.pdf">ТСД -
+                            Сканирование кодов маркировки при отгрузке товара</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Выписать несколько заказов ОХ на самовывоз (объеденить).pdf">Выписать
+                            несколько
+                            заказов ОХ на самовывоз (объеденить)</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Возврат товара</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/Возврат с доставки.pdf">Возврат с
+                            доставки</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Регламент оформления возвратов товара надлежащего качества ПИШ 2023 г.pdf">Регламент
+                            оформления возвратов товара надлежащего качества ПИШ 2023 г</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Приемка товара</h4>
+                    <p>
+                        <a class="text-danger section-files__link" target="_blank" href="pdf/">Размещение товара в места
+                            хранения через
+                            ТСД
+                            (Используются клетки)</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Приемка в ПдСК дисков и маркировка их.pdf">Приемка в ПдСК
+                            дисков и
+                            маркировка их</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/ТСД-Сканирование-кодов-маркировки-при-приемке-товара.pdf">ТСД
+                            Сканирование кодов маркировки при приемке товара</a>
+                    </p>
+                    <p>
+                        <a class="text-danger section-files__link" target="_blank" href="pdf/">Размещение товара в места
+                            хранения через
+                            ТСД</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Коды маркировки</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Маркировка остатов дисков на складе.pdf">Маркировка остатов
+                            дисков
+                            на складе</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Перемаркировка остатков шин на складе ПИШ.pdf">Перемаркировка
+                            остатков шин на складе ПИШ</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Создание КМ на позиции где утерян код или нечитаемый.pdf">Создание
+                            КМ на позиции где утерян код или нечитаемый</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/Создание дубль КМ.pdf">Создание дубль
+                            КМ</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Перемещение товара на складе</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Возврат с ОХ сканироование КМ.pdf">Возврат с ОХ сканироование
+                            КМ
+                        </a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Перемещение между ячейками через ТСД (Используются клетки).pdf">Перемещение
+                            между
+                            ячейками через ТСД (Используются клетки)</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Перемещение между ячейками через ТСД.pdf">Перемещение между
+                            ячейками через ТСД</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Складские остатки</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/СВЕРКА остатков в ячейке.pdf">СВЕРКА
+                            остатков в ячейке</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Как посмотреть остатки складские по конкретной номенклатуре.pdf">Как
+                            посмотреть
+                            остатки складские по конкретной номенклатуре</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Проверка качества и рекламационный товар</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/Проверка качества товара.pdf">Проверка
+                            качества товара</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Заявление на приемку товара - рекламация NEW2023.pdf">Заявление
+                            на
+                            приемку товара - рекламация NEW2023</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инструкция по приемке товара на рекламацию NEW2023.pdf">Инструкция
+                            по приемке товара на рекламацию NEW2023</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Закрытие месяца</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инструкция закрытие месяца.pdf">Инструкция закрытие месяца</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Инвентаризация склада ПИШ</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Мастер создания заявок на пересчеты товаров.pdf">Мастер
+                            создания
+                            заявок на пересчеты товаров</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Заявки на пересчёты товаров для ТСД.pdf">Заявки на пересчёты
+                            товаров для ТСД</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Пересчет товаров на ТСД (Инвентаризация) + возможные ошибки.pdf">Пересчет
+                            товаров
+                            на ТСД (Инвентаризация) + возможные ошибки</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Пересчет товаров на ТСД (Инвентаризация).pdf">Пересчет товаров
+                            на
+                            ТСД (Инвентаризация)</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Пересчет товаров на ТСД (Инвентаризация) + Диски.pdf">Пересчет
+                            товаров на ТСД (Инвентаризация) + Диски</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Инвентаризация складов ОХ</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инвентаризация на складе ОХ ТСД ПИШ.pdf">Инвентаризация на
+                            складе
+                            ОХ ТСД ПИШ</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инструкция по снятию с ОХ.pdf">Инструкция по снятию с ОХ</a>
+                    </p>
+                    <p>
+                        <a class="text-danger section-files__link" target="_blank" href="pdf/">Возврат с ОХ
+                            сканироование КМ</a>
+                    </p>
+                    <p>
+                        <a class="text-danger section-files__link" target="_blank" href="pdf/">Инвентаризация на складе
+                            ОХ</a>
+                    </p>
+                </div>
+                <div class="section-files">
+                    <h4>Инструкции для менеджеров офиса</h4>
+                    <p>
+                        <a class="section-files__link" target="_blank" href="pdf/Две СУПЕР опции 1С.pdf">Две СУПЕР опции
+                            1С</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Запросить товар из резерва.pdf">Запросить товар из резерва</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Инструкция по документообороту в ОП ПИШ (уточнения!!).pdf">Инструкция по
+                            документообороту в ОП ПИШ (уточнения!!)</a>
+                    </p>
+                    <p>
+                        <a class="section-files__link" target="_blank"
+                            href="pdf/Регламент по претензионной работе с транспортными компаниями.pdf">Регламент по
+                            претензионной работе с транспортными компаниями</a>
+                    </p>
+                    <p>
+                        <a class="text-danger section-files__link" target="_blank" href="pdf/">Работа с заказами (не
+                            обеспечивать)_1</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

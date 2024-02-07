@@ -27,9 +27,11 @@ h6 {
     color           : #ef7a1c;
     background-color: #fff;
 }
+
 a {
     color: #64748B;
 }
+
 a:hover,
 a:focus {
     color: #ef7a1c;
@@ -96,15 +98,17 @@ body {
 .border-bottom-info {
     border-bottom: 1px solid #bababa !important;
 }
+.border-right-info {
+    border-right: 1px solid #bababa !important;
+}
 
 .border-top-info {
     border-top: 1px solid #bababa !important;
 }
-.container-youTube iframe{
+
+.container-youTube iframe {
     border-radius: 12px;
 }
-/* /border */
-
 
 /* media */
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
