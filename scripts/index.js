@@ -20,23 +20,14 @@ $menu.addEventListener('click', function(e) {
     }
 });
 
-// const pdfLinks = document.querySelectorAll("a[href$='.pdf']");
 
-// pdfLinks.forEach(link => {
-//     const pdfIcon = document.createElement('svg');
-//     pdfIcon.setAttribute("width", "32");
-//     pdfIcon.setAttribute("height", "33");
-//     pdfIcon.setAttribute("class", "me-2");
 
-//     const useElement = document.createElement('use');
-//     useElement.setAttribute('href', "/svg/common.bundle.svg#news");
-
-//     pdfIcon.appendChild(useElement);
-//     link.appendChild(pdfIcon);
-// });
-
-const pdfLinks = document.querySelectorAll("a[href$='.pdf']");
-const wordLinks = document.querySelectorAll("a[href$='.doc'], a[href$='.docx']");
+// pdf svg
+const pdfLinks = document.querySelectorAll('.section-files a[href$=".pdf"], .section-files__link[href$=".pdf"]'); 
+// word svg
+const wordLinks = document.querySelectorAll('a[href$=".doc"],  a[href$=".docx"],  a[href$=".rtf"]');
+// other svg links
+const otherLinks = document.querySelectorAll('.section-files a:not([href$=".pdf"]):not([href$=".doc"]):not([href$=".docx"]):not([href$=".rtf"])');
 
 pdfLinks.forEach(link => {
     link.insertAdjacentHTML('afterbegin', `<svg width="16" height="16">
@@ -47,6 +38,12 @@ wordLinks.forEach(link => {
     link.insertAdjacentHTML('afterbegin', `<svg width="16" height="16">
         <use href = "/svg/common.bundle.svg#word"></use></svg >`);
 });
+
+otherLinks.forEach(link => {
+    link.insertAdjacentHTML('afterbegin', `<svg width="16" height="16">
+        <use href="/svg/common.bundle.svg#other-links"></use></svg>`);
+});
+
 
 
 
