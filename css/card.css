@@ -27,7 +27,7 @@
     color      : #2D2D2D;
     font-size  : 20px;
     font-weight: 700;
-    line-height: 19px;
+    line-height: normal;
     margin     : 23px 0 12px 0;
 }
 
@@ -38,9 +38,19 @@
     font-weight       : 500;
     line-height       : 24px;
     display           : -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow          : hidden;
+}
+
+.card__data {
+    font-size     : 12px;
+    font-weight   : 600;
+    line-height   : 15px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    opacity       : 0.8;
+    color         : #2d2d2d;
 }
 
 .one-c-cards {

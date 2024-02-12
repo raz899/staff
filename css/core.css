@@ -74,7 +74,8 @@ main {
     margin-top: 80px;
 }
 
-.footer {
+footer {
+    margin-top: 100px;
     flex: 0 0 auto;
 }
 

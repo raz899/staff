@@ -24,10 +24,6 @@
     color: #64748B;
 }
 
-.news-cards {
-    margin-top: 21px;
-}
-
 .news-card {
     display        : flex;
     flex-direction : column;
