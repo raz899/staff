@@ -28,33 +28,23 @@
     <main class="form-signin w-100 m-auto">
         <div class="container">
             <form novalidate>
-                <svg class="mb-3" width="190" height="39">
+                <svg class="mb-4 w-100" width="190" height="39">
                     <use href="/svg/common.bundle.svg#logo"></use>
                 </svg>
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                        <label for="floatingInput">Адрес электронной почты</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                        <label for="floatingPassword">Пароль</label>
-                    </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required="">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required="">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Войти</button>
                 <div class="row my-3">
-                    <div class="col-6">
-                        <!-- <div class="form-check text-nowrap">
-                            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                запомнить меня
-                            </label>
-                        </div> -->
-                    </div>
-                    <div class="col-6 d-flex justify-content-end">
+                    <div class="col-12 d-flex justify-content-center">
                         <a href="recovery.html">Забыли пароль?</a>
                     </div>
                 </div>
-                <button class="btn btn-primary w-100 py-2" type="submit">Войти</button>
-                <p class="mt-5 mb-3 text-body-secondary">&copy; staff.4tochki.ru.
-                </p>
             </form>
         </div>
     </main>
