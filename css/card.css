@@ -64,6 +64,25 @@
     border                   : 1px solid #E2E8F0;
     padding                  : 15px;
 }
+.information-promotions span {
+    font-size: 14px;
+    color: #818282;
+}
+.information-promotions .card__item-title {
+    font-size: 16px;
+    color: #64748B;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+.information-promotions .card__item-text {
+    font-size    : 16px;
+    color        : #64748B;
+    margin-top   : 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+}
 
 
 /* media */

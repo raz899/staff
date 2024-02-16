@@ -2,13 +2,13 @@ const $menu = document.querySelector('.burger__body');
 const $menuBtn = document.querySelector('.js-burger__icon');
 const body = document.body;
 
-$menuBtn.addEventListener('click', function(e) {
+$menuBtn.addEventListener('click', function (e) {
     $menu.classList.toggle('active');
     $menuBtn.classList.toggle('active');
     body.classList.toggle('lock');
 });
 
-$menu.addEventListener('click', function(e) {
+$menu.addEventListener('click', function (e) {
     if (e.target.classList.contains('.burger__body')) {
         $menu.classList.remove('active');
         $menuBtn.classList.remove('active');
@@ -23,7 +23,7 @@ $menu.addEventListener('click', function(e) {
 
 
 // pdf svg
-const pdfLinks = document.querySelectorAll('.section-files a[href$=".pdf"], .section-files a[href$=".PDF"], .section-files__link[href$=".pdf"]'); 
+const pdfLinks = document.querySelectorAll('.section-files a[href$=".pdf"], .section-files a[href$=".PDF"], .section-files__link[href$=".pdf"]');
 // word svg
 const wordLinks = document.querySelectorAll('a[href$=".doc"],  a[href$=".docx"],  a[href$=".rtf"]');
 // other svg links
@@ -42,6 +42,12 @@ wordLinks.forEach(link => {
 otherLinks.forEach(link => {
     link.insertAdjacentHTML('afterbegin', `<svg width="16" height="16">
         <use href="/svg/common.bundle.svg#other-links"></use></svg>`);
+});
+// popover
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+var popoverList = popoverTriggerList.map(function (popoverTrigger) {
+    return new bootstrap.Popover(popoverTrigger);
 });
 
 

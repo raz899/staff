@@ -40,7 +40,7 @@ a:focus {
 /* --------------------------------------------- */
 /* colors */
 .text-black {
-    color: #2d2d2d;
+    color: #2d2d2d !important;
 }
 
 .text-info {
@@ -114,6 +114,9 @@ body {
 
 .nav-tabs .nav-link.active {
     color: #ef7a1c;
+}
+.c-pointer {
+    cursor: pointer
 }
 
 /* media */
