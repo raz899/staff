@@ -142,483 +142,329 @@
                     <label>Введите №Заказа или №ТН или №Акта</label>
                 </div>
                 <button type="button" class="btn btn-primary">Найти</button>
-                <button type="button" class="btn btn-secondary">Отчёт</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">Отчёт</button>
                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">Добавить акцию</button>
 
                 <h3 class="title">Информация по акции</h3>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Номер заявки
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="Номер заказа в 'форточки'">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Дата
-                                    добавления
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="Дата добавления в систему">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th style="min-width: 300px;">
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Данные чека
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="Дата кассового чека, Дата оказания услуг, ФД, ФПД, Общая сумма чека">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th style="min-width: 300px;">
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Товар
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="SAE(код товара), Марка шин, Модель шин, Типоразмер">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Данные
-                                    покукпателя
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="ФИО, номер телефона">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center justify-content-center text-nowrap">Документы
-                                    <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
-                                        data-bs-content="Копии документов (накладной / кассового чека) на продажу шин, Копии документов на оказание услуг">
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#info"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center justify-content-center align-content-center">
-                                    <div>
-                                        <svg width="14" height="14">
-                                            <use href="/svg/common.bundle.svg#gear"></use>
-                                        </svg>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-striped">
-                        <tr>
-                            <td>
-                                <div class="d-flex justify-content-center align-content-center">
-                                    <div class="h-100">F0123078</div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center justify-content-center">20.09.2023
-                                    <span class="ms-3">05:17:25</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div>
-                                        <span class="table-text me-2">Дата оказания услуг:</span>
-                                        <span>13.09.2023</span>
-                                        <div>
-                                            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                                aria-expanded="false" aria-controls="collapseExample">
-                                                подробнее
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Дата оказания услуг:</span>
-                                            <div>13.09.2023</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Дата кассового чека:</span>
-                                            <div>13.09.2023 19:22</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">ФД:</span>
-                                            <div>62000</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">ФПД:</span>
-                                            <div>62000</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Общая сумма чека:</span>
-                                            <div>62000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div>
-                                        <span class="table-text me-2">Марка шин:</span>
-                                        <span>Yokohama</span>
-                                        <div>
-                                            <a class="" data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                                                aria-expanded="false" aria-controls="collapseExample2">
-                                                подробнее
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample2">
-                                    <div class="card card-body">
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Марка шин:</span>
-                                            <div>Yokohama</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Модель шин:</span>
-                                            <div>Yokohama IceGuard IG65</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Типоразмер:</span>
-                                            <div>245/50R18</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">ФПД:</span>
-                                            <div>62000</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">SAE (код товара):</span>
-                                            <div>r16200</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div>
-                                        <span class="table-text me-2">ФИО:</span>
-                                        <span>Власов Андрей</span>
-                                        <div>
-                                            <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                                                aria-expanded="false" aria-controls="collapseExample1">
-                                                подробнее
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample1">
-                                    <div class="card card-body">
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">ФИО:</span>
-                                            <div>Власов Андрей Дмитриевич</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Телефон:</span>
-                                            <div>+7(953)767-1406</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column align-items-center">
-                                    <div>
-                                        <div>
-                                            <a class="" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
-                                                aria-controls="collapseExample3">
-                                                подробнее
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample3">
-                                    <div class="card card-body">
-                                        <div class="d-flex">
-                                            <img src="img/1446801618.png" scalable="150px" alt="">
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Модель шин:</span>
-                                            <div>Yokohama IceGuard IG65</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">Типоразмер:</span>
-                                            <div>245/50R18</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">ФПД:</span>
-                                            <div>62000</div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <span class="table-text me-2">SAE (код товара):</span>
-                                            <div>r16200</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="dropdown c-pointer">
-                                        <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <svg width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#dots"></use>
-                                            </svg>
-                                        </div>
-                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
-                                            <li>
-                                                <button type="button"
-                                                    class="btn d-flex align-items-center dropdown-item">
-                                                    <svg class="text-dark me-2" width="16" height="16">
-                                                        <use href="/svg/common.bundle.svg#save"></use>
-                                                    </svg>Сохранить
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button"
-                                                    class="btn d-flex align-items-center dropdown-item">
-                                                    <svg class="text-warning me-2" width="16" height="16">
-                                                        <use href="/svg/common.bundle.svg#pen"></use>
-                                                    </svg>Редактировать
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button"
-                                                    class="btn d-flex align-items-center dropdown-item">
-                                                    <svg class="text-danger me-2" width="16" height="16">
-                                                        <use href="/svg/common.bundle.svg#del"></use>
-                                                    </svg>Удалить
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- <div class="card__item information-promotions">
-                    <div class="d-flex align-items-center justify-content-between mb-2 border-bottom-info">
-                        <div class="d-flex align-items-center">
-                            <div class="d-flex me-4">
-                                <span class="card__item-title m-0">Номер заказа в "форточки": </span>
-                                <span>F0123078</span>
-                            </div>
-                            <div class="d-flex ms-4">
-                                <span class="card__item-title">SAE (код товара):</span>
-                                <span>12412412</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <span class="card__item-title">Общая сумма чека:</span>
-                            <span>62000р</span>
-                        </div>
-                    </div>
-                    <div class="row border-bottom-info">
-                        <div class="col-3">
-                            <span class="card__item-title">Дата</span>
-                            <div class="d-flex flex-column">
-                                <div class="row">
-                                    <span class="col">кассового чека:</span>
-                                    <span class="col">13.09.2023 19:22</span>
-                                </div>
-                                <div class="row">
-                                    <span class="col">оказания услуг:</span>
-                                    <span class="col">13.09.2023 19:22</span>
-                                </div>
-                                <div class="row">
-                                    <span class="col">добавления:</span>
-                                    <span class="col">13.09.2023 19:22</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <span class="card__item-title">Информация о покупателе</span>
-                            <div class="d-flex flex-column">
-                                <div class="row">
-                                    <span class="col-3">ФИО:</span>
-                                    <span class="col">Власов Андрей Дмитриевич</span>
-                                </div>
-                                <div class="row">
-                                    <span class="col-3">Телефон:</span>
-                                    <span class="col">+7(953)767-1406</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <span class="card__item-title">Товар</span>
-                            <div class="d-flex flex-column">
-                                <div class="row">
-                                    <span class="col">Марка шин:</span>
-                                    <span class="col">Yokohama</span>
-                                </div>
-                                <div class="row">
-                                    <span class="col">Модель шин:</span>
-                                    <span class="col">IceGuard IG65</span>
-                                </div>
-                                <div class="row">
-                                    <span class="col">Типоразмер:</span>
-                                    <span class="col">245/50R18</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <span class="card__item-title">ФПД:</span>
-                            <div class="row">
-                                <span class="col">null</span>
-                            </div>
-                            <span class="card__item-title">ФПД:</span>
-                            <div class="row">
-                                <span class="col">null</span>
-                            </div>
-                        </div>
-                        <div class="col-1">
-                            <div class="d-flex flex-column align-items-end">
-                                <button type="button" class="btn my-1 p-1">
-                                    <svg class="text-warning" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#pen"></use>
-                                    </svg>
-                                </button>
-                                <button type="button" class="btn my-1 p-1">
-                                    <svg class="text-primary" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#save"></use>
-                                    </svg>
-                                </button>
-                                <button type="button" class="btn my-1 p-1">
-                                    <svg class="text-danger" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#del"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                            aria-expanded="false" aria-controls="multiCollapseExample1">Копии документов (накладной / кассового чека) на продажу шин</a>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#multiCollapseExample2" aria-expanded="false"
-                            aria-controls="multiCollapseExample2">Копии документов на оказание услуг</button>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis error quasi deserunt fuga temporibus assumenda veniam ipsum. Ad natus aspernatur voluptatum! Magnam vero mollitia esse aperiam explicabo consectetur ut.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                <div class="card card-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis error quasi deserunt fuga temporibus assumenda
-                                    veniam ipsum. Ad natus aspernatur voluptatum! Magnam vero mollitia esse aperiam explicabo consectetur ut.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="table-container">
+                <div class="table-container">
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th style="min-width: 10px;">#</th>
-                                <th style="min-width: 120px;">Номер заказа в "форточки"</th>
-                                <th style="min-width: 180px;">Дата кассового чека</th>
-                                <th style="min-width: 180px;">Дата оказания услуг</th>
-                                <th style="min-width: 150px;">Дата добавления</th>
-                                <th style="min-width: 150px;">Общая сумма чека</th>
-                                <th style="min-width: 100px;">Марка шин</th>
-                                <th style="min-width: 120px;">Модель шин</th>
-                                <th style="min-width: 100px;">Типоразмер</th>
-                                <th style="min-width: 250px;">ФИО (покупателя)</th>
-                                <th style="min-width: 200px;">Телефон (покупателя)</th>
-                                <th style="min-width: 420px;">Копии документов <br>
-                                    (накладной / кассового чека) на продажу шин</th>
-                                <th style="min-width: 320px;">Копии документов на оказание услуг</th>
-                                <th style="min-width: 100px;">ФД</th>
-                                <th style="min-width: 100px;">ФПД</th>
-                                <th style="min-width: 150px;">SAE (код товара)</th>
-                                <th style="min-width: 150px;">Сохранить <br>
-                                    Редактировать <br>
-                                    Удалить</th>
+                                <th style="min-width: 140px;">
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Номер
+                                        заказа
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Номер заказа в 'форточки'">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th style="min-width: 140px;">
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Дата
+                                        добавления
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Дата добавления в систему">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th style="min-width: 274px;">
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Данные чека
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Дата кассового чека, Дата оказания услуг, ФД, ФПД, Общая сумма чека">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th style="min-width: 220px;">
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Товар
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="SAE(код товара), Марка шин, Модель шин, Типоразмер">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th style="min-width: 274px;">
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Данные
+                                        покукпателя
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="ФИО, номер телефона">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Документы
+                                        <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Копии документов (накладной / кассового чека) на продажу шин, Копии документов на оказание услуг">
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div>
+                                            <svg width="14" height="14">
+                                                <use href="/svg/common.bundle.svg#gear"></use>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody class="table-striped">
                             <tr>
-                                <td>1</td>
-                                <td>F0123078</td>
-                                <td>13.09.2023 19:22</td>
-                                <td>13.09.2023</td>
-                                <td>20.09.2023 05:17:25</td>
-                                <td>62000р</td>
-                                <td>Yokohama</td>
-                                <td>Yokohama IceGuard IG65</td>
-                                <td>245/50R18</td>
-                                <td>Власов Андрей Дмитриевич</td>
-                                <td>+7(953)767-1406</td>
                                 <td>
-                                    <div class="overfloy">
-                                        <button class="btn docFile1">
-                                            <svg width="32" height="33" class="ms-1">
-                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                    <div class="d-flex justify-content-start align-content-center">
+                                        <span>F0123078</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">20.09.2023
+                                        <span class="ms-2">05:17:25</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Данные чека"
+                                            data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
+                                            <span class="text-nowrap">Дата оказания услуг:</span>
+                                            <span class="text-nowrap ms-2">13.09.2023</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
                                             </svg>
-                                        </button>
-                                        <div class="file">
-                                            <div class="delShareFile"></div>
-                                            <img src="#" alt="">
                                         </div>
                                     </div>
                                 </td>
-                                <td>fail</td>
-                                <td>nd</td>
-                                <td>nd</td>
-                                <td>nd</td>
                                 <td>
-                                    <div class="d-flex">
-                                        <button class="btn me-1 saveShare" type="button">
-                                            <svg width="32" height="33" class="ms-1">
-                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Товар"
+                                            data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
+                                            <span class="text-nowrap me-2">Марка шин:</span>
+                                            <span class="text-nowrap">Yokohama</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
                                             </svg>
-                                        </button>
-                                        <button class="btn me-1 editShare" type="button">
-                                            <svg width="32" height="33" class="ms-1">
-                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Данные покукпателя"
+                                            data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
+                                            <span class="text-nowrap me-2">ФИО:</span>
+                                            <span class="text-nowrap">Власов Андрей Дмитриевич</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
                                             </svg>
-                                        </button>
-                                        <button class="btn me-1 delShare" type="button">
-                                            <svg width="32" height="33" class="ms-1">
-                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <span class="text-nowrap me-2">Документы:</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="text-link c-pointer" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop1">
+                                                <svg class="ms-2" width="16" height="16">
+                                                    <use href="/svg/common.bundle.svg#treaties"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse mt-2" id="collapseExample4">
+                                        <div class="card card-body p-2">
+                                            <div class="d-flex">
+                                                <img src="img/1443428104.gif" alt="документ">
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="img/1443428104.gif" alt="документ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="dropdown c-pointer">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <svg width="16" height="16">
+                                                    <use href="/svg/common.bundle.svg#dots"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-dark me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#save"></use>
+                                                        </svg>Сохранить
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-warning me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#pen"></use>
+                                                        </svg>Редактировать
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-danger me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#del"></use>
+                                                        </svg>Удалить
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-start align-content-center">
+                                        <span>F0123078</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">20.09.2023
+                                        <span class="ms-2">05:17:25</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Данные чека"
+                                            data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
+                                            <span class="text-nowrap">Дата оказания услуг:</span>
+                                            <span class="text-nowrap ms-2">13.09.2023</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
                                             </svg>
-                                        </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Товар"
+                                            data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
+                                            <span class="text-nowrap me-2">Марка шин:</span>
+                                            <span class="text-nowrap">Yokohama</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
+                                            data-bs-html="true" title="Данные покукпателя"
+                                            data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
+                                            <span class="text-nowrap me-2">ФИО:</span>
+                                            <span class="text-nowrap">Власов Андрей Дмитриевич</span>
+                                            <svg class="ms-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <span class="text-nowrap me-2">Документы:</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="text-link c-pointer" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop1">
+                                                <svg class="ms-2" width="16" height="16">
+                                                    <use href="/svg/common.bundle.svg#treaties"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse mt-2" id="collapseExample4">
+                                        <div class="card card-body p-2">
+                                            <div class="d-flex">
+                                                <img src="img/1443428104.gif" alt="документ">
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="img/1443428104.gif" alt="документ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="dropdown c-pointer">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <svg width="16" height="16">
+                                                    <use href="/svg/common.bundle.svg#dots"></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-dark me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#save"></use>
+                                                        </svg>Сохранить
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-warning me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#pen"></use>
+                                                        </svg>Редактировать
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-danger me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#del"></use>
+                                                        </svg>Удалить
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>  -->
+                </div>
+                <div class="pop-up">
+                    <span class="btn-close"></span>
+                    <img src="img/чек1.jpg" alt="">
+                </div>
             </section>
         </main>
         <footer class="container">
@@ -639,7 +485,27 @@
     </div>
     <!-- script -->
     <script src="/scripts/index.js"></script>
-
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Отчет по (Назавание акции)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form action="#">
+                    
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Сформировать</button>
+                    <button type="button" class="btn btn-primary">Excel</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -705,11 +571,169 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
-    <script src="/scripts/table.js"></script>
+    <!--  -->
+    <div class="modal fade" id="staticBackdrop1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Документы заказа <span>F0123078</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active p-3" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                aria-selected="true">Копии на продажу шин</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link p-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Копии на оказание
+                                услуг</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="documents-items js-images-gallery my-4">
+                                <!--  -->
+                                <div class="documents-item">
+                                    <img class="w-100" src="img/чек1.jpg" alt="документ">
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="documents-item">
+                                    <img class="w-100" src="img/чек2.jpg" alt="документ">
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="documents-item">
+                                    <a href="/staff_img/sharesFiles/185894/doc1/Бусыгин_чек.pdf"
+                                        target="_blank">Бусыгин_чек.pdf</a>
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <div class="item-fill">
+                                        <input class="d-none" type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                        <label class="c-pointer d-flex align-items-center justify-content-end"
+                                            for="imageUpload">Добавить документ
+                                            <svg class="ms-2 text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#agreements"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="documents-items js-images-gallery my-4">
+                                <!--  -->
+                                <div class="documents-item">
+                                    <img class="w-100" src="img/чек1.jpg" alt="документ">
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="documents-item">
+                                    <img class="w-100" src="img/чек2.jpg" alt="документ">
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="documents-item">
+                                    <a href="/staff_img/sharesFiles/185894/doc1/Бусыгин_чек.pdf"
+                                        target="_blank">Бусыгин_чек.pdf</a>
+                                    <div class="items-fill">
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-danger" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#delete"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="item-fill btn">
+                                            <svg class="c-pointer text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#printer"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <div class="item-fill">
+                                        <input class="d-none" type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                        <label class="c-pointer d-flex align-items-center justify-content-end"
+                                            for="imageUpload">Добавить документ
+                                            <svg class="ms-2 text-primary" width="20" height="24">
+                                                <use href="/svg/common.bundle.svg#agreements"></use>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/documens.js"></script>
 </body>
 
 </html>
