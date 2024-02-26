@@ -143,9 +143,9 @@
                 </div>
                 <button type="button" class="btn btn-primary">Найти</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop2">Отчёт</button>
+                    data-bs-target="#report">Отчёт</button>
                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">Добавить акцию</button>
+                    data-bs-target="#add-promotion">Добавить акцию</button>
 
                 <h3 class="title">Информация по акции</h3>
                 <div class="table-container">
@@ -289,7 +289,7 @@
                                         <span class="text-nowrap me-2">Документы:</span>
                                         <div class="d-flex align-items-center">
                                             <div class="text-link c-pointer" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop1">
+                                                data-bs-target="#order-documents">
                                                 <svg class="ms-2" width="16" height="16">
                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                 </svg>
@@ -401,7 +401,7 @@
                                         <span class="text-nowrap me-2">Документы:</span>
                                         <div class="d-flex align-items-center">
                                             <div class="text-link c-pointer" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop1">
+                                                data-bs-target="#order-documents">
                                                 <svg class="ms-2" width="16" height="16">
                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                 </svg>
@@ -485,8 +485,8 @@
     </div>
     <!-- script -->
     <script src="/scripts/index.js"></script>
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- Modal Отчет -->
+    <div class="modal fade" id="report" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -495,9 +495,68 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <form action="#">
-                    
-                </form>
+                    <form action="#">
+                        <div class="mb-3">
+                            <label class="form-label">Организация</label>
+                            <div class="form-control">Выберите организацию</div>
+                            <div class="w-100 form-control">
+                                <div class="">
+                                    <input type="checkbox" name="1" id="1">
+                                    <label for="1" class="form-label">2</label>
+                                </div>
+                                <div class="">
+                                    <input type="checkbox" name="1" id="2">
+                                    <label for="1" class="form-label">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"></label>
+                            <label class="form-label">Укажите адрес или ФИО</label>
+                            <input type="text" class="form-control" placeholder="Введите номер заказа" >
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label class="form-label">Период</label>
+                                <div class="d-flex align-items-center">
+                                   <span class="me-2"> c:</span>
+                                    <input type="date" class="form-control" placeholder="Дата">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label"></label>
+                                <div class="d-flex align-items-center">
+                                <span class="me-2"> по:</span>
+                                    <input type="date" class="form-control" placeholder="Дата">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Марка</label>
+                            <div class="form-control">Выберите марку</div>
+                            <div class="w-100 form-control">
+                                <div class="">
+                                    <input type="checkbox" name="1" id="3">
+                                    <label for="1" class="form-label">1</label>
+                                </div>
+                                <div class="">
+                                    <input type="checkbox" name="1" id="4">
+                                    <label for="1" class="form-label">2</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Тип выборки   
+                            </label>
+                            <select class="form-select">
+                                <option value="0">Все</option>
+                                <option value="1">Дата продажи</option>
+                                <option value="2">Дата оказания услуг</option>
+                                <option value="3">Дата добавления</option>
+                            </select>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Сформировать</button>
@@ -506,8 +565,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- Modal добавить акцию -->
+    <div class="modal fade" id="add-promotion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -518,26 +577,36 @@
                 <div class="modal-body">
                     <form action="#">
                         <div class="mb-3">
-                            <label class="form-label">Номер заказа в "форточках"</label>
+                            <label class="form-label">Номер заказа в "форточках"
+                                <span class="text-danger ms-1">*</span>
+                            </label>
                             <input type="text" class="form-control" placeholder="Введите номер заказа" required>
                         </div>
                         <div class="row mb-3">
                             <div class="col-6">
-                                <label class="form-label">Дата кассового чека</label>
+                                <label class="form-label">Дата кассового чека
+                                    <span class="text-danger ms-1">*</span>
+                                </label>
                                 <input type="date" class="form-control" id="date" placeholder="Дата" required>
                             </div>
                             <div class="col-6">
-                                <label class="form-label">Дата оказания услуг</label>
+                                <label class="form-label">Дата оказания услуг
+                                    <span class="text-danger ms-1">*</span>
+                                </label>
                                 <input type="date" class="form-control" id="date" placeholder="Дата" required>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Общая сумма чека</label>
+                            <label class="form-label">Общая сумма чека
+                                <span class="text-danger ms-1">*</span>
+                            </label>
                             <input type="text" class="form-control" placeholder="Введите сумма чека" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Марка шин</label>
-                            <select class="form-select">
+                            <label class="form-label">Марка шин
+                                <span class="text-danger ms-1">*</span>
+                            </label>
+                            <select class="form-select" required>
                                 <option value="0">...</option>
                                 <option value="1">Amtel</option>
                                 <option value="2">Formula</option>
@@ -545,7 +614,9 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Типоразмер</label>
+                            <label class="form-label">Типоразмер
+                                <span class="text-danger ms-1">*</span>
+                            </label>
                             <div class="d-flex align-items-center">
                                 <input type="text" class="form-control" placeholder="Ширина" required>
                                 <span class="mx-2">/</span>
@@ -555,15 +626,19 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">ФИО (Покупателя)</label>
+                            <label class="form-label">ФИО (Покупателя)
+                                <span class="text-danger ms-1">*</span>
+                            </label>
                             <input type="text" class="form-control" placeholder="Введите ФИО" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Телефон (покупателя)</label>
+                            <label class="form-label">Телефон (покупателя)
+                                <span class="text-danger ms-1">*</span>
+                            </label>
                             <input type="tel" class="form-control" placeholder="Введите Телефон" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label text-danger">ИНН (если покупатель юр.лицо)</label>
+                            <label class="form-label">ИНН (если покупатель юр.лицо)</label>
                             <input type="text" class="form-control" placeholder="Введите ИНН">
                         </div>
                         <div class="d-flex justify-content-end">
@@ -574,13 +649,13 @@
             </div>
         </div>
     </div>
-    <!--  -->
-    <div class="modal fade" id="staticBackdrop1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+    <!-- Modal документы заказа № -->
+    <div class="modal fade" id="order-documents" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Документы заказа <span>F0123078</span></h5>
+                    <h5 class="modal-title">Документы заказа №:<span>F0123078</span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

@@ -1,6 +1,8 @@
 .table-container {
-    max-height    : 500px;
+    max-height        : 500px;
     padding-bottom: 100px;
+    overflow      : scroll;
+
 }
 
 .table th {
