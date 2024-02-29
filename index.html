@@ -67,8 +67,8 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Помощь</div>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#feedback-form">
+                                        Помощь</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item text-danger" href="#">Выход</a>
@@ -115,9 +115,9 @@
                                             <a href="#" class="nav-link py-2">Админка</a>
                                         </li>
                                         <li class="nav-item border-top-info mt-2">
-                                            <div class="nav-link py-2" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">
-                                                Помощь</div>
+                                            <a href="#" class="nav-link py-2" data-bs-toggle="modal"
+                                                data-bs-target="#feedback-form">
+                                                Помощь</a>
                                         </li>
                                         <li class="nav-item w-100">
                                             <a href="#" class="nav-link text-danger py-2">Выход</a>
@@ -160,7 +160,7 @@
                         <sapn class="card__item-text">Обучающие материалы по: 1С, маркировке, транспортной документации
                             и т.п.</sapn>
                     </a>
-                    <a href="#" class="card__item">
+                    <a target="_blank" href="http://partner.4tochki.ru/?login=&amp;password=$2y$10$N0gZ3hbRtrgRT7X0ICZKu.3WV4seCMNGrM9KSLpDMfNUAUh4TkA3S" class="card__item">
                         <svg width="32" height="33">
                             <use href="/svg/common.bundle.svg#service"></use>
                         </svg>
@@ -175,7 +175,7 @@
                         <sapn class="card__item-text">Добавление \ редактирование акций
                             на сайт 4tochki.ru</sapn>
                     </a>
-                    <a href="#" class="card__item">
+                    <a href="guest-pass.html" class="card__item">
                         <svg width="32" height="33">
                             <use href="/svg/common.bundle.svg#guest-passwords"></use>
                         </svg>
@@ -374,13 +374,13 @@
 
     <!-- script -->
     <script src="/scripts/index.js"></script>
-    <!-- Модальное окно -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Форма обратной связи -->
+    <div class="modal fade" id="feedback-form" tabindex="-1" aria-labelledby="feedback-formLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered d-flex justify-content-center">
             <form action="#">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Форма обратной связи</h5>
+                        <h5 class="modal-title" id="feedback-formLabel">Форма обратной связи</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                     </div>
                     <div class="modal-body">
@@ -388,7 +388,7 @@
                             <label for="themeSelect" class="form-label">Выберите тему вашего обращения:</label>
                             <select class="form-select" id="themeSelect">
                                 <option selected>...</option>
-                                <option value="1">Тема 1</option>
+                                <option value="1">Создание заявок в ТК</option>
                                 <option value="2">Тема 2</option>
                                 <option value="3">Тема 3</option>
                             </select>
