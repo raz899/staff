@@ -130,6 +130,8 @@ body {
 }
 .popover {
     z-index: 1040;
+    max-width: 500px !important;
+    margin: 20px;
 }
 
 

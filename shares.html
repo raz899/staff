@@ -141,7 +141,6 @@
                     <input type="text" class="form-control" placeholder="Введите №Заказа или №ТН или №Акта">
                     <label>Введите №Заказа или №ТН или №Акта</label>
                 </div>
-                <button type="button" class="btn btn-primary">Найти</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#report">Отчёт</button>
                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
@@ -153,7 +152,7 @@
                         <thead>
                             <tr>
                                 <th style="min-width: 140px;">
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Номер
+                                    <div class="table-content text-nowrap">Номер
                                         заказа
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
@@ -165,7 +164,7 @@
                                     </div>
                                 </th>
                                 <th style="min-width: 140px;">
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Дата
+                                    <div class="table-content text-nowrap">Дата
                                         добавления
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
@@ -177,7 +176,7 @@
                                     </div>
                                 </th>
                                 <th style="min-width: 274px;">
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Данные чека
+                                    <div class="table-content text-nowrap">Данные чека
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
                                             data-bs-content="Дата кассового чека, Дата оказания услуг, ФД, ФПД, Общая сумма чека">
@@ -187,8 +186,8 @@
                                         </div>
                                     </div>
                                 </th>
-                                <th style="min-width: 220px;">
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Товар
+                                <th style="min-width: 215px;">
+                                    <div class="table-content text-nowrap">Товар
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
                                             data-bs-content="SAE(код товара), Марка шин, Модель шин, Типоразмер">
@@ -199,7 +198,7 @@
                                     </div>
                                 </th>
                                 <th style="min-width: 274px;">
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Данные
+                                    <div class="table-content text-nowrap">Данные
                                         покукпателя
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
@@ -211,7 +210,7 @@
                                     </div>
                                 </th>
                                 <th>
-                                    <div class="d-flex align-items-center justify-content-start text-nowrap">Документы
+                                    <div class="table-content text-nowrap">Документы
                                         <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
                                             data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
                                             data-bs-content="Копии документов (накладной / кассового чека) на продажу шин, Копии документов на оказание услуг">
@@ -222,9 +221,9 @@
                                     </div>
                                 </th>
                                 <th>
-                                    <div class="d-flex align-items-center justify-content-start">
+                                    <div class="table-content">
                                         <div>
-                                            <svg width="14" height="14">
+                                            <svg width="17" height="17">
                                                 <use href="/svg/common.bundle.svg#gear"></use>
                                             </svg>
                                         </div>
@@ -236,83 +235,72 @@
                         <tbody class="table-striped">
                             <tr>
                                 <td>
-                                    <div class="d-flex justify-content-start align-content-center">
-                                        <span>F0123078</span>
+                                    <div class="table-content">
+                                        <div>F0123078</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">20.09.2023
+                                    <div class="table-content">20.09.2023
                                         <span class="ms-2">05:17:25</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Данные чека"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Данные чека"
                                             data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
                                             <span class="text-nowrap">Дата оказания услуг:</span>
                                             <span class="text-nowrap ms-2">13.09.2023</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Товар"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Товар"
                                             data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
                                             <span class="text-nowrap me-2">Марка шин:</span>
                                             <span class="text-nowrap">Yokohama</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Данные покукпателя"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Данные покукпателя"
                                             data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
                                             <span class="text-nowrap me-2">ФИО:</span>
                                             <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <span class="text-nowrap me-2">Документы:</span>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-link c-pointer" data-bs-toggle="modal"
-                                                data-bs-target="#order-documents">
-                                                <svg class="ms-2" width="16" height="16">
+                                    <div class="table-content">
+                                        <div class="c-pointer" data-bs-toggle="modal" data-bs-target="#order-documents">
+                                            <div class="text-nowrap">Документы:</div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="ms-2 text-info" width="16" height="16">
                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                 </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="collapse mt-2" id="collapseExample4">
-                                        <div class="card card-body p-2">
-                                            <div class="d-flex">
-                                                <img src="img/1443428104.gif" alt="документ">
-                                            </div>
-                                            <div class="d-flex">
-                                                <img src="img/1443428104.gif" alt="документ">
-                                            </div>
-                                        </div>
-                                    </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
+                                    <div class="table-content">
                                         <div class="dropdown c-pointer">
                                             <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
-                                                <svg width="16" height="16">
+                                                <svg width="19" height="19">
                                                     <use href="/svg/common.bundle.svg#dots"></use>
                                                 </svg>
                                             </div>
@@ -348,83 +336,72 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="d-flex justify-content-start align-content-center">
-                                        <span>F0123078</span>
+                                    <div class="table-content">
+                                        <div>F0123078</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">20.09.2023
+                                    <div class="table-content">20.09.2023
                                         <span class="ms-2">05:17:25</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Данные чека"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Данные чека"
                                             data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
                                             <span class="text-nowrap">Дата оказания услуг:</span>
                                             <span class="text-nowrap ms-2">13.09.2023</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Товар"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Товар"
                                             data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
                                             <span class="text-nowrap me-2">Марка шин:</span>
                                             <span class="text-nowrap">Yokohama</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <div class="c-pointer" data-bs-toggle="popover" data-bs-placement="bottom"
-                                            data-bs-html="true" title="Данные покукпателя"
+                                    <div class="table-content">
+                                        <div class="c-pointer d-flex align-items-center" data-bs-toggle="popover"
+                                            data-bs-placement="bottom" data-bs-html="true" title="Данные покукпателя"
                                             data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
                                             <span class="text-nowrap me-2">ФИО:</span>
                                             <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                            <svg class="ms-2" width="16" height="16">
-                                                <use href="/svg/common.bundle.svg#arrow-bar-down"></use>
+                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
                                             </svg>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
-                                        <span class="text-nowrap me-2">Документы:</span>
-                                        <div class="d-flex align-items-center">
-                                            <div class="text-link c-pointer" data-bs-toggle="modal"
-                                                data-bs-target="#order-documents">
-                                                <svg class="ms-2" width="16" height="16">
+                                    <div class="table-content">
+                                        <div class="c-pointer" data-bs-toggle="modal" data-bs-target="#order-documents">
+                                            <div class="text-nowrap">Документы:</div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="ms-2 text-info" width="16" height="16">
                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                 </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="collapse mt-2" id="collapseExample4">
-                                        <div class="card card-body p-2">
-                                            <div class="d-flex">
-                                                <img src="img/1443428104.gif" alt="документ">
-                                            </div>
-                                            <div class="d-flex">
-                                                <img src="img/1443428104.gif" alt="документ">
-                                            </div>
-                                        </div>
-                                    </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex align-items-center justify-content-start">
+                                    <div class="table-content">
                                         <div class="dropdown c-pointer">
                                             <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
-                                                <svg width="16" height="16">
+                                                <svg width="19" height="19">
                                                     <use href="/svg/common.bundle.svg#dots"></use>
                                                 </svg>
                                             </div>
@@ -461,10 +438,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="pop-up">
-                    <span class="btn-close"></span>
-                    <img src="img/чек1.jpg" alt="">
-                </div>
+
             </section>
         </main>
         <footer class="container">
@@ -513,21 +487,21 @@
                         <div class="mb-3">
                             <label class="form-label"></label>
                             <label class="form-label">Укажите адрес или ФИО</label>
-                            <input type="text" class="form-control" placeholder="Введите номер заказа" >
+                            <input type="text" class="form-control" placeholder="Введите номер заказа">
                         </div>
 
                         <div class="row mb-3">
                             <div class="col-6">
                                 <label class="form-label">Период</label>
                                 <div class="d-flex align-items-center">
-                                   <span class="me-2"> c:</span>
+                                    <span class="me-2"> c:</span>
                                     <input type="date" class="form-control" placeholder="Дата">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <label class="form-label"></label>
                                 <div class="d-flex align-items-center">
-                                <span class="me-2"> по:</span>
+                                    <span class="me-2"> по:</span>
                                     <input type="date" class="form-control" placeholder="Дата">
                                 </div>
                             </div>
@@ -547,7 +521,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Тип выборки   
+                            <label class="form-label">Тип выборки
                             </label>
                             <select class="form-select">
                                 <option value="0">Все</option>
@@ -676,7 +650,7 @@
                             <div class="documents-items js-images-gallery my-4">
                                 <!--  -->
                                 <div class="documents-item">
-                                    <img class="w-100" src="img/чек1.jpg" alt="документ">
+                                    <img class="w-100 c-pointer" src="img/чек1.jpg" alt="документ">
                                     <div class="items-fill">
                                         <button type="button" class="item-fill btn">
                                             <svg class="c-pointer text-danger" width="20" height="24">
@@ -692,7 +666,7 @@
                                 </div>
                                 <!--  -->
                                 <div class="documents-item">
-                                    <img class="w-100" src="img/чек2.jpg" alt="документ">
+                                    <img class="w-100 c-pointer" src="img/чек2.jpg" alt="документ">
                                     <div class="items-fill">
                                         <button type="button" class="item-fill btn">
                                             <svg class="c-pointer text-danger" width="20" height="24">
@@ -807,7 +781,10 @@
             </div>
         </div>
     </div>
-
+    <div class="pop-up">
+        <span class="btn-close"></span>
+        <img src="img/чек1.jpg" alt="">
+    </div>
     <script src="/scripts/documens.js"></script>
 </body>
 

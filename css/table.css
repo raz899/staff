@@ -1,13 +1,13 @@
 .table-container {
     max-height    : 500px;
     padding-bottom: 100px;
-    overflow      : scroll;
-
+    /* overflow      : scroll; */
 }
 
 .table th {
     padding  : 10px;
     min-width: 100%;
+    font-size: 14px;
 }
 
 .table td {
@@ -17,14 +17,26 @@
 .table td div {
     display  : flex;
     flex-wrap: nowrap;
-    font-size: 13px;
+    font-size: 14px;
+}
+.table-min tbody tr td+td {
+    border-left: 1px solid #64748B;
+}
+
+.table-content {
+    display    : flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.table td .table-content {
+    height         : 35px;
 }
 
 table {
     border-collapse: separate;
     border-spacing : 0;
     width          : 100%;
-    font-size      : 14px;
 }
 
 th {

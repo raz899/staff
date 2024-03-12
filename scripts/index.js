@@ -49,6 +49,16 @@ var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var popoverList = popoverTriggerList.map(function (popoverTrigger) {
     return new bootstrap.Popover(popoverTrigger);
 });
+document.addEventListener('shown.bs.popover', function (event) {
+    var openedPopoverId = event.target.getAttribute('aria-describedby');
+
+    popoverList.forEach(function (popover) {
+        if (popover._element.getAttribute('aria-describedby') !== openedPopoverId) {
+            popover.hide();
+        }
+    });
+});
+
 
 
 
