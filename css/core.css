@@ -133,6 +133,10 @@ body {
     max-width: 500px !important;
     margin: 20px;
 }
+.generate-report {
+    max-height: 300px;
+    overflow: auto;
+}
 
 
 /* media */

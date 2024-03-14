@@ -143,18 +143,18 @@
                 </div>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active p-3" id="all-orders-tab" data-id="1" data-bs-toggle="tab"
-                            data-bs-target="#all-orders" type="button" role="tab" aria-controls="all-orders"
+                        <button class="nav-link active p-3" id="guarantee-tab" data-id="1" data-bs-toggle="tab"
+                            data-bs-target="#guarantee" type="button" role="tab" aria-controls="guarantee"
                             aria-selected="true">Заказы</button>
-                        <button class="nav-link p-3" id="warranty-activation-tab" data-id="2" data-bs-toggle="tab"
-                            data-bs-target="#warranty-activation" type="button" role="tab"
-                            aria-controls="warranty-activation" aria-selected="false">Активация</button>
-                        <button class="nav-link p-3" id="warranty-activation-tab" data-id="2" data-bs-toggle="tab"
+                        <button class="nav-link p-3" id="guarantee-report-tab" data-id="2" data-bs-toggle="tab"
+                            data-bs-target="#guarantee-report" type="button" role="tab" aria-controls="guarantee-report"
+                            aria-selected="false">Активация</button>
+                        <button class="nav-link p-3" id="guarantee-activate-tab" data-id="3" data-bs-toggle="tab"
                             data-bs-target="#reports" type="button" role="tab" aria-controls="reports"
                             aria-selected="false">Отчёт</button>
                     </div>
                 </nav>
-                <div class="row my-4">
+                <!-- <div class="row my-4">
                     <div class="col-xl-10 col-12">
                         <input type="text" class="form-control table-search col-2" placeholder="Найти">
                     </div>
@@ -169,10 +169,25 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="all-orders" role="tabpanel"
-                        aria-labelledby="all-orders-tab">
+                    <div class="tab-pane fade" id="guarantee" role="tabpanel" aria-labelledby="guarantee-tab">
+                        <div class="row my-4">
+                            <div class="col-xl-10 col-12">
+                                <input type="text" class="form-control table-search col-2" placeholder="Поиск">
+                            </div>
+                            <div class="col-xl-2 col-12 mt-2 mt-xl-0 p-0">
+                                <div class="row">
+                                    <div class="col px-4">
+                                        <div class="d-flex">
+                                            <button class="btn btn-primary text-nowrap w-50">Найти</button>
+                                            <button class="btn btn-primary text-nowrap w-50 ms-2"
+                                                onClick="window.print()">Печать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <h5>Расширенная гарантия</h5>
                         <div class="table-container p-0">
                             <table class="table table-striped">
@@ -582,8 +597,7 @@
                                                             <div class="table-content">
                                                                 <div class="c-pointer d-flex align-items-center"
                                                                     data-bs-toggle="popover" data-bs-placement="bottom"
-                                                                    data-bs-html="true" title=""
-                                                                    data-bs-content="Марка: Yokohama <br>
+                                                                    data-bs-html="true" title="" data-bs-content="Марка: Yokohama <br>
                                                                     Модель: 103V <br>
                                                                     Типоразмер: 205/55R16 <br>"
                                                                     data-bs-original-title="Товар">
@@ -984,12 +998,16 @@
                             </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="warranty-activation" role="tabpanel"
-                        aria-labelledby="warranty-activation-tab">
+                    <div class="tab-pane fade" id="guarantee-report" role="tabpanel"
+                        aria-labelledby="guarantee-report-tab">
+                        <div class="my-4 d-sm-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Активация расширенной гарантии</h5>
+                            <button class="btn btn-primary text-nowrap mt-sm-0 mt-2"
+                                onClick="window.print()">Печать</button>
+                        </div>
                         <form action="#">
                             <div class="row">
-                                <h5>Активация расширенной гарантии</h5>
-                                <div class="col-3">
+                                <div class="col-xl-3 col-12">
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
@@ -1070,7 +1088,7 @@
                                         </thead>
                                     </table>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-xl-9 col-12">
                                     <div class="table-container p-0">
                                         <table class="table js-table">
                                             <thead>
@@ -1095,7 +1113,7 @@
                                                             Дот-коды
                                                         </div>
                                                     </th>
-                                                    <th style="min-width: 10px;"></th>
+                                                    <th style="min-width: 50px;"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1245,12 +1263,300 @@
                             <button type="button" class="btn btn-primary">Сохранить</button>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="reports-tab">
-                        <div class="table-container">
-                            <!-- <h5>Сформировать отчет по гарантийным случаям:</h5> -->
+                    <div class="tab-pane fade show active" id="reports" role="tabpanel" aria-labelledby="reports-tab">
+                        <div class="my-4 d-sm-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Сформировать отчет по гарантийным случаям</h5>
+                            <button class="btn btn-primary text-nowrap mt-sm-0 mt-2" onClick="window.print()">Печать</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-12">
+                                <form action="#">
+                                    <label class="form-label">Организация</label>
+                                    <button type="button" class="form-control js-button c-pointer">Выберите организацию</button>
+                                    <div class="generate-report form-control mb-3 d-none js-generate-report">
+                                        <input type="text" class="ms-search form-control form-control-sm" name="" id="">
+                                        <ul class="p-0">
+                                            <li class="ms-select-all form-check my-2">
+                                                <input class="form-check-input" type="checkbox" id="selectAll">
+                                                <label class="form-check-label" for="selectAll"
+                                                    class="form-label">[Выбрать все]</label>
+                                            </li>
+                                            <li class="ms-select form-check my-2">
+                                                <input class="form-check-input" type="checkbox" id="1">
+                                                <label class="form-check-label" for="1" class="form-label">Автоопт
+                                                    ООО</label>
+                                            </li>
+                                            <li class="ms-select form-check my-2">
+                                                <input class="form-check-input" type="checkbox" id="2">
+                                                <label class="form-check-label" for="2" class="form-label">Автопроект
+                                                    ООО (Саратов)</label>
+                                            </li>
+                                            <li class="ms-select form-check my-2">
+                                                <input class="form-check-input" type="checkbox" id="3">
+                                                <label class="form-check-label" for="3" class="form-label">Автоцентр
+                                                    ООО</label>
+                                            </li>
+                                            <li class="ms-select form-check my-2">
+                                                <input class="form-check-input" type="checkbox" id="4">
+                                                <label class="form-check-label" for="4" class="form-label">ИП Платонов
+                                                    А.Ю - продажа, ИП Гришин К.Ю. - услуги</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label">Период</label>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">c:</span>
+                                                <input type="date" class="form-control form-control-sm"
+                                                    placeholder="Дата">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 ps-0">
+                                            <label class="form-label"></label>
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2">по:</span>
+                                                <input type="date" class="form-control form-control-sm"
+                                                    placeholder="Дата">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-1">
+                                            <button type="button" class="btn btn-primary w-100 me-1">Сформировать</button>
+                                            <button type="button" class="btn btn-success w-100 ms-1">Excel</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-9 col-12">
+                                <div class="table-container p-0">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        №
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Организация
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Город
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Дата
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Товар
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Вид работ
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Цена шины (розница)
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
+                                                        Примечание
+                                                    </div>
+                                                </th>
+                                                <th style="min-width: 50px;">
+                                                    <div class="table-content">
 
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-content">
+                                                        1
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <a href="#"> ООО "Шинный сервис"</a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        Йошка-Ола
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        21.02.2024
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="c-pointer d-flex align-items-center"
+                                                            data-bs-toggle="popover" data-bs-placement="bottom"
+                                                            data-bs-html="true" title=""
+                                                            data-bs-content="Марка шин: Goodride <br> Модель шин: H188 <br> Типоразмер: 195/75 R16"
+                                                            data-bs-original-title="Товар">
+                                                            <span class="text-nowrap me-2">Марка шин:</span>
+                                                            <span class="text-nowrap">Goodride</span>
+                                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        Замена
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        6699
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="c-pointer" data-bs-toggle="modal"
+                                                            data-bs-target="#note-documents">
+                                                            <div class="text-nowrap">Примечание:</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <svg class="ms-2 text-info" width="16" height="16">
+                                                                    <use href="/svg/common.bundle.svg#treaties">
+                                                                    </use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="dropdown c-pointer">
+                                                            <div class="dropdown-toggle" id="settings-table"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg width="19" height="19">
+                                                                    <use href="/svg/common.bundle.svg#dots"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                                <li>
+                                                                    <button type="button"
+                                                                        class="btn d-flex align-items-center dropdown-item">
+                                                                        <svg class="text-dark me-2" width="16"
+                                                                            height="16">
+                                                                            <use href="/svg/common.bundle.svg#save">
+                                                                            </use>
+                                                                        </svg>Сохранить
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="table-content">
+                                                        2
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <a href="#">ООО "ЗЕЛЕНАЯ ШИНА" (ИП Михасев А.М.)</a>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        Санкт-Петербург
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        29.02.2024
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="c-pointer d-flex align-items-center"
+                                                            data-bs-toggle="popover" data-bs-placement="bottom"
+                                                            data-bs-html="true" title=""
+                                                            data-bs-content="Марка шин: Pirelli Formula <br> Модель шин: Formula Ice Friction <br> Типоразмер: 205/55R16"
+                                                            data-bs-original-title="Товар">
+                                                            <span class="text-nowrap me-2">Марка шин:</span>
+                                                            <span class="text-nowrap">Pirelli Formula</span>
+                                                            <svg class="ms-2 text-info" width="10" height="10">
+                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        Замена
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        5390
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="c-pointer" data-bs-toggle="modal"
+                                                            data-bs-target="#note-documents">
+                                                            <div class="text-nowrap">Примечание:</div>
+                                                            <div class="d-flex align-items-center">
+                                                                <svg class="ms-2 text-info" width="16" height="16">
+                                                                    <use href="/svg/common.bundle.svg#treaties">
+                                                                    </use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-content">
+                                                        <div class="dropdown c-pointer">
+                                                            <div class="dropdown-toggle" id="settings-table"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg width="19" height="19">
+                                                                    <use href="/svg/common.bundle.svg#dots"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                                <li>
+                                                                    <button type="button"
+                                                                        class="btn d-flex align-items-center dropdown-item">
+                                                                        <svg class="text-dark me-2" width="16"
+                                                                            height="16">
+                                                                            <use href="/svg/common.bundle.svg#save">
+                                                                            </use>
+                                                                        </svg>Сохранить
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </main>

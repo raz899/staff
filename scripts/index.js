@@ -58,6 +58,33 @@ document.addEventListener('shown.bs.popover', function (event) {
         }
     });
 });
+const jsButtom = document.querySelectorAll('.js-button');
+if (jsButtom != null) {
+    document.querySelectorAll('.js-button').forEach(function (button) {
+        button.addEventListener('click', function () {
+            button.nextElementSibling.classList.toggle('d-none');
+            // document.querySelector('.js-generate-report').classList.toggle('d-none');
+        });
+    });
+}
+
+// При клике на ms-select-all отмечаем все checkbox
+const selectAllCheckbox = document.querySelector('.ms-select-all input');
+if (selectAllCheckbox != null) {
+    selectAllCheckbox.addEventListener('click', function () {
+        const checkboxes = document.querySelectorAll('.ms-select input');
+
+        if (selectAllCheckbox.checked) {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = true;
+            });
+        } else {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+    });
+}
 
 
 
