@@ -135,79 +135,189 @@
                 </nav>
             </div>
             <section class="container mt-5">
-                <h3 class="title">Акции</h3>
-                <div class="shares-items">
-                    <!--  -->
-                    <div class="shares__item">
-                        <a href="shares.html" class="shares__item-link">БЕСПЛАТНЫЙ ШИНОМОНТАЖ ЗИМА 2023</a>
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <a class="shares__item-link" href="http://4tochki.ru" target="_blank">4tochki.ru</a>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link p-3 active" id="nav-stock-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-stock" type="button" role="tab" aria-controls="nav-stock"
+                            aria-selected="true">Акции</button>
+                        <button class="nav-link p-3" id="nav-archive-shares-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-archive-shares" type="button" role="tab" aria-controls="nav-archive-shares"
+                            aria-selected="false">Архив</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-stock" role="tabpanel" aria-labelledby="nav-stock-tab">
+                        <h5 class="my-4">Акции</h5>
+                        <div class="shares-items">
+                            <!--  -->
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">БЕСПЛАТНЫЙ ШИНОМОНТАЖ ЗИМА 2023</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.08.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.11.2030</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-8">
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <span>20.08.2001</span>
-                                    <svg class="mx-2" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#arrow"></use>
-                                    </svg>
-                                    <span>20.11.2030</span>
+                            <!--  -->
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Проект 111</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.02.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.06.2030</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Проект 167</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>22.08.2022</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>31.12.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Проект 178</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.08.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.11.2030</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--  -->
-                    <div class="shares__item">
-                        <a href="shares.html" class="shares__item-link">Архив [лето 2023]</a>
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <a class="shares__item-link" href="http://4tochki.ru" target="_blank">4tochki.ru</a>
-                            </div>
-                            <div class="col-8">
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <span>20.02.2001</span>
-                                    <svg class="mx-2" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#arrow"></use>
-                                    </svg>
-                                    <span>20.06.2030</span>
-                                </div>
+                    <div class="tab-pane fade" id="nav-archive-shares" role="tabpanel" aria-labelledby="nav-archive-shares-tab">
+                        <div class="d-sm-flex align-items-center justify-content-between my-4">
+                            <h5 class="mb-sm-0">Архив</h5>
+                            <div class="d-flex justify-content-sm-end justify-content-start flex-wrap">
+                                <a href="#" class="years active">Весь архив</a>
+                                <a href="#" class="years">2023</a>
+                                <a href="#" class="years">2022</a>
+                                <a href="#" class="years">2019</a>
+                                <a href="#" class="years">2018</a>
+                                <a href="#" class="years">2017</a>
+                                <a href="#" class="years">2016</a>
+                                <a href="#" class="years">2015</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="shares__item">
-                        <a href="shares.html" class="shares__item-link">Архив [зима 2022]</a>
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <a class="shares__item-link" href="http://4tochki.ru" target="_blank">4tochki.ru</a>
-                            </div>
-                            <div class="col-8">
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <span>22.08.2022</span>
-                                    <svg class="mx-2" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#arrow"></use>
-                                    </svg>
-                                    <span>31.12.2022</span>
+                        <div class="shares-items">
+                            <!--  -->
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Архив [лето 2023]</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.08.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.11.2030</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="shares__item">
-                        <a href="shares.html" class="shares__item-link">Проект 178</a>
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <a class="shares__item-link" href="http://4tochki.ru" target="_blank">4tochki.ru</a>
+                            <!--  -->
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Архив [лето 2023]</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.02.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.06.2030</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-8">
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <span>20.08.2001</span>
-                                    <svg class="mx-2" width="16" height="16">
-                                        <use href="/svg/common.bundle.svg#arrow"></use>
-                                    </svg>
-                                    <span>20.11.2030</span>
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Архив [зима 2022]</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>22.08.2022</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>31.12.2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shares__item">
+                                <a href="shares.html" class="shares__item-link">Архив [зима 2022]</a>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <a class="shares__item-link" href="http://4tochki.ru"
+                                            target="_blank">4tochki.ru</a>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <span>20.08.2001</span>
+                                            <svg class="mx-2" width="16" height="16">
+                                                <use href="/svg/common.bundle.svg#arrow"></use>
+                                            </svg>
+                                            <span>20.11.2030</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--  -->
             </section>
         </main>
         <footer class="container">

@@ -31,12 +31,6 @@
     line-height: 4px;
 }
 
-.form-label {
-    font-size: 14px;
-    margin   : 0;
-    color    : #818282;
-}
-
 /* модалка */
 .documents-item {
     position     : relative;

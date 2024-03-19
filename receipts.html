@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/table.css">
+    <title>Экспедиторские расписки</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Экспедиторские расписки</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link p-3 active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Все расписки</button>
+                        <button class="nav-link p-3" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Упаковочные
+                            листы</button>
+                        <button class="nav-link p-3" id="nav-contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Грузополучатели</button>
+                        <button class="nav-link p-3" id="nav-contact1-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1"
+                            aria-selected="false">Экспедиторы</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                            data-bs-target="#add-receipt">
+                            Добавить расписку
+                        </button>
+                        <h5>Все расписки</h5>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Дата расписки
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Дата расписки" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Дата создания
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Дата создания" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Имя грузополучателя
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Имя грузополучателя" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Адрес грузополучателя
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Адрес грузополучателя" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Экспедитор
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Экспедитор" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Кол-во
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Количество мест" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Информация о товаре
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true" data-bs-content="Вид упаковки,<br> 
+                                                    Размер упаковки, <br> Объём, <br> Особые отметки<br>"
+                                                    data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Грузоотправитель
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Грузоотправитель" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Сканы
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Сканы документов" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Упаковочный лист
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Название <br>,Количество" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content"></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>19.05.2022</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>19.05.2022 15:39:14</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Тюмень</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>625014, Тюмень г., Чекистов ул., дом № 36</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>.</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>1</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="c-pointer d-flex align-items-center"
+                                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                                    data-bs-html="true" title="" data-bs-content="Вид упаковки	: коробка <br>
+                                                    Вес брутто, нетто:  <br>
+                                                    Объём: <br>
+                                                    Особые отметки: <br>" data-bs-original-title="Товар">
+                                                    <span class="text-nowrap me-2">Вид упаковки:</span>
+                                                    <span class="text-nowrap">коробка</span>
+                                                    <svg class="ms-2 text-info" width="10" height="10">
+                                                        <use href="/svg/common.bundle.svg#dropdown-arrow">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>Богатырёв М. Ю.</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tab-content">
+                                                <div class="table-content">
+                                                    <div class="c-pointer" data-bs-toggle="modal"
+                                                        data-bs-target="#note-documents">
+                                                        <div class="text-nowrap">Сканы:</div>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="ms-2 text-info" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#treaties">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="c-pointer d-flex align-items-center"
+                                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                                    data-bs-html="true" title="" data-bs-content="Название: коммутатор Cisco <br>
+                                                    Количество:1 <br>" data-bs-original-title="Информация о Товар">
+                                                    <span class="text-nowrap me-2">Название:</span>
+                                                    <span class="text-nowrap">коммутатор Cisco</span>
+                                                    <svg class="ms-2 text-info" width="10" height="10">
+                                                        <use href="/svg/common.bundle.svg#dropdown-arrow">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-receipt-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-primary me-2" width="16"
+                                                                        height="16">
+                                                                        <use
+                                                                            href="/svg/common.bundle.svg#arrow-bar-down">
+                                                                        </use>
+                                                                    </svg>Экспорт
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                            data-bs-target="#add-packing-slip">
+                            Добавление упаковочного листа
+                        </button>
+                        <h5>Упаковочные листы</h5>
+                        <div class="table-container p-0">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width: 100px;">
+                                            <div class="table-content">
+                                                Дата
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true" data-bs-content="Дата"
+                                                    data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 100px;">
+                                            <div class="table-content">
+                                                Имя грузополучателя
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Имя грузополучателя" data-bs-original-title=""
+                                                    title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 700px;">
+                                            <div class="table-content">
+                                                Состав посылки
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Состав посылки" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+                                                Количество
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Количество" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content"></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>19.05.2022</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Тюмень</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>коммутатор Cisco</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>1</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-packing-slip-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>02.05.2022</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Новоросийск</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>Принтер Brother 5100</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>1</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-packing-slip-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>09.03.2022</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Краснодар</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ИБП</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>1</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-packing-slip-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>01.03.2022</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Краснодар</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>реставина с колёсами и паторном Б/У</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>1</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-packing-slip-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                            data-bs-target="#add-consignee">
+                            Добавление грузополучателя
+                        </button>
+                        <h5>Грузополучатели</h5>
+                        <div class="table-container p-0">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width: 100px;">
+                                            <div class="table-content">
+                                                Название
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Название" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 600px;">
+                                            <div class="table-content">
+                                                Адрес
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Адрес" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>Москва Красная сосна</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="text-wrap">129337, г. Москва, ул. Красная Сосна, д.30</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-consignee-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Красноярск</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="text-wrap">660015, Красноярский край, Емельяновский
+                                                    муниципальный район,
+                                                    Сельское поселение Солонцовский сельсовет, Солонцы п,
+                                                    Котельникова пр-кт, дом 9, корпус Б</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-consignee-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>ОП Великие Луки</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="text-wrap">Россия, Псковская область, город Великие Луки,
+                                                    переулок Пушкина, дом 4, литер В</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-consignee-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact1-tab">
+                        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                            data-bs-target="#add-forwarder">
+                            Добавление экспедитора
+                        </button>
+                        <h5>Экспедиторы</h5>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="min-width: 1000px">
+                                            <div class="table-content">
+                                                Название
+                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
+                                                    data-bs-container="body" data-bs-toggle="popover"
+                                                    data-bs-placement="right" data-bs-html="true"
+                                                    data-bs-content="Название" data-bs-original-title="" title="">
+                                                    <svg width="14" height="14">
+                                                        <use href="/svg/common.bundle.svg#info"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th style="min-width: 50px;">
+                                            <div class="table-content">
+
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                <div>.</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="table-content">
+                                                    <div class="dropdown c-pointer">
+                                                        <div class="dropdown-toggle" id="settings-table"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="19" height="19">
+                                                                <use href="/svg/common.bundle.svg#dots">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#add-forwarder-edit">
+                                                                    <svg class="text-warning me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#pen"></use>
+                                                                    </svg>Редактировать
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button"
+                                                                    class="btn d-flex align-items-center dropdown-item">
+                                                                    <svg class="text-danger me-2" width="16"
+                                                                        height="16">
+                                                                        <use href="/svg/common.bundle.svg#del">
+                                                                        </use>
+                                                                    </svg>Удалить
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+    <!-- Modal add-receipt -->
+    <div class="modal fade" id="add-receipt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавление экспедиторской расписки</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Дата</label>
+                            <input type="date" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Грузополучатель</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">Москва Красная сосна</option>
+                                <option value="2">ОП Великие Луки</option>
+                                <option value="3">ОП Воронеж</option>
+                            </select>
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Экспедитор</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">.</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Кол-во мест</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Вид упаковки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Вес брутто, нетто</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Размер упаковки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Объём</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Особые отметки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-receipt-edit -->
+    <div class="modal fade" id="add-receipt-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Редактирование экспедиторской расписки</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Дата</label>
+                            <input type="date" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Грузополучатель</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">Москва Красная сосна</option>
+                                <option value="2">ОП Великие Луки</option>
+                                <option value="3">ОП Воронеж</option>
+                            </select>
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Экспедитор</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">.</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Кол-во мест</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Вид упаковки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Вес брутто, нетто</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Размер упаковки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Объём</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Особые отметки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-packing-slip -->
+    <div class="modal fade" id="add-packing-slip" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавление упаковочного листа</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Расписка</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">19.05.2022 => ОП Тюмень</option>
+                                <option value="2">02.05.2022 => ОП Новоросийск</option>
+                                <option value="3">09.03.2022 => ОП Краснодар</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-packing-slip-edit -->
+    <div class="modal fade" id="add-packing-slip-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Редактирование упаковочного листа</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Расписка</label>
+                            <select class="form-select form-select-sm">
+                                <option selected></option>
+                                <option value="1">19.05.2022 => ОП Тюмень</option>
+                                <option value="2">02.05.2022 => ОП Новоросийск</option>
+                                <option value="3">09.03.2022 => ОП Краснодар</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Состав посылки</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                            <div class="mb-1 col-6">
+                                <label class="form-label">Количество</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-consignee -->
+    <div class="modal fade" id="add-consignee" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавление грузополучателя</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Название</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Адрес</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-consignee-edit -->
+    <div class="modal fade" id="add-consignee-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Редактирование грузополучателя</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Название</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Адрес</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-forwarder -->
+    <div class="modal fade" id="add-forwarder" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавление экспедитора</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Название</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal add-forwarder-edit -->
+    <div class="modal fade" id="add-forwarder-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Редактирование экспедитра</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-1">
+                            <label class="form-label">Название</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

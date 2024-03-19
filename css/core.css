@@ -137,6 +137,37 @@ body {
     max-height: 300px;
     overflow: auto;
 }
+/* years */
+.years {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 7px 8px;
+    font-size      : 12px;
+    line-height    : 96.023%;
+    color          : #64748B;
+    border-radius  : 4px;
+    text-decoration: none;
+}
+
+.years:hover,
+.years:focus {
+    color: #ef7a1c;
+}
+
+.years.active {
+    border: 1px solid #64748B;
+}
+
+.years.active:hover,
+.years.active:focus {
+    color: #64748B;
+}
+.form-label {
+    font-size: 14px;
+    margin   : 0;
+    color    : #818282;
+}
 
 
 /* media */
@@ -171,5 +202,8 @@ body {
     .container {
         padding: 0 15px;
     }
-
+   
+    .years {
+        padding: 5px;
+    }
 }
