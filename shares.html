@@ -152,10 +152,12 @@
                         aria-labelledby="shares-main-tab">
                         <h5 class="my-4">Информация по акции</h5>
                         <div class="mt-4 d-flex align-items-center justify-content-between">
-                            <input type="text" class="form-control table-search me-4" placeholder="Номер заказа, ТН или акта">
+                            <input type="text" class="form-control table-search me-4"
+                                placeholder="Номер заказа, ТН или акта">
                             <button class="btn btn-primary text-nowrap">Найти</button>
                         </div>
-                        <button type="button" class="btn btn-success mt-3 mb-2" data-bs-toggle="modal" data-bs-target="#add-promotion">Добавить акцию</button>
+                        <button type="button" class="btn btn-success mt-3 mb-2" data-bs-toggle="modal"
+                            data-bs-target="#add-promotion">Добавить акцию</button>
                         <div class="table-container">
                             <table class="table table-striped">
                                 <thead>
@@ -467,7 +469,8 @@
                             <div class="col-xl-3 col-lg-6 col-12">
                                 <form action="#">
                                     <label class="form-label">Организация</label>
-                                    <button type="button" class="form-control js-button c-pointer">Выберите организацию</button>
+                                    <button type="button" class="form-control js-button c-pointer">Выберите
+                                        организацию</button>
                                     <div class="generate-report form-control d-none js-generate-report">
                                         <input type="text" class="ms-search form-control form-control-sm" name="" id="">
                                         <ul class="p-0">
@@ -521,7 +524,8 @@
                                         </div>
                                     </div>
                                     <label class="form-label">Марка</label>
-                                    <button type="button" class="form-control js-button c-pointer">Выберите марку</button>
+                                    <button type="button" class="form-control js-button c-pointer">Выберите
+                                        марку</button>
                                     <div class="generate-report form-control mb-1 d-none js-generate-report">
                                         <input type="text" class="ms-search form-control form-control-sm" name="" id="">
                                         <ul class="p-0">
@@ -898,109 +902,6 @@
             </div>
         </footer>
     </div>
-    <!-- script -->
-    <script src="/scripts/index.js"></script>
-    <script src="/scripts/table.js"></script>
-    <script src="/scripts/documens.js"></script>
-    <!-- Modal Отчет -->
-    <!-- <div class="modal fade" id="report" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Отчет по (Назавание акции)</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#">
-                        <div class="mb-3">
-                            <span>Организация</span>
-                            <div class="form-control js-button c-pointer">Выберите организацию</div>
-                            <div class="generate-report form-control mb-3 d-none js-generate-report">
-                                <input type="text" class="ms-search form-control form-control-sm" name="" id="">
-                                <ul class="p-0">
-                                    <li class="ms-select-all form-check my-2">
-                                        <input class="form-check-input" type="checkbox" id="selectAll">
-                                        <label class="form-check-label" for="selectAll" class="form-label">[Выбрать
-                                            все]</label>
-                                    </li>
-                                    <li class="ms-select form-check my-2">
-                                        <input class="form-check-input" type="checkbox" id="1">
-                                        <label class="form-check-label" for="1" class="form-label">Автоопт
-                                            ООО</label>
-                                    </li>
-                                    <li class="ms-select form-check my-2">
-                                        <input class="form-check-input" type="checkbox" id="2">
-                                        <label class="form-check-label" for="2" class="form-label">Автопроект
-                                            ООО (Саратов)</label>
-                                    </li>
-                                    <li class="ms-select form-check my-2">
-                                        <input class="form-check-input" type="checkbox" id="3">
-                                        <label class="form-check-label" for="3" class="form-label">Автоцентр
-                                            ООО</label>
-                                    </li>
-                                    <li class="ms-select form-check my-2">
-                                        <input class="form-check-input" type="checkbox" id="4">
-                                        <label class="form-check-label" for="4" class="form-label">ИП Платонов
-                                            А.Ю - продажа, ИП Гришин К.Ю. - услуги</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label"></label>
-                            <label class="form-label">Укажите адрес или ФИО</label>
-                            <input type="text" class="form-control" placeholder="Введите номер заказа">
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <label class="form-label">Период</label>
-                                <div class="d-flex align-items-center">
-                                    <span class="me-2"> c:</span>
-                                    <input type="date" class="form-control" placeholder="Дата">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label class="form-label"></label>
-                                <div class="d-flex align-items-center">
-                                    <span class="me-2"> по:</span>
-                                    <input type="date" class="form-control" placeholder="Дата">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Марка</label>
-                            <div class="form-control">Выберите марку</div>
-                            <div class="w-100 form-control">
-                                <div class="">
-                                    <input type="checkbox" name="1" id="3">
-                                    <label for="1" class="form-label">1</label>
-                                </div>
-                                <div class="">
-                                    <input type="checkbox" name="1" id="4">
-                                    <label for="1" class="form-label">2</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Тип выборки
-                            </label>
-                            <select class="form-select">
-                                <option value="0">Все</option>
-                                <option value="1">Дата продажи</option>
-                                <option value="2">Дата оказания услуг</option>
-                                <option value="3">Дата добавления</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Сформировать</button>
-                    <button type="button" class="btn btn-primary">Excel</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- Modal добавить акцию -->
     <div class="modal fade" id="add-promotion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -1175,7 +1076,7 @@
                             <div class="documents-items js-images-gallery my-4">
                                 <!--  -->
                                 <div class="documents-item">
-                                    <img class="w-100" src="img/чек1.jpg" alt="документ">
+                                    <img class="w-100 c-pointer" src="img/чек1.jpg" alt="документ">
                                     <div class="items-fill">
                                         <button type="button" class="item-fill btn">
                                             <svg class="c-pointer text-danger" width="20" height="24">
@@ -1191,7 +1092,7 @@
                                 </div>
                                 <!--  -->
                                 <div class="documents-item">
-                                    <img class="w-100" src="img/чек2.jpg" alt="документ">
+                                    <img class="w-100 c-pointer" src="img/чек2.jpg" alt="документ">
                                     <div class="items-fill">
                                         <button type="button" class="item-fill btn">
                                             <svg class="c-pointer text-danger" width="20" height="24">
@@ -1245,8 +1146,11 @@
     </div>
     <div class="pop-up">
         <span class="btn-close"></span>
-        <img src="img/чек1.jpg" alt="">
+        <img src="img/" alt="">
     </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/table.js"></script>
 </body>
 
 </html>

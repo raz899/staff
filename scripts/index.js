@@ -85,6 +85,23 @@ if (selectAllCheckbox != null) {
         }
     });
 }
+// увеличение картинки по клику
+const imgsgGallery = document.querySelectorAll('.js-images-gallery img');
+const popUp = document.querySelector('.pop-up span');
+
+if (imgsgGallery.length > 0) {
+    imgsgGallery.forEach(img => {
+        img.addEventListener('click', function () {
+            document.querySelector('.pop-up').style.display = 'block';
+            document.querySelector('.pop-up img').src = this.getAttribute('src');
+        });
+    });
+    popUp.addEventListener('click', function () {
+        document.querySelector('.pop-up').style.display = 'none';
+    });
+}
+
+
 
 
 
