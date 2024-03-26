@@ -135,7 +135,14 @@
                 </nav>
             </div>
             <section class="container mt-5">
-                <h5 class="my-4">Название документа</h5>
+                <div class="my-4 d-md-flex align-items-center justify-content-between">
+                    <h5 class="m-0">Название документа</h5>
+                    <div>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#add-document">Добавить
+                            документ</button>
+                    </div>
+                </div>
                 <div class="table-container">
                     <table class="table table-striped">
                         <thead>
@@ -157,7 +164,6 @@
                                 </th>
                                 <th style="width: 50px;">
                                     <div class="table-content">
-
                                     </div>
                                 </th>
                             </tr>
@@ -194,12 +200,6 @@
                                             </div>
                                             <ul class="dropdown-menu" aria-labelledby="settings-table">
                                                 <li>
-                                                    <!-- <button type="button" class="btn d-flex align-items-center dropdown-item">
-                                                        <svg class="text-dark me-2" width="16" height="16">
-                                                            <use href="/svg/common.bundle.svg#save">
-                                                            </use>
-                                                        </svg>Скачать
-                                                    </button> -->
                                                     <a class="dropdown-item" href="#">
                                                         <svg class="text-dark me-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#arrow-bar-down">
@@ -251,12 +251,6 @@
                                             </div>
                                             <ul class="dropdown-menu" aria-labelledby="settings-table">
                                                 <li>
-                                                    <!-- <button type="button" class="btn d-flex align-items-center dropdown-item">
-                                                        <svg class="text-dark me-2" width="16" height="16">
-                                                            <use href="/svg/common.bundle.svg#save">
-                                                            </use>
-                                                        </svg>Скачать
-                                                    </button> -->
                                                     <a class="dropdown-item" href="#">
                                                         <svg class="text-dark me-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#arrow-bar-down">
@@ -266,6 +260,55 @@
                                                 <li>
                                                     <button type="button"
                                                         class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-danger me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#del">
+                                                            </use>
+                                                        </svg>Удалить
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-content">
+                                        <svg class="text-info" width="30" height="30">
+                                            <use href="/svg/common.bundle.svg#pdf">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                       <a target="_blank" href="pdf/_srv_www_servers_staff.4tochki.ru_staff_img_form_docs_vnutrennie_reglamenti_kompanii_Входящие_ТТН_оформление_.pdf">Входящие_ТТН_оформление_.pdf</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <div>23.07.2018 21:04:14</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <div class="dropdown c-pointer">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg width="19" height="19">
+                                                    <use href="/svg/common.bundle.svg#dots">
+                                                    </use>
+                                                </svg>
+                                            </div>
+                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <svg class="text-dark me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#arrow-bar-down">
+                                                            </use>
+                                                        </svg>Скачать</a>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btn d-flex align-items-center dropdown-item">
                                                         <svg class="text-danger me-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#del">
                                                             </use>
@@ -297,6 +340,50 @@
                 </ul>
             </div>
         </footer>
+    </div>
+
+    <!-- Modal Добавить документ -->
+    <div class="modal fade" id="add-document" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавить документа</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-3">
+                            <label class="form-label">Тип<span class="text-danger">*</span></label>
+                            <select class="form-select form-select-sm">
+                                <option selected=""></option>
+                                <option value="1">Word</option>
+                                <option value="2">Pdf</option>
+                                <option value="3">Папка</option>
+                                <option value="4">Другое</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Название раздела / файла<span class="text-danger">*</span></label>
+                            <textarea class="form-control form-control-sm" rows="3" required=""></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Дата<span class="text-danger">*</span></label>
+                            <input type="date" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Прикрепление файлов</label>
+                            <input type="file" multiple="multiple" class="form-control form-control-sm">
+                            <span class="form-label text-danger">через Ctrl можно выбирать несколько файлов</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- script -->
     <script src="/scripts/index.js"></script>
