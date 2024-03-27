@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/table.css">
+    <title>Доп. соглашения</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Доп. соглашения</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <h5 class="y-4">Доп. соглашения</h5>
+                <div class="row">
+                    <div class="col-xl-3 col-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-6 col-12 mb-3">
+                                <span class="form-label">Статус движения договора</span>
+                                <div class="d-flex flex-column border">
+                                    <span class="border-bottom p-1 form-select-sm">На подписании</span>
+                                    <span class="border-bottom p-1 form-select-sm">Получен оригинал</span>
+                                    <span class="border-bottom p-1 form-select-sm">Отправлен в ЦО</span>
+                                    <span class="p-1 form-select-sm">Получен в ЦО</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-6 col-12 mb-3">
+                                <span class="form-label">Статус</span>
+                                <div class="d-flex flex-column border">
+                                    <div class="d-flex justify-content-between border-bottom">
+                                        <span class="p-1 form-select-sm">Требуется согласование с Москвой</span>
+                                        <div class="ps-3 bg-danger"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-bottom">
+                                        <span class="p-1 form-select-sm">На доработку</span>
+                                        <div class="ps-3 bg-warning"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="p-1 form-select-sm">Согласовано</span>
+                                        <div class="ps-3 bg-success"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-12">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Поиск по дате доп соглашения</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Поиск по названия организации</label>
+                                        <input type="text" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Поиск по статусу</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">Требуется согласование с Москвой</option>
+                                            <option value="2">На доработку</option>
+                                            <option value="3">Согласовано</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Поиск по статусу движения</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">На подписании</option>
+                                            <option value="2">Получен оригинал</option>
+                                            <option value="3">Отправлен в ЦО</option>
+                                            <option value="4">Получен в ЦО</option>
+                                            <option value="5">Согласовано КРУ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Поиск по ОП</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">Обособленное подразделение ООО "Пауэр Интернэшнл-шины" г.
+                                                Великие Луки</option>
+                                            <option value="2">Обособленное подразделение ООО "Пауэр Интернэшнл-шины" г.
+                                                Воронеж</option>
+                                            <option value="3">Обособленное подразделение ООО "Пауэр Интернэшнл-шины" г.
+                                                Давыдово</option>
+                                            <option value="4">Обособленное подразделение ООО "Пауэр Интернэшнл-шины" г.
+                                                Екатеринбург</option>
+                                            <option value="5">Обособленное подразделение ООО "Пауэр Интернэшнл-шины" г.
+                                                Казань</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-12 mt-2">
+                                    <button class="btn btn-primary mt-1" type="button">Найти</button>
+                                    <button class="btn btn-primary mt-1" type="button">Сбросить</button>
+                                    <button class="btn btn-success mt-1" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#add-agreement">Добавление доп. соглашения</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="table-container p-0">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="table-content">№</div>
+                                </th>
+                                <th>
+                                    <div class="table-content">Дата</div>
+                                </th>
+                                <th style="max-width: 180px;">
+                                    <div class="table-content">Номер доп. соглашения</div>
+                                </th>
+                                <th style="max-width: 230px;">
+                                    <div class="table-content">Название организации</div>
+                                </th>
+                                <th>
+                                    <div class="table-content">Премия в размере</div>
+                                </th>
+                                <th>
+                                    <div class="table-content">Статус движения договора</div>
+                                </th>
+                                <th>
+                                    <div class="table-content">Статус</div>
+                                </th>
+                                <th>
+                                    <div class="table-content"></div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody style="vertical-align:middle">
+                            <tr>
+                                <td>
+                                    <div class="table-content">1</div>
+                                </td>
+                                <td>
+                                    <div class="table-content text-wrap">13.06.2020</div>
+                                </td>
+                                <td style="max-width: 180px;">
+                                    <div class="table-content">777</div>
+                                </td>
+                                <td style="max-width: 230px;">
+                                    <div class="table-content text-wrap">2</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">2000</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <select class="form-select form-select-sm">
+                                            <option value="0">Нет статуса</option>
+                                            <option value="1">На подписании</option>
+                                            <option value="2">Получен оригинал</option>
+                                            <option value="3">Отправлен в ЦО</option>
+                                            <option value="4">Получен в ЦО</option>
+                                            <option value="5">Согласовано КРУ</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <div class="statys bg-danger"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn btn-sm btn-secondary w-100 py-0 text-nowrap dropdown-toggle"
+                                                    type="button" id="dropdownDocs" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Договор(ы)
+                                                    <svg width="10" height="10" class="ms-2">
+                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                                    </svg>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownDocs">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Договор - предоплата 2024</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Договор о конфиденциальности и
+                                                            неразглашении инф. - 2024</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap"
+                                                type="button">Взять на проверку</button>
+
+                                        </div>
+                                        <div class="table-content">
+                                            <div class="dropdown c-pointer ps-2">
+                                                <div class="dropdown-toggle" id="settings-table"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg width="19" height="19">
+                                                        <use href="/svg/common.bundle.svg#dots">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item"
+                                                            data-bs-toggle="modal" data-bs-target="#editing-contract">
+                                                            <svg class="text-warning me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#pen"></use>
+                                                            </svg>Редактировать
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item">
+                                                            <svg class="text-danger me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#del">
+                                                                </use>
+                                                            </svg>Удалить
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-content">2</div>
+                                </td>
+                                <td>
+                                    <div class="table-content text-wrap">15.06.2020</div>
+                                </td>
+                                <td style="max-width: 180px;">
+                                    <div class="table-content">1</div>
+                                </td>
+                                <td style="max-width: 230px;">
+                                    <div class="table-content text-wrap">1</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">1</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <select class="form-select form-select-sm">
+                                            <option value="0">Нет статуса</option>
+                                            <option value="1">На подписании</option>
+                                            <option value="2">Получен оригинал</option>
+                                            <option value="3">Отправлен в ЦО</option>
+                                            <option value="4">Получен в ЦО</option>
+                                            <option value="5">Согласовано КРУ</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <div class="statys bg-warning"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column w-100">
+                                            <button class="btn btn-sm btn-success mt-1 py-0 text-nowrap"
+                                                type="button">Согласовать (ЦО)</button>
+                                            <button class="btn btn-sm btn-danger mt-1 py-0 text-nowrap"
+                                                type="button">Отклонить (ЦО)</button>
+                                        </div>
+                                        <div class="table-content">
+                                            <div class="dropdown c-pointer ps-2">
+                                                <div class="dropdown-toggle" id="settings-table"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg width="19" height="19">
+                                                        <use href="/svg/common.bundle.svg#dots">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item"
+                                                            data-bs-toggle="modal" data-bs-target="#editing-contract">
+                                                            <svg class="text-warning me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#pen"></use>
+                                                            </svg>Редактировать
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item">
+                                                            <svg class="text-danger me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#del">
+                                                                </use>
+                                                            </svg>Удалить
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-content">3</div>
+                                </td>
+                                <td>
+                                    <div class="table-content text-wrap">31.07.2020</div>
+                                </td>
+                                <td style="max-width: 180px;">
+                                    <div class="table-content">75</div>
+                                </td>
+                                <td style="max-width: 230px;">
+                                    <div class="table-content text-wrap">Рога и копыта</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">15123</div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <select class="form-select form-select-sm">
+                                            <option value="0">Нет статуса</option>
+                                            <option value="1">На подписании</option>
+                                            <option value="2">Получен оригинал</option>
+                                            <option value="3">Отправлен в ЦО</option>
+                                            <option value="4">Получен в ЦО</option>
+                                            <option value="5">Согласовано КРУ</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <div class="statys bg-success"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column w-100">
+                                            <div class="d-flex flex-column w-100">
+                                                <div class="dropdown">
+                                                    <button
+                                                        class="btn btn-sm btn-secondary w-100 py-0 text-nowrap dropdown-toggle"
+                                                        type="button" id="dropdownDocs" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        На проверке
+                                                        <svg width="10" height="10" class="ms-2">
+                                                            <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownDocs">
+                                                        <li>
+                                                            <span class="form-label p-2 text-nowrap">Договор на проверке
+                                                                (Щербина Лилия Сергеевна)</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap"
+                                                type="button">Снять с проверки</button>
+                                        </div>
+                                        <div class="table-content">
+                                            <div class="dropdown c-pointer ps-2">
+                                                <div class="dropdown-toggle" id="settings-table"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg width="19" height="19">
+                                                        <use href="/svg/common.bundle.svg#dots">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item"
+                                                            data-bs-toggle="modal" data-bs-target="#editing-contract">
+                                                            <svg class="text-warning me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#pen"></use>
+                                                            </svg>Редактировать
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button"
+                                                            class="btn d-flex align-items-center dropdown-item">
+                                                            <svg class="text-danger me-2" width="16" height="16">
+                                                                <use href="/svg/common.bundle.svg#del">
+                                                                </use>
+                                                            </svg>Удалить
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal Добавление доп. соглашения -->
+    <div class="modal fade" id="add-agreement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавление доп. соглашения</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <label class="form-label">Прикрепление файлов <span class="text-danger">*</span></label>
+                                <input type="file" multiple="multiple" class="form-control form-control-sm" required>
+                                <span class="form-label text-danger">через Ctrl можно выбирать несколько файлов</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Номер доп соглашения:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Договор поставки №:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Дата доп. соглашения:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Начало периода договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Конец периода договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Сумма договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Премия в размере:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Сумма закупок за период:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ОПФ:<span class="text-danger">*</span></label>
+                                <select class="form-select form-select-sm" required>
+                                    <option selected=""></option>
+                                    <option value="1">ООО</option>
+                                    <option value="2">ИП</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Наименование организации:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Действуен на основании:<span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected=""></option>
+                                    <option value="1">Устав</option>
+                                    <option value="2">Доверенность</option>
+                                    <option value="3">Свидетельство о регистрации</option>
+                                    <option value="4">Лист записи</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ФИО руководителя:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ИНН:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">КПП:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Статус</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected=""></option>
+                                    <option value="1">Требуется согласование с Москвой</option>
+                                    <option value="2">На доработку</option>
+                                    <option value="3">Согласовано</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Редактирование договора -->
+    <div class="modal fade" id="editing-contract" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Редактирование доп. соглашений</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="my-4 d-sm-flex align-items-center justify-content-between">
+                            <h5 class="m-0">Доп соглашение «777» от 2020-06-13</h5>
+                            <a class="text-nowrap" href="dop-soglasheniya-history-of-changes.html">История изменений</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <label class="form-label">Прикрепленные файлы:</label>
+                                <!--  -->
+                                <div
+                                    class="form-control-sm d-flex align-items-center justify-content-between border mb-1">
+                                    <a href="#">Бизнесс_логистика_.docx</a>
+                                    <div class="c-pointer">
+                                        <svg class="text-danger" width="16" height="16">
+                                            <use href="/svg/common.bundle.svg#del"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div
+                                    class="form-control-sm d-flex align-items-center justify-content-between border mb-1">
+                                    <a href="#">Бизнесс_логистикаБизнесс _логистика Бизнесс_логистика_.docx</a>
+                                    <div class="c-pointer">
+                                        <svg class="text-danger" width="16" height="16">
+                                            <use href="/svg/common.bundle.svg#del"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-primary" type="button">Скачать все</button>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div>
+                                    <label class="form-label">Прикрепление файлов <span
+                                            class="text-danger">*</span></label>
+                                    <input type="file" multiple="multiple" class="form-control form-control-sm"
+                                        required="">
+                                    <span class="form-label text-danger">через Ctrl можно выбирать несколько
+                                        файлов</span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" type="button">Загрузить</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Номер доп соглашения:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Договор поставки №:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Дата доп. соглашения:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Начало периода договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Конец периода договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="date" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Сумма договоренностей:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Премия в размере:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Сумма закупок за период:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ОПФ:<span class="text-danger">*</span></label>
+                                <select class="form-select form-select-sm" required>
+                                    <option selected=""></option>
+                                    <option value="1">ООО</option>
+                                    <option value="2">ИП</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Наименование организации:<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Действуен на основании:<span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected=""></option>
+                                    <option value="1">Устав</option>
+                                    <option value="2">Доверенность</option>
+                                    <option value="3">Свидетельство о регистрации</option>
+                                    <option value="4">Лист записи</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ФИО руководителя:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">ИНН:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">КПП:<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-3">
+                                <label class="form-label">Статус</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected=""></option>
+                                    <option value="1">Требуется согласование с Москвой</option>
+                                    <option value="2">На доработку</option>
+                                    <option value="3">Согласовано</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                    <button type="button" class="btn btn-danger">Отменить редактирование</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
