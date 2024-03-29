@@ -229,7 +229,8 @@
                                 <td>
                                     <div class="table-content">
                                         <div class="dropdown c-pointer">
-                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
                                                 <svg width="19" height="19">
                                                     <use href="/svg/common.bundle.svg#dots">
                                                     </use>
@@ -244,7 +245,8 @@
                                                         </svg>Скачать</a>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn d-flex align-items-center dropdown-item">
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
                                                         <svg class="text-danger me-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#del">
                                                             </use>
@@ -255,7 +257,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                
+
                             </tr>
                             <tr>
                                 <td>
@@ -278,7 +280,8 @@
                                 <td>
                                     <div class="table-content">
                                         <div class="dropdown c-pointer">
-                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
                                                 <svg width="19" height="19">
                                                     <use href="/svg/common.bundle.svg#dots">
                                                     </use>
@@ -293,7 +296,8 @@
                                                         </svg>Скачать</a>
                                                 </li>
                                                 <li>
-                                                    <button type="button" class="btn d-flex align-items-center dropdown-item">
+                                                    <button type="button"
+                                                        class="btn d-flex align-items-center dropdown-item">
                                                         <svg class="text-danger me-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#del">
                                                             </use>
@@ -304,7 +308,7 @@
                                         </div>
                                     </div>
                                 </td>
-                            
+
                             </tr>
                         </tbody>
                     </table>
@@ -326,6 +330,34 @@
                 </ul>
             </div>
         </footer>
+    </div>
+    <!-- Modal Добавить контрагента -->
+    <div class="modal fade" id="add-counterparty" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Добавить контрагента</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="mb-3">
+                            <label class="form-label">Наименование контрагента</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Инн контрагента</label>
+                            <input type="text" class="form-control form-control-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- script -->
     <script src="/scripts/index.js"></script>
