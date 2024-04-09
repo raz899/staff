@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/card.css">
+    <title>Переговорные комнаты</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Переговорные комнаты</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <div class="my-4 d-sm-flex align-items-center justify-content-between">
+                    <h5 class="m-0">Переговорные комнаты</h5>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#schedule-meeting-room">Запланировать</button>
+                </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-4 col-12">
+                                    <div class="mb-2">
+                                        <label class="form-label">Подразделение</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">Великие Луки</option>
+                                            <option value="2">Воронеж</option>
+                                            <option value="3">Давыдово</option>
+                                            <option value="4">Екатеринбург</option>
+                                            <option value="5">Казань</option>
+                                            <option value="6">Краснодар</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12">
+                                    <div class="mb-2">
+                                        <label class="form-label">Переговорная комната</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">Великие Луки</option>
+                                            <option value="2">Воронеж</option>
+                                            <option value="3">Давыдово</option>
+                                            <option value="4">Екатеринбург</option>
+                                            <option value="5">Казань</option>
+                                            <option value="6">Краснодар</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12">
+                                    <div class="mb-2">
+                                        <label class="form-label">Дата:</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Поиск</button>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-12">
+                        <div class="card p-3">
+                            <div class="col-12">
+                                <label class="form-label">Дата:</label>
+                                <input type="date" class="form-control form-control-sm" value="2024-04-01" disabled>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Тема встречи:</label>
+                                <input type="text" class="form-control form-control-sm" value="тест сосны" disabled>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Переговорка:</label>
+                                <input type="text" class="form-control form-control-sm" value="Красная сосна" disabled>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Участников:</label>
+                                <input type="text" class="form-control form-control-sm" value="9" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="d-flex align-items-center flex-wrap mt-3 mt-lg-0">
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">09:00 - 09:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">09:30 - 10:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">10:00 - 10:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">10:30 - 11:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">11:00 - 11:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">11:30 - 12:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">12:00 - 12:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">12:30 - 13:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">13:00 - 13:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">13:30 - 14:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">14:00 - 14:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">14:30 - 15:00</button>
+                            <button type="button" class="btn btn-danger m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#time-is-booked">15:00 - 15:30</button>
+                            <button type="button" class="btn btn-danger m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#time-is-booked">15:30 - 16:00</button>
+                            <button type="button" class="btn btn-danger m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#time-is-booked">16:00 - 16:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">16:30 - 17:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">17:00 - 17:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">17:30 - 18:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">18:00 - 18:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">18:30 - 19:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">19:00 - 19:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">19:30 - 20:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">20:00 - 20:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">20:30 - 21:00</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">21:00 - 21:30</button>
+                            <button type="button" class="btn btn-success m-2 box-shadow" data-bs-toggle="modal"
+                                data-bs-target="#schedule-meeting-room-button">21:30 - 22:00</button>
+                        </div>
+                        <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal"
+                            data-bs-target="#edit-meeting-room">Редактировать</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal Запланировать переговорную комнату -->
+    <div class="modal fade" id="schedule-meeting-room" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запланировать</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Дата:</label>
+                                <input type="date" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Подразделение</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected></option>
+                                    <option value="1">Великие Луки</option>
+                                    <option value="2">Воронеж</option>
+                                    <option value="3">Давыдово</option>
+                                    <option value="4">Екатеринбург</option>
+                                    <option value="5">Казань</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Переговорная комната</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected></option>
+                                    <option value="1">Великие Луки</option>
+                                    <option value="2">Воронеж</option>
+                                    <option value="3">Давыдово</option>
+                                    <option value="4">Екатеринбург</option>
+                                    <option value="5">Казань</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Участников:</label>
+                                <input type="text" class="form-control form-control-sm">
+                                <span class=""></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Тема встречи:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Переговорка:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="form-label">Временные интервалы:</span>
+                    <!-- <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:00 - 09:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:30 - 10:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:00 - 10:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:30 - 11:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:00 - 11:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:30 - 12:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">12:00 - 12:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">12:30 - 13:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">13:00 - 13:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">13:30 - 14:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:00 - 14:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:30 - 15:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:00 - 15:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:30 - 16:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:00 - 16:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:30 - 17:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:00 - 17:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:30 - 18:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:00 - 18:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:30 - 19:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:00 - 19:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:30 - 20:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:00 - 20:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:30 - 21:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:00 - 21:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:30 - 22:00</button>
+                    </div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Запланировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Запланировать переговорную комнату по клик на кнопку -->
+    <div class="modal fade" id="schedule-meeting-room-button" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запланировать</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Дата:</label>
+                                <input type="date" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Участников:</label>
+                                <input type="text" class="form-control form-control-sm">
+                                <span class=""></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Тема встречи:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Переговорка:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="form-label">Временные интервалы:</span>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:00 - 09:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:30 - 10:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:00 - 10:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:30 - 11:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:00 - 11:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:30 - 12:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">12:00 - 12:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">12:30 - 13:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">13:00 - 13:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">13:30 - 14:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:00 - 14:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:30 - 15:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:00 - 15:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:30 - 16:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:00 - 16:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:30 - 17:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:00 - 17:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:30 - 18:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:00 - 18:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:30 - 19:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:00 - 19:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:30 - 20:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:00 - 20:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:30 - 21:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:00 - 21:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:30 - 22:00</button>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Запланировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Время переговорная забронирована -->
+    <div class="modal fade" id="time-is-booked" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Для информации</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> В выбранное Вами время переговорная забронирована (Иванов Иван Сергеевич)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Редактировать переговорную комнату -->
+    <div class="modal fade" id="edit-meeting-room" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Редактировать</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Дата:</label>
+                                <input type="date" value="2024-04-01" class="form-control form-control-sm" disabled>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Подразделение</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected></option>
+                                    <option value="1">Великие Луки</option>
+                                    <option value="2">Воронеж</option>
+                                    <option value="3">Давыдово</option>
+                                    <option value="4">Екатеринбург</option>
+                                    <option value="5">Казань</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Переговорная комната</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Великие Луки</option>
+                                    <option value="1">Великие Луки</option>
+                                    <option value="2">Воронеж</option>
+                                    <option value="3">Давыдово</option>
+                                    <option value="4">Екатеринбург</option>
+                                    <option value="5">Казань</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Участников:</label>
+                                <input type="text" class="form-control form-control-sm">
+                                <span class=""></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Тема встречи:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-2">
+                                <label class="form-label">Переговорка:</label>
+                                <input type="text" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="form-label">Временные интервалы:</span>
+                    <div class="d-flex align-items-center flex-wrap">
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:00 - 09:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">09:30 - 10:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:00 - 10:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">10:30 - 11:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:00 - 11:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">11:30 - 12:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">12:00 - 12:30</button>
+                        <button type="button" class="btn btn-danger m-2 box-shadow">12:30 - 13:00</button>
+                        <button type="button" class="btn btn-danger m-2 box-shadow">13:00 - 13:30</button>
+                        <button type="button" class="btn btn-danger m-2 box-shadow">13:30 - 14:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:00 - 14:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">14:30 - 15:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:00 - 15:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">15:30 - 16:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:00 - 16:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">16:30 - 17:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:00 - 17:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">17:30 - 18:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:00 - 18:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">18:30 - 19:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:00 - 19:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">19:30 - 20:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:00 - 20:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">20:30 - 21:00</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:00 - 21:30</button>
+                        <button type="button" class="btn btn-success m-2 box-shadow">21:30 - 22:00</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-danger">Удалить</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
