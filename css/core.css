@@ -130,8 +130,7 @@ body {
     cursor: pointer
 }
 .popover {
-    z-index: 1040;
-    max-width: 500px !important;
+
     margin: 20px;
 }
 .generate-report {
@@ -204,6 +203,9 @@ body {
     z-index         : 100;
     background-color: #fff;
     cursor          : pointer;
+}
+.box-shadow {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* media */
