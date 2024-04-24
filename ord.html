@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/table.css">
+
+    <title>ОРД Яндеса</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">ОРД Яндеса</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <h5 class="my-4">ОРД Яндеса</h5>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link p-3 active" id="creative-tab" data-bs-toggle="tab"
+                            data-bs-target="#creative" type="button" role="tab" aria-controls="creative"
+                            aria-selected="true">Креативы</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link p-3" id="dogovor-tab" data-bs-toggle="tab" data-bs-target="#dogovor"
+                            type="button" role="tab" aria-controls="dogovor" aria-selected="false">Договоры</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link p-3" id="organization-tab" data-bs-toggle="tab"
+                            data-bs-target="#organization" type="button" role="tab" aria-controls="organization"
+                            aria-selected="false">Организации</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link p-3" id="platforms-tab" data-bs-toggle="tab" data-bs-target="#platforms"
+                            type="button" role="tab" aria-controls="platforms" aria-selected="false">Площадки</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link p-3" id="register-tab" data-bs-toggle="tab" data-bs-target="#register"
+                            type="button" role="tab" aria-controls="register" aria-selected="false">Регистрация</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- 1 -->
+                    <div class="tab-pane fade show active" id="creative" role="tabpanel" aria-labelledby="creative-tab">
+                        <div class="col-12 my-4">
+                            <form class="card d-block p-3" action="#">
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID креатива (Идентификатор объекта в
+                                            базе данных пользователя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Тип рекламной кампании</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Другое</option>
+                                            <option value="2">cpa</option>
+                                            <option value="3">cpc</option>
+                                            <option value="4">cpm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Форма распространения рекламы</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Баннер</option>
+                                            <option value="2">Текстовый блок</option>
+                                            <option value="3">Текстово-графический блок</option>
+                                            <option value="4">Видеоролик</option>
+                                            <option value="5">Аудиозапись</option>
+                                            <option value="6">Видеотрансляция в прямом эфире</option>
+                                            <option value="7">Аудиотрансляция в прямом эфире</option>
+                                            <option value="8">Иное</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Целевые ссылки (Через запятую)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Идентификатор изначального договора / доп.
+                                            соглашения.</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">26-08-2023</option>
+                                            <option value="2">31-01-2024</option>
+                                            <option value="3">234</option>
+                                            <option value="4">123</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Текстовые данные креатива</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Медиаданные креатива (Должно быть заполнено, если не
+                                            заполнено поле textData)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <div class="card p-2">
+                                            <label class="form-label">URL</label>
+                                            <input type="text" class="form-control form-control-sm">
+                                            <label class="form-label">Описание</label>
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Общее описание объекта рекламирования Рекомендуется
+                                            указать: Бренд (или несколько брендов) рекламируемых товаров или
+                                            услуг; Вид товара/услуги; Дополнительную информацию.</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Признак социальной рекламы</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Да</option>
+                                            <option value="2">Нет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Признак нативной рекламы</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Да</option>
+                                            <option value="2">Нет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Идентификатор организации в случае креатива по
+                                            саморекламе. Идентификатор договора в таком случае не требуется. В ОРД
+                                            должна быть зарегистрирована организация с таким id</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                            </form>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="table-content">Токен</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">ID креатива</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Тип рекламной <br> кампании</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Форма распространения <br> рекламы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Целевые ссылки</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Идентификатор изначального <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Текстовые данные креатива</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Общее описание объекта рекламирования</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Признак социальной <br> рекламы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Признак нативной <br> рекламы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Идентификатор организации в <br> случае креатива
+                                                по саморекламе</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                4CQwVszL76wtJKpe1Lo
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                314
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                other
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Баннер
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                <a
+                                                    href="https://www.4tochki.ru/akcii/shinomontazh-na-ikon-tyres-v-podarok/">https://www.4tochki.ru/akcii/shinomontazh-na-ikon-tyres-v-podarok/</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                31-01-2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Видеоролик об особенностях грузовых шин на разных осях
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Видеоролик об особенностях грузовых шин на разных осях на примере
+                                                грузовых
+                                                шин Fortune и Blackhawk
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                PISH
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="tab-pane fade" id="dogovor" role="tabpanel" aria-labelledby="dogovor-tab">
+                        <div class="col-12 my-4">
+                            <form class="card d-block p-3" action="#">
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID договора (Идентификатор объекта в базе данных
+                                            пользователя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Тип договора</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select" disabled>
+                                            <option selected></option>
+                                            <option value="1">Договор оказания услуг</option>
+                                            <option value="2">Посреднический договор</option>
+                                            <option value="3">Дополнительное соглашение</option>
+                                            <option value="4">self-promotion</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID заказчика (Идентификатор Контрагента-заказчика в
+                                            базе данных пользователя. В ОРД должна быть зарегистрирована
+                                            организация с таким id. ИНН контрагента-заказчика не должен быть равен ИИН
+                                            контрагента-исполнителя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">ZSH</option>
+                                            <option value="2">MERDGIO</option>
+                                            <option value="3">TEST</option>
+                                            <option value="4">PISH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID исполнителя (Идентификатор Контрагента-исполнителя
+                                            в базе данных пользователя. В ОРД должна быть зарегистрирована
+                                            организация с таким id. ИНН контрагента-заказчика не должен быть равен ИИН
+                                            контрагента-исполнителя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">ZSH</option>
+                                            <option value="2">MERDGIO</option>
+                                            <option value="3">TEST</option>
+                                            <option value="4">PISH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">На исполнителе лежит обязанность регистрировать и
+                                            репортить креативы</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Да</option>
+                                            <option value="2">Нет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Описание осуществляемых посредником-представителем
+                                            действий</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Действия в целях распространения рекламы</option>
+                                            <option value="2">Заключение договоров</option>
+                                            <option value="3">Коммерческое представительство</option>
+                                            <option value="4">Иное</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Сведения о предмете договора</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Договор на организацию распространения рекламы</option>
+                                            <option value="2">Посредничество</option>
+                                            <option value="3">Договор на распространение рекламы</option>
+                                            <option value="4">Представительство</option>
+                                            <option value="5">Иное</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Номер договора / доп.соглашения</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Дата договора / доп.соглашения</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Сумма договора / доп.соглашения (в рублях)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Признак "с НДС"</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Да</option>
+                                            <option value="2">Нет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                            </form>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="table-content">ID <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Тип <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">ID <br> заказчика</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">ID <br> исполнителя</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Обязанность регистрировать <br> креативы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Описание осуществляемых <br>
+                                                посредником-представителем действий</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Сведения о предмете <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Номер <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Дата <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Сумма <br> договора</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">c НДС</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                26-08-2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор оказания услуг
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                PISH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                ZSH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Действия в целях распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор на распространение рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                26-08-2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2023-08-26
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                1536000
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                31-01-2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор оказания услуг
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                PISH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Действия в целях распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор на организацию распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                234
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2023-11-08
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                234
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                26-08-2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор оказания услуг
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                PISH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                ZSH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Действия в целях распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор на распространение рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                26-08-2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2023-08-26
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                1536000
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content">
+                                                31-01-2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор оказания услуг
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                PISH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Действия в целях распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Договор на организацию распространения рекламы
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                234
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2023-11-08
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                234
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="tab-pane fade" id="organization" role="tabpanel" aria-labelledby="organization-tab">
+                        <div class="col-12 my-4">
+                            <form class="card d-block p-3" action="#">
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID организации (Идентификатор объекта в базе данных
+                                            пользователя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Тип</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Юридическое лицо (РФ)</option>
+                                            <option value="2">Физическое лицо (РФ)</option>
+                                            <option value="3">Индивидуальный предприниматель</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ИНН (Идентификатор объекта в базе данных пользователя,
+                                            для bндивидуального предпринимателя ИНН не обязателен)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Название организации (Наименование организации или
+                                            ФИО) <br>
+                                            Только русские буквы <br>
+                                            Допускается пробел <br>
+                                            Допускается тире <br>
+                                            Допускается " <br>
+                                            Символы римских чисел: I, V, X, L, C, D, M</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                            </form>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="table-content">ID организации</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Тип</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">ИНН</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Название организации</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                ZSH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Юридическое лифо
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                7810713186
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                ООО "Зеленая шина"
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Физическое лицо
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                525911389387
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Щуров Евгений Юрьевич
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                TEST
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Юридическое лифо
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                7703247653
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Рога и Копыта
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                PISH
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Юридическое лифо
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                7703247653
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                ООО "Пауэр Интернэшнл-шины"
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="tab-pane fade" id="platforms" role="tabpanel" aria-labelledby="platforms-tab">
+                        <div class="col-12 my-4">
+                            <form class="card d-block p-3" action="#">
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID организации (Идентификатор организации в базе
+                                            данных пользователя. Организация должна быть предварительно
+                                            зарегистрирована)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">ООО "Зеленая шина"</option>
+                                            <option value="2">ООО "Пауэр Интернэшнл-шины"</option>
+                                            <option value="3">Рога и Копыта</option>
+                                            <option value="4">Щуров Евгений Юрьевич</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">ID платформы (Идентификатор платформы в базе данных
+                                            пользователя)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Площадка принадлежит контрагенту</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Да</option>
+                                            <option value="2">Нет</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Тип платформы</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <select class="form-select">
+                                            <option selected></option>
+                                            <option value="1">Сайт</option>
+                                            <option value="2">Информационная система</option>
+                                            <option value="3">Приложение</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">Название сайта (блога) или приложения или иные способы
+                                            адресации</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row py-3 border-bottom">
+                                    <div class="col-lg-3 col-12">
+                                        <label class="form-label">URL площадки или приложения в сторе.
+                                            бязательно, если тип площадки "Сайт" или "Приложение"
+                                            Обязательно в формате http(s)://...</label>
+                                    </div>
+                                    <div class="col-lg-9 col-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                            </form>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="table-content">ID организации</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">ID платформы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Площадка принадлежит контрагенту</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Тип платформы</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">Название сайта</div>
+                                        </th>
+                                        <th>
+                                            <div class="table-content">URL</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                ytmerdgiolife
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Информационная система
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Будни Дальнобойщицы Merdgio Life
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                https://www.youtube.com/@MerdgioLife
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                vkmerdgiolife
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Сайт
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Merdgio Life
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                https://vk.com/video/@merdgiolife
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                dzenmerdgio
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Нет
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Сайт
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Дальнобойщица Катя
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                https://dzen.ru/merdgio
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                MERDGIO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                TEST_PLATFORMA
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Да
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Сайт
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content text-wrap">
+                                                Тестовая платформа
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                http://123.ru
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <div class="card my-4">
+                            <div class="col-12">
+                                <form class="d-block p-3" action="#">
+                                    <h5>Регистрация актов</h5>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Наш идентификатор акта</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Идентификатор договора</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">123</option>
+                                                <option value="2">234</option>
+                                                <option value="3">26-08-2023</option>
+                                                <option value="4">31-01-2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Роль заказчика в акте</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">Рекламное агентство</option>
+                                                <option value="2">Рекламораспространитель</option>
+                                                <option value="3">Оператор рекламной системы</option>
+                                                <option value="4">Рекламодатель</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Роль исполнителя в акте</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">Рекламное агентство</option>
+                                                <option value="2">Рекламораспространитель</option>
+                                                <option value="3">Оператор рекламной системы</option>
+                                                <option value="4">Рекламодатель</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Дата акта</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Дата начала периода</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Дата окончания периода</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Сумма акта (в рублях)</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Признак "с НДС"</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">Да</option>
+                                                <option value="2">Нет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Номер акта</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                                </form>
+                            </div>
+                            <div class="table-container m-3">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="table-content">Акт</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Идентификатор договора</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Роль заказчика в акте</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Роль исполнителя в акте</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Дата акта</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Дата начала периода</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Дата окончания периода</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Сумма акта (в рублях)</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Признак "с НДС"</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Номер акта</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024-1
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Рекламодатель
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Рекламораспространитель
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-01-31
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-03-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    370852.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Нет
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Рекламодатель
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Рекламораспространитель
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-01-31
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-01-01
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-03-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    370852.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    Да
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card my-4">
+                            <div class="col-12">
+                                <form class="d-block p-3" action="#">
+                                    <h5>Регистрация данных о креативах в акте</h5>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Наш идентификатор акта</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">31-01-2024-1</option>
+                                                <option value="2">31-01-2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Идентификатор договора</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">123</option>
+                                                <option value="2">234</option>
+                                                <option value="3">26-08-2023</option>
+                                                <option value="4">31-01-2024</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">ID креативов (через запятую)</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                                </form>
+                            </div>
+                            <div class="table-container m-3">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="table-content">Наш идентификатор акта</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Идентификатор договора</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">ID креативов</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024-1
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    ML4
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    123
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    4CQwVszL76wtJKpnmvA, 4CQwVszL76wtJKpnmv9
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    31-01-2024
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    4CQwVszL76wtJKpnmvA, 4CQwVszL76wtJKpnmv9
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card my-4">
+                            <div class="col-12">
+                                <form class="d-block p-3" action="#">
+                                    <h5>Регистрация статистики</h5>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Идентификатор объекта</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Идентификатор креатива</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">666</option>
+                                                <option value="2">68</option>
+                                                <option value="3">11</option>
+                                                <option value="4">310</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Идентификатор платформы</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">TEST_PLATFORMA</option>
+                                                <option value="2">dzenmerdgio</option>
+                                                <option value="3">vkmerdgiolife</option>
+                                                <option value="4">ytmerdgiolife</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Плановое количество показов</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Фактическое количество показов</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Фактическая дата начала показов</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Плановая дата начала показов (по акту)</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Фактическая дата окончания показов</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Плановая дата окончания показов (по акту)</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Стоимость оказанных услуг</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Стоимость единицы оказания услуг</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row py-3 border-bottom">
+                                        <div class="col-lg-3 col-12">
+                                            <label class="form-label">Признак "с НДС"</label>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <select class="form-select">
+                                                <option selected></option>
+                                                <option value="1">Да</option>
+                                                <option value="2">Нет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary mt-3">Зарегистрировать</button>
+                                </form>
+                            </div>
+                            <div class="table-container m-3">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="table-content">Идентификатор <br> объекта</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Идентификатор <br> креатива</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Идентификатор <br> платформы</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Плановое <br> количество показов</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Фактическое <br> количество показов</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Фактическая дата <br> начала показов</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Плановая дата начала <br> показов (по акту)
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Фактическая дата <br> окончания показов</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Плановая дата окончания <br> показов (по
+                                                    акту)</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Стоимость <br> оказанных услуг</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">Стоимость единицы <br> оказания услуг</div>
+                                            </th>
+                                            <th>
+                                                <div class="table-content">НДС</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    youtubemerdgio0224
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    ML4
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    ytmerdgiolife
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    1
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    40000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    370852.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    1.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    0
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-content">
+                                                    dzenmerdgio0224
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    666
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    TEST_PLATFORMA
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-22
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    2024-02-29
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    370852.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    1.000000
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-content">
+                                                    1
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
