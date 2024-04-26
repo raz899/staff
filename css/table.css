@@ -21,6 +21,18 @@ table {
     z-index : 11;
 }
 
+.table-x-scroll tr>*:first-child {
+    position: sticky;
+    left    : 0;
+    opacity : 2;
+    background-color: #ffffff;
+    border-right: 1px solid #64748B;
+}
+
+.table-x-scroll .table-content {
+    justify-content: center;
+}
+
 .table th {
     background-color: #ffffff !important;
     color           : #64748B;
@@ -33,9 +45,11 @@ table {
 table tbody {
     vertical-align: middle !important;
 }
+
 .table td {
     padding: 10px;
 }
+
 .table-content {
     display    : flex;
     align-items: center;
@@ -63,23 +77,27 @@ table tbody {
 }
 
 .bg-orange {
-    background:#ed9200;
+    background: #ed9200;
 }
 
 .bg-danger-red {
-    background:#5c1313;
+    background: #5c1313;
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-
-}
+@media (max-width: 1399.98px) {}
 
 /* // `xl` applies to medium devices (tablets, less than 1200px) */
 @media (max-width: 1199.98px) {}
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+
+    .table-x-scroll tr>*:first-child {
+    position        : relative;
+   
+}
+    
     .nav-tabs .nav-link {
         font-size: 14px;
     }
