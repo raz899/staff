@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/header.css">
     <!--  -->
-    <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/table.css">
-
-    <title>Ключевые показатели</title>
+    <title>Рейтинг менеджеров - Заполнение</title>
 </head>
 
 <body>
@@ -131,34 +129,57 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
                         <li class="breadcrumb-item"><a href="/">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Ключевые показатели</li>
+                        <li class="breadcrumb-item"><a href="keysreports.html">Ключевые показатели</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Рейтинг менеджеров - Заполнение</li>
                     </ol>
                 </nav>
             </div>
             <section class="container mt-5">
-                <h5 class="my-4">Ключевые показатели</h5>
-                <div class="card-items">
-                    <a href="rating-regions.html" class="card__item">
-                        <svg class="text-muted" width="32" height="33">
-                            <use href="/svg/common.bundle.svg#monitoring"></use>
-                        </svg>
-                        <sapn class="card__item-title">Рейтинг регионов</sapn>
-                        <sapn class="card__item-text">Рейтинг. Рейтинг подробно. Компетенция.</sapn>
-                    </a>
-                    <a href="reyting-menedjerov-zapolnenie.html" class="card__item">
-                        <svg width="32" height="33">
-                            <use href="/svg/common.bundle.svg#receipts"></use>
-                        </svg>
-                        <sapn class="card__item-title">Рейтинг менеджеров - Заполнение</sapn>
-                        <sapn class="card__item-text">Сверка. Скачивание шаблонов. (только для Москвы)</sapn>
-                    </a>
-                    <a href="reyting-menedjerov-prosmotr.html" class="card__item">
-                        <svg class="text-warning" width="32" height="33">
-                            <use href="/svg/common.bundle.svg#wallet"></use>
-                        </svg>
-                        <sapn class="card__item-title">Рейтинг менеджеров - Просмотр</sapn>
-                        <sapn class="card__item-text">Заполнение. Просмотр. (только для Москвы)</sapn>
-                    </a>
+                    <h5 class="my-4">Рейтинг менеджеров - Заполнение</h5>
+                <div class="table-container">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="table-content">
+                                        ФИО
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-content">
+                                        Заполнено
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-content">
+                                        <a href="reyting-menedjerov-zapolnenie-id.html">Горшков Михаил Юрьевич</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div
+                                        class="table-content">
+                                       <span class="text-danger">Не заполнено</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-content">
+                                        <a href="reyting-menedjerov-zapolnenie-id.html">Канухин Алексей Николаевич</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-content">
+                                        <span class="text-success">Заполнено</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
         </main>
@@ -178,6 +199,7 @@
             </div>
         </footer>
     </div>
+    <!-- script -->
     <script src="/scripts/index.js"></script>
 </body>
 

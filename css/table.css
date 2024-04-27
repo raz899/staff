@@ -10,27 +10,11 @@ table {
     width          : 100%;
 }
 
-.table-bordered>:not(caption)>*>* {
-    border-width: 1px 0 0 1px !important;
-    border      : 1px solid #6d6d6e;
-}
-
 .table thead {
     position: sticky;
     top     : 0px;
     z-index : 11;
-}
-
-.table-x-scroll tr>*:first-child {
-    position: sticky;
-    left    : 0;
-    opacity : 2;
-    background-color: #ffffff;
-    border-right: 1px solid #64748B;
-}
-
-.table-x-scroll .table-content {
-    justify-content: center;
+    border-bottom: 1px solid #6d6d6e  !important;
 }
 
 .table th {
@@ -40,6 +24,41 @@ table {
     min-width       : 100%;
     font-size       : 14px;
     line-height     : 15px;
+}
+
+.table-bordered {
+    border-bottom: 1px solid #6d6d6e;
+    border-right : 1px solid #6d6d6e;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 1px 0 0 1px !important;
+    border      : 1px solid #6d6d6e;
+}
+
+.table-bordered .table-content {
+    justify-content: center;
+}
+
+.table-bordered thead {
+    border: 1px solid #6d6d6e;
+}
+
+
+.table-x-scroll tr>*:first-child {
+    position        : sticky;
+    left            : 0;
+    opacity         : 2;
+    background-color: #ffffff;
+    border-right    : 1px solid #64748B;
+}
+
+.table-x-scroll .table-content {
+    justify-content: center;
+}
+
+.table>thead {
+    vertical-align: middle !important;
 }
 
 table tbody {
@@ -94,10 +113,10 @@ table tbody {
 @media (max-width: 991.98px) {
 
     .table-x-scroll tr>*:first-child {
-    position        : relative;
-   
-}
-    
+        position: relative;
+
+    }
+
     .nav-tabs .nav-link {
         font-size: 14px;
     }

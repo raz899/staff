@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/table.css">
+    <title>Рейтинг менеджеров - Заполнение</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="keysreports.html">Ключевые показатели</a></li>
+                        <li class="breadcrumb-item"><a href="reyting-menedjerov-zapolnenie.html">Рейтинг менеджеров -
+                                Заполнение</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">ФИО</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <h5 class="mb-4">Рейтинг менеджеров - Заполнение</h5>
+                <div class="card p-3 mb-4">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 mb-3">
+                            <span class="form-label">ЭФФЕКТИВНОСТЬ</span>
+                            <div class="d-flex flex-column border">
+                                <span class="border-bottom p-1 form-select-sm">&lt;4 = не удовлетворительно</span>
+                                <span class="border-bottom p-1 form-select-sm">от 4 до 5 = удовлетворительно</span>
+                                <span class="border-bottom p-1 form-select-sm">от 6 до 7 = хорошо</span>
+                                <span class="p-1 form-select-sm">от 8 до 10 = отлично</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-12">
+                            <form action="#">
+                                <div class="row align-items-end mb-4">
+                                    <div class="col-lg-4 col-sm-6 col-12">
+                                        <label class="form-label">Менеджер</label>
+                                        <select class="form-select">
+                                            <option value="1" selected="">Горшков Михаил Юрьевич</option>
+                                            <option value="2">Канухин Алексей Николаевич</option>
+                                            <option value="3">Ибрагимов Андрей Юрьевич</option>
+                                            <option value="4">Швытких Дмитрий Владиславович</option>
+                                            <option value="5">Алиев Ильдар Рушанович</option>
+                                            <option value="6">Зайцева Снежана Николаевна</option>
+                                            <option value="7">Гришин Юрий Владимирович</option>
+                                            <option value="8">Галас Ирина Сергеевна</option>
+                                            <option value="9">Филиппова Анна Владимировна</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 col-12">
+                                        <label class="form-label">Итоговая оценка:</label>
+                                        <input class="form-control text-success" value="10" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 col-12">
+                                        <button class="btn btn-primary me-2 mt-2" type="button">Найти</button>
+                                        <button class="btn btn-primary me-2 mt-2" type="button">Сохранить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">№</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Показатель</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Описание показателя</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Тип оценки</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" colspan="4">
+                                        <div class="table-content">Коэффециент</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Измеряемый период</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Результат за отчетный период</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">% выполнения</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important; min-width: 100px;" rowspan="2">
+                                        <div class="table-content">Оценка</div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0.5</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0.75</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">1</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">1</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Объем продаж</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Сравнение продаж в одинаковый отчетный период
+                                        </div>
+                                    </td>
+                                    <td rowspan="6">
+                                        <div class="table-content">
+                                            Количественная
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            минус 50% и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            минус 1%-49%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            плюс 0%-9%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            плюс 10% и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">2</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Просроченная дебиторская задолженность
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Объем просроченной задолженности, в процентах от оборота за отчетный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            более 11%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 8% до 10%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 5 % до 7%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            до 4 %
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">3</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Активная клиентская база
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Сравнение числа клиентов в одинаковый период
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="table-content">
+                                            падение более 30%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            падение более 10%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            без изменений
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            прирост
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">4</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Подписание договора поставки
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Наличие подписанного договора поставки со всеми клиентами (отгруженными
+                                            перед
+                                            отчетным месяцем, от 2х реализаций и
+                                            более)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            менее 80%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 81% до 89%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 90% до 94%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 95% до 100%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">5</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Наличие всех закрывающих документов
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Наличие УПД, ТТН, МХ за предшествующий календарный месяц (Андрианова А.М. /
+                                            Шеламова В.Н.)
+
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">6</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Акты сверки
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Подписанные акты сверки за предшествующий календарный месяц (ТОП 20
+                                            ежемесячно /
+                                            все активные ежеквартально) Данные на
+                                            10 число текущего месяца. (Ибрагимов А.Ю.)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">7</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Сопровождение ОХ / работа с ключевыми объёмообразующими клиентами
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Наполнение, оборачиваемость, своевременная ротация ассортимента ОХ /
+                                            сопровождение крупного опта (Зеленова В.А. /
+                                            Грунчева Л.Л.)
+                                        </div>
+                                    </td>
+                                    <td rowspan="4">
+                                        <div class="table-content">
+                                            Качественная
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">8</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Поиск сбыта / Целеустремлённость
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            (Грунчева Л.Л.)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">9</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Должная осмотрительность
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            (Грунчева Л.Л.)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">10</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Уровень исполнительской дисциплины / Выполнение внутренних норм и правил
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            (Ибрагимов А.Ю.)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            предыдущий календарный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 mb-3">
+                            <span class="form-label">ДИСЦИПЛИНА</span>
+                            <div class="d-flex flex-column border">
+                                <span class="border-bottom p-1 form-select-sm">2,4 и менее = не удовлетворительно</span>
+                                <span class="border-bottom p-1 form-select-sm">от 2,5 до 3,4 = удовлетворительно</span>
+                                <span class="border-bottom p-1 form-select-sm">от 3,5 до 4,4 = хорошо</span>
+                                <span class="p-1 form-select-sm">от 4,5 до 5 = отлично</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-12">
+                            <form action="#">
+                                <div class="row align-items-end mb-4">
+                                    <div class="col-lg-4 col-sm-6 col-12">
+                                        <label class="form-label">Итоговая оценка:</label>
+                                        <input class="form-control text-success" value="10" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 col-12">
+                                        <button class="btn btn-primary me-2 mt-2" type="button">Сохранить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">№</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Показатель</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Описание показателя</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Вес</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" colspan="4">
+                                        <div class="table-content">Коэффециент</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Измеряемый период</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">Результат за отчетный период</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;" rowspan="2">
+                                        <div class="table-content">% выполнения</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important; min-width: 100px;" rowspan="2">
+                                        <div class="table-content">Оценка</div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0.5</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">0.75</div>
+                                    </th>
+                                    <th style="background:#dce9f9 !important;">
+                                        <div class="table-content">1</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">1</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Опоздания</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Приход в офис (вход в систему) позже 9:00 или позже 12:00, в зависимости от
+                                            графика работы, без имеющихся на то
+                                            оснований
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5 и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">2</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Ранний уход</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Ранний уход Уход из офиса (выход из системы) ранее 18:00 или ранее 21:00, в
+                                            зависимости от графика работы, без имеющихся
+                                            на то оснований
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5 и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">3</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Журнал рабочего времени</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Средняя длительность рабочего дня за отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            менее 8
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            8:00-8:29
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            8:30-8:50
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            8:50 и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">4</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Журнал рабочего времени</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Активность в течении рабочего дня по группам процессов за отчётный месяц (%
+                                            от длительности)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            менее 60%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 60% до 69%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            от 70% до 79%
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            80% и более
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-content">5</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">Форточка</div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Средняя оценка от клиентов закрепленных в Форточке
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            1
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            2 и менее
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            4
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            5
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content text-wrap">
+                                            Отчётный месяц
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-content">
+                                            <select class="form-select form-select-sm">
+                                                <option value="0">0</option>
+                                                <option value="1">0.5</option>
+                                                <option value="2">0.75</option>
+                                                <option value="3">1</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
