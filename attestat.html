@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto+Condensed:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- common.css -->
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/card.css">
+
+    <title>Аттестат</title>
+</head>
+
+<body>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!-- /script -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <a class="col" href="/">
+                        <svg width="190" height="39">
+                            <use href="/svg/common.bundle.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <ul class="col p-0 d-lg-flex d-none nav-list justify-lg-content-center">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a>
+                        </li>
+                        <li class="nav-item"><a href="help-desk.html" class="nav-link">Help desk</a></li>
+                        <li class="nav-item"><a href="phones.html" class="nav-link">Телефонный справочник</a></li>
+                    </ul>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="d-lg-flex d-none ps-3 dropdown text-end d-flex align-items-center">
+                            <a href="#"
+                                class="d-block link-body-emphasis text-decoration-none dropdown-toggle text-info me-2 me-lg-0"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-info me-2">im_evsikov</span>
+                                <svg width="32" height="33" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#foto"></use>
+                                </svg>
+                                <!-- событие по клику повернуть стрелку, добавить класс rotate -->
+                                <svg width="14" height="6" class="ms-1">
+                                    <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <a class="dropdown-item" href="cabinet.html">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Уведомления</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Админка</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- бургер меню-->
+                        <div class="burger__menu">
+                            <div class="js-burger__icon burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="burger__body d-lg-none d-flex">
+                                <div class="burger__list align-items-start">
+                                    <div class="d-flex justify-content-between w-100 mb-2 pb-2 border-bottom-info">
+                                        <svg width="40" height="41">
+                                            <use href="/svg/common.bundle.svg#logo-mini"></use>
+                                        </svg>
+                                        <div class="d-flex align-items-center">
+                                            <span class="text-info me-2">im_evsikov</span>
+                                            <svg width="32" height="33" class="ms-1">
+                                                <use href="/svg/common.bundle.svg#foto"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul class="nav nav-pills d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a href="/" class="nav-link py-2">Главная</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="help-desk.html" class="nav-link py-2">Help desk</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="phones.html" class="nav-link py-2">Телефонный справочник</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="cabinet.html" class="nav-link py-2">Личный кабинет</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Уведомления</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link py-2">Админка</a>
+                                        </li>
+                                        <li class="nav-item border-top-info mt-2 w-100">
+                                            <a href="#" class="nav-link text-danger py-2">Выход</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb py-3 bg-body-tertiary rounded-3">
+                        <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="education.html">Обучение</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Аттестат</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="container mt-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link p-3 active" id="tests-tab" data-bs-toggle="tab" data-bs-target="#tests"
+                            type="button" role="tab" aria-controls="tests" aria-selected="true">Тесты</button>
+                        <button class="nav-link p-3" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses"
+                            type="button" role="tab" aria-controls="courses" aria-selected="false">Курсы</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- 1 -->
+                    <div class="tab-pane fade show active" id="tests" role="tabpanel" aria-labelledby="tests-tab">
+                    <h5 class="my-4">Тесты</h5>
+                    <div class="card-items">
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №1</sapn>
+                            <sapn class="card__item-text">Что такое шина</sapn>
+                        </a>
+                        <a href="#"
+                            class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №2</sapn>
+                            <sapn class="card__item-text">Протектор, элементы, функции, ...</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №3</sapn>
+                            <sapn class="card__item-text">Из чего и как делают шины</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №4</sapn>
+                            <sapn class="card__item-text">Маркировки шин</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №5</sapn>
+                            <sapn class="card__item-text">Разработка новых шин</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №6</sapn>
+                            <sapn class="card__item-text">Эксплуатационные характеристики шин</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №7</sapn>
+                            <sapn class="card__item-text">Колесные диски</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №8</sapn>
+                            <sapn class="card__item-text">Грузовые шины</sapn>
+                        </a>
+                        <a href="#" class="card__item">
+                            <svg width="32" height="33">
+                                <use href="/svg/common.bundle.svg#test"></use>
+                            </svg>
+                            <sapn class="card__item-title">Тест №9</sapn>
+                            <sapn class="card__item-text">Повреждения шин</sapn>
+                        </a>
+                    </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+                        <h5 class="my-4">Курсы</h5>
+                        <div class="card-items">
+                            <a href="/articles/obuchenie/attestat/kursi/chto_takoe_shina/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Что такое шина?</sapn>
+                                <sapn class="card__item-text">Пневматическая шина, функции,...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/protektor__elementi__funktsii__risunki__primenyaemostj/"
+                                class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Протектор, элементы, функции, рисунки, применяемость
+                                </sapn>
+                                <sapn class="card__item-text">Протектор, элементы, функции, ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/iz_chego_i_kak_delayut_shini/"
+                                class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Из чего и как делают шины?</sapn>
+                                <sapn class="card__item-text">Сырье, материалы, характеристики, функции, ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/markirovki_shin/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Маркировки шин</sapn>
+                                <sapn class="card__item-text">Основыне маркировки шин, этикетки, буквы и ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/razrabotka_novih_shin/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Разработка новых шин</sapn>
+                                <sapn class="card__item-text">Этапы разработки новых ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/ekspluatatsionnie_harakteristiki_shin/"
+                                class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Эксплуатационные характеристики шин</sapn>
+                                <sapn class="card__item-text">Управляемость, Поворачиваемотсь,
+                                    ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/kolesnie_diski/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Колесные диски</sapn>
+                                <sapn class="card__item-text">Колесные диски, технические характеристики, маркировки,
+                                    ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/gruzovie_shini/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Грузовые шины</sapn>
+                                <sapn class="card__item-text">Характеристики, строение, прменяемость, ...</sapn>
+                            </a>
+                            <a href="/articles/obuchenie/attestat/kursi/povrejdeniya_shin/" class="card__item">
+                                <svg width="32" height="33">
+                                    <use href="/svg/common.bundle.svg#pdf"></use>
+                                </svg>
+                                <sapn class="card__item-title">Повреждения шин</sapn>
+                                <sapn class="card__item-text">Характерные повреждения шин, определение ...</sapn>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top-info">
+                <a href="/" class="">
+                    <svg width="32" height="33">
+                        <use href="/svg/common.bundle.svg#logo-mini"></use>
+                    </svg>
+                </a>
+                <p class=" mb-0 text-body-secondary ms-2">© 2015-2024 staff.4tochki.ru.</p>
+                <ul class="nav col justify-content-end d-md-flex d-none">
+                    <li class="nav-item"><a href="/" class="nav-link px-2">Главная</a></li>
+                    <li class="nav-item"><a href="help-desk.html" class="nav-link px-2">Help desk</a></li>
+                    <li class="nav-item"><a href="phones.html" class="nav-link px-2">Телефонный справочник</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- script -->
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
