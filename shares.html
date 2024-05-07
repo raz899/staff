@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/card.css">
     <title>Информация по акции</title>
 </head>
+<!-- не ок, всплывашка(отчет) с организацией и маркой  -->
 
 <body>
     <!-- script -->
@@ -163,66 +164,19 @@
                                 <thead>
                                     <tr>
                                         <th style="min-width: 140px;">
-                                            <div class="table-content text-nowrap">Номер
-                                                заказа
-                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                                    data-bs-container="body" data-bs-toggle="popover"
-                                                    data-bs-placement="right"
-                                                    data-bs-content="Номер заказа в 'форточки'">
-                                                    <svg width="14" height="14">
-                                                        <use href="/svg/common.bundle.svg#info"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                            <div class="table-content text-nowrap">Номер заказа</div>
                                         </th>
                                         <th style="min-width: 140px;">
-                                            <div class="table-content text-nowrap">Дата
-                                                добавления
-                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                                    data-bs-container="body" data-bs-toggle="popover"
-                                                    data-bs-placement="right"
-                                                    data-bs-content="Дата добавления в систему">
-                                                    <svg width="14" height="14">
-                                                        <use href="/svg/common.bundle.svg#info"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                            <div class="table-content text-nowrap">Дата добавления</div>
                                         </th>
                                         <th style="min-width: 274px;">
-                                            <div class="table-content text-nowrap">Данные чека
-                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                                    data-bs-container="body" data-bs-toggle="popover"
-                                                    data-bs-placement="right"
-                                                    data-bs-content="Дата кассового чека, Дата оказания услуг, ФД, ФПД, Общая сумма чека">
-                                                    <svg width="14" height="14">
-                                                        <use href="/svg/common.bundle.svg#info"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                            <div class="table-content text-nowrap">Данные чека</div>
                                         </th>
                                         <th style="min-width: 215px;">
-                                            <div class="table-content text-nowrap">Товар
-                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                                    data-bs-container="body" data-bs-toggle="popover"
-                                                    data-bs-placement="right"
-                                                    data-bs-content="SAE(код товара), Марка шин, Модель шин, Типоразмер">
-                                                    <svg width="14" height="14">
-                                                        <use href="/svg/common.bundle.svg#info"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                            <div class="table-content text-nowrap">Товар</div>
                                         </th>
                                         <th style="min-width: 274px;">
-                                            <div class="table-content text-nowrap">Данные
-                                                покукпателя
-                                                <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus"
-                                                    data-bs-container="body" data-bs-toggle="popover"
-                                                    data-bs-placement="right" data-bs-content="ФИО, номер телефона">
-                                                    <svg width="14" height="14">
-                                                        <use href="/svg/common.bundle.svg#info"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
+                                            <div class="table-content text-nowrap">Данные покукпателя</div>
                                         </th>
                                         <th>
                                             <div class="table-content text-nowrap">Документы
@@ -236,16 +190,7 @@
                                                 </div>
                                             </div>
                                         </th>
-                                        <th>
-                                            <div class="table-content">
-                                                <div>
-                                                    <svg width="17" height="17">
-                                                        <use href="/svg/common.bundle.svg#gear"></use>
-                                                    </svg>
-                                                </div>
-
-                                            </div>
-                                        </th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-striped">
@@ -262,49 +207,89 @@
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Данные чека"
-                                                    data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
-                                                    <span class="text-nowrap">Дата оказания услуг:</span>
-                                                    <span class="text-nowrap ms-2">13.09.2023</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        Дата оказания услуг: 13.09.2023
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">Дата оказания услуг:
+                                                                13.09.2023</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Дата кассового чека:
+                                                                13.09.2023</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">ФД:620</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">ФПД:54</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Общая сумма чека: 62000р</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Товар"
-                                                    data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
-                                                    <span class="text-nowrap me-2">Марка шин:</span>
-                                                    <span class="text-nowrap">Yokohama</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        Марка шин: Yokohama
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">Марка шин: Yokohama </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Модель шин: Yokohama IceGuard
+                                                                IG65</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Типоразмер: 245/50R18</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">SAE (код товара): r16200</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Данные покукпателя"
-                                                    data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
-                                                    <span class="text-nowrap me-2">ФИО:</span>
-                                                    <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        ФИО: Власов Андрей Дмитриевич
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">ФИО: Власов Андрей Дмитриевич
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Телефон: +7(953)767-1406</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer" data-bs-toggle="modal"
+                                                <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
                                                     data-bs-target="#order-documents">
                                                     <div class="text-nowrap">Документы:</div>
                                                     <div class="d-flex align-items-center">
@@ -335,7 +320,8 @@
                                                         </li>
                                                         <li>
                                                             <button type="button"
-                                                                class="btn d-flex align-items-center dropdown-item">
+                                                                class="btn d-flex align-items-center dropdown-item"
+                                                                data-bs-toggle="modal" data-bs-target="#editing-shares">
                                                                 <svg class="text-warning me-2" width="16" height="16">
                                                                     <use href="/svg/common.bundle.svg#pen"></use>
                                                                 </svg>Редактировать
@@ -367,49 +353,89 @@
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Данные чека"
-                                                    data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
-                                                    <span class="text-nowrap">Дата оказания услуг:</span>
-                                                    <span class="text-nowrap ms-2">13.09.2023</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        Дата оказания услуг: 13.09.2023
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">Дата оказания услуг:
+                                                                13.09.2023</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Дата кассового чека:
+                                                                13.09.2023</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">ФД:620</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">ФПД:54</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Общая сумма чека: 62000р</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Товар"
-                                                    data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
-                                                    <span class="text-nowrap me-2">Марка шин:</span>
-                                                    <span class="text-nowrap">Yokohama</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        Марка шин: Yokohama
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">Марка шин: Yokohama </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Модель шин: Yokohama IceGuard
+                                                                IG65</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Типоразмер: 245/50R18</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">SAE (код товара): r16200</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer d-flex align-items-center"
-                                                    data-bs-toggle="popover" data-bs-placement="bottom"
-                                                    data-bs-html="true" title="Данные покукпателя"
-                                                    data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
-                                                    <span class="text-nowrap me-2">ФИО:</span>
-                                                    <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                                    <svg class="ms-2 text-info" width="10" height="10">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuClickableInside"
+                                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                        aria-expanded="false">
+                                                        ФИО: Власов Андрей Дмитриевич
+                                                    </button>
+                                                    <ul class="dropdown-menu p-2"
+                                                        aria-labelledby="dropdownMenuClickableInside">
+                                                        <li>
+                                                            <span class="form-label">ФИО: Власов Андрей Дмитриевич
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="form-label">Телефон: +7(953)767-1406</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="c-pointer" data-bs-toggle="modal"
+                                                <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
                                                     data-bs-target="#order-documents">
                                                     <div class="text-nowrap">Документы:</div>
                                                     <div class="d-flex align-items-center">
@@ -440,7 +466,8 @@
                                                         </li>
                                                         <li>
                                                             <button type="button"
-                                                                class="btn d-flex align-items-center dropdown-item">
+                                                                class="btn d-flex align-items-center dropdown-item"
+                                                                data-bs-toggle="modal" data-bs-target="#editing-shares">
                                                                 <svg class="text-warning me-2" width="16" height="16">
                                                                     <use href="/svg/common.bundle.svg#pen"></use>
                                                                 </svg>Редактировать
@@ -466,7 +493,7 @@
                     <div class="tab-pane fade" id="shares-report" role="tabpanel" aria-labelledby="shares-report-tab">
                         <h5 class="my-4">Отчёт</h5>
                         <div class="row">
-                            <div class="col-xl-3 col-lg-6 col-12">
+                            <div class="col-xl-3 col-12">
                                 <form action="#">
                                     <label class="form-label">Организация</label>
                                     <button type="button" class="form-control js-button c-pointer">Выберите
@@ -556,9 +583,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="d-flex mt-2">
-                                        <button type="button" class="btn btn-primary w-100 me-1">Сформировать</button>
-                                        <a href="#" class="btn btn-outline-primary text-nowrap m-1">Экспорт в Excel</a>
+                                    <div class="d-flex align-items-center justify-content-xl-between flex-wrap mt-2">
+                                        <button type="button" class="btn btn-primary me-2 mt-1">Сформировать</button>
+                                        <a href="#" class="btn btn-outline-primary text-nowrap mt-1">Экспорт в Excel</a>
                                     </div>
                                 </form>
                             </div>
@@ -568,67 +595,19 @@
                                         <thead>
                                             <tr>
                                                 <th style="min-width: 140px;">
-                                                    <div class="table-content text-nowrap">Номер
-                                                        заказа
-                                                        <div type="button" class="p-0 ms-2"
-                                                            data-bs-trigger="hover focus" data-bs-container="body"
-                                                            data-bs-toggle="popover" data-bs-placement="right"
-                                                            data-bs-content="Номер заказа в 'форточки'">
-                                                            <svg width="14" height="14">
-                                                                <use href="/svg/common.bundle.svg#info"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                    <div class="table-content text-nowrap">Номер заказа</div>
                                                 </th>
                                                 <th style="min-width: 140px;">
-                                                    <div class="table-content text-nowrap">Дата
-                                                        добавления
-                                                        <div type="button" class="p-0 ms-2"
-                                                            data-bs-trigger="hover focus" data-bs-container="body"
-                                                            data-bs-toggle="popover" data-bs-placement="right"
-                                                            data-bs-content="Дата добавления в систему">
-                                                            <svg width="14" height="14">
-                                                                <use href="/svg/common.bundle.svg#info"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                    <div class="table-content text-nowrap">Дата добавления</div>
                                                 </th>
                                                 <th style="min-width: 274px;">
-                                                    <div class="table-content text-nowrap">Данные чека
-                                                        <div type="button" class="p-0 ms-2"
-                                                            data-bs-trigger="hover focus" data-bs-container="body"
-                                                            data-bs-toggle="popover" data-bs-placement="right"
-                                                            data-bs-content="Дата кассового чека, Дата оказания услуг, ФД, ФПД, Общая сумма чека">
-                                                            <svg width="14" height="14">
-                                                                <use href="/svg/common.bundle.svg#info"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                    <div class="table-content text-nowrap">Данные чека</div>
                                                 </th>
                                                 <th style="min-width: 215px;">
-                                                    <div class="table-content text-nowrap">Товар
-                                                        <div type="button" class="p-0 ms-2"
-                                                            data-bs-trigger="hover focus" data-bs-container="body"
-                                                            data-bs-toggle="popover" data-bs-placement="right"
-                                                            data-bs-content="SAE(код товара), Марка шин, Модель шин, Типоразмер">
-                                                            <svg width="14" height="14">
-                                                                <use href="/svg/common.bundle.svg#info"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                    <div class="table-content text-nowrap">Товар</div>
                                                 </th>
                                                 <th style="min-width: 274px;">
-                                                    <div class="table-content text-nowrap">Данные
-                                                        покукпателя
-                                                        <div type="button" class="p-0 ms-2"
-                                                            data-bs-trigger="hover focus" data-bs-container="body"
-                                                            data-bs-toggle="popover" data-bs-placement="right"
-                                                            data-bs-content="ФИО, номер телефона">
-                                                            <svg width="14" height="14">
-                                                                <use href="/svg/common.bundle.svg#info"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                    <div class="table-content text-nowrap">Данные покукпателя</div>
                                                 </th>
                                                 <th>
                                                     <div class="table-content text-nowrap">Документы
@@ -642,16 +621,7 @@
                                                         </div>
                                                     </div>
                                                 </th>
-                                                <th>
-                                                    <div class="table-content">
-                                                        <div>
-                                                            <svg width="17" height="17">
-                                                                <use href="/svg/common.bundle.svg#gear"></use>
-                                                            </svg>
-                                                        </div>
-
-                                                    </div>
-                                                </th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody class="table-striped">
@@ -668,49 +638,93 @@
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Данные чека"
-                                                            data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
-                                                            <span class="text-nowrap">Дата оказания услуг:</span>
-                                                            <span class="text-nowrap ms-2">13.09.2023</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                Дата оказания услуг: 13.09.2023
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">Дата оказания услуг:
+                                                                        13.09.2023</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Дата кассового чека:
+                                                                        13.09.2023</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">ФД:620</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">ФПД:54</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Общая сумма чека:
+                                                                        62000р</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Товар"
-                                                            data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
-                                                            <span class="text-nowrap me-2">Марка шин:</span>
-                                                            <span class="text-nowrap">Yokohama</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                Марка шин: Yokohama
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">Марка шин: Yokohama </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Модель шин: Yokohama
+                                                                        IceGuard IG65</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Типоразмер:
+                                                                        245/50R18</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">SAE (код товара):
+                                                                        r16200</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Данные покукпателя"
-                                                            data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
-                                                            <span class="text-nowrap me-2">ФИО:</span>
-                                                            <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                ФИО: Власов Андрей Дмитриевич
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">ФИО: Власов Андрей
+                                                                        Дмитриевич </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Телефон:
+                                                                        +7(953)767-1406</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer" data-bs-toggle="modal"
+                                                        <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
                                                             data-bs-target="#order-documents">
                                                             <div class="text-nowrap">Документы:</div>
                                                             <div class="d-flex align-items-center">
@@ -743,7 +757,9 @@
                                                                 </li>
                                                                 <li>
                                                                     <button type="button"
-                                                                        class="btn d-flex align-items-center dropdown-item">
+                                                                        class="btn d-flex align-items-center dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#editing-shares">
                                                                         <svg class="text-warning me-2" width="16"
                                                                             height="16">
                                                                             <use href="/svg/common.bundle.svg#pen">
@@ -779,49 +795,93 @@
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Данные чека"
-                                                            data-bs-content='Дата оказания услуг: 13.09.2023 <br> Дата кассового чека: 13.09.2023 <br> ФД:620 <br> ФПД:54 <br> Общая сумма чека: 62000р'>
-                                                            <span class="text-nowrap">Дата оказания услуг:</span>
-                                                            <span class="text-nowrap ms-2">13.09.2023</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                Дата оказания услуг: 13.09.2023
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">Дата оказания услуг:
+                                                                        13.09.2023</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Дата кассового чека:
+                                                                        13.09.2023</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">ФД:620</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">ФПД:54</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Общая сумма чека:
+                                                                        62000р</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Товар"
-                                                            data-bs-content='Марка шин: Yokohama <br> Модель шин: Yokohama IceGuard IG65 <br> Типоразмер: 245/50R18 <br> SAE (код товара): r16200 '>
-                                                            <span class="text-nowrap me-2">Марка шин:</span>
-                                                            <span class="text-nowrap">Yokohama</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                Марка шин: Yokohama
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">Марка шин: Yokohama </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Модель шин: Yokohama
+                                                                        IceGuard IG65</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Типоразмер:
+                                                                        245/50R18</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">SAE (код товара):
+                                                                        r16200</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer d-flex align-items-center"
-                                                            data-bs-toggle="popover" data-bs-placement="bottom"
-                                                            data-bs-html="true" title="Данные покукпателя"
-                                                            data-bs-content='ФИО: Власов Андрей Дмитриевич <br> Телефон: +7(953)767-1406'>
-                                                            <span class="text-nowrap me-2">ФИО:</span>
-                                                            <span class="text-nowrap">Власов Андрей Дмитриевич</span>
-                                                            <svg class="ms-2 text-info" width="10" height="10">
-                                                                <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                            </svg>
+                                                        <div class="btn-group">
+                                                            <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                                type="button" id="dropdownMenuClickableInside"
+                                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                                aria-expanded="false">
+                                                                ФИО: Власов Андрей Дмитриевич
+                                                            </button>
+                                                            <ul class="dropdown-menu p-2"
+                                                                aria-labelledby="dropdownMenuClickableInside">
+                                                                <li>
+                                                                    <span class="form-label">ФИО: Власов Андрей
+                                                                        Дмитриевич </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="form-label">Телефон:
+                                                                        +7(953)767-1406</span>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="c-pointer" data-bs-toggle="modal"
+                                                        <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
                                                             data-bs-target="#order-documents">
                                                             <div class="text-nowrap">Документы:</div>
                                                             <div class="d-flex align-items-center">
@@ -854,7 +914,9 @@
                                                                 </li>
                                                                 <li>
                                                                     <button type="button"
-                                                                        class="btn d-flex align-items-center dropdown-item">
+                                                                        class="btn d-flex align-items-center dropdown-item"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#editing-shares">
                                                                         <svg class="text-warning me-2" width="16"
                                                                             height="16">
                                                                             <use href="/svg/common.bundle.svg#pen">
@@ -917,27 +979,31 @@
                             <label class="form-label">Номер заказа в "форточках"
                                 <span class="text-danger ms-1">*</span>
                             </label>
-                            <input type="text" class="form-control" placeholder="Введите номер заказа" required>
+                            <input type="text" class="form-control form-control-sm" placeholder="Введите номер заказа"
+                                required>
                         </div>
                         <div class="row mb-3">
                             <div class="col-6">
                                 <label class="form-label">Дата кассового чека
                                     <span class="text-danger ms-1">*</span>
                                 </label>
-                                <input type="date" class="form-control" id="date" placeholder="Дата" required>
+                                <input type="date" class="form-control form-control-sm" id="date" placeholder="Дата"
+                                    required>
                             </div>
                             <div class="col-6">
                                 <label class="form-label">Дата оказания услуг
                                     <span class="text-danger ms-1">*</span>
                                 </label>
-                                <input type="date" class="form-control" id="date" placeholder="Дата" required>
+                                <input type="date" class="form-control form-control-sm" id="date" placeholder="Дата"
+                                    required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Общая сумма чека
                                 <span class="text-danger ms-1">*</span>
                             </label>
-                            <input type="text" class="form-control" placeholder="Введите сумма чека" required>
+                            <input type="text" class="form-control form-control-sm" placeholder="Введите сумма чека"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Марка шин
@@ -955,28 +1021,29 @@
                                 <span class="text-danger ms-1">*</span>
                             </label>
                             <div class="d-flex align-items-center">
-                                <input type="text" class="form-control" placeholder="Ширина" required>
+                                <input type="text" class="form-control form-control-sm" placeholder="Ширина" required>
                                 <span class="mx-2">/</span>
-                                <input type="text" class="form-control" placeholder="Профиль" required>
+                                <input type="text" class="form-control form-control-sm" placeholder="Профиль" required>
                                 <span class="mx-2">R</span>
-                                <input type="text" class="form-control" placeholder="Диаметр" required>
+                                <input type="text" class="form-control form-control-sm" placeholder="Диаметр" required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">ФИО (Покупателя)
                                 <span class="text-danger ms-1">*</span>
                             </label>
-                            <input type="text" class="form-control" placeholder="Введите ФИО" required>
+                            <input type="text" class="form-control form-control-sm" placeholder="Введите ФИО" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Телефон (покупателя)
                                 <span class="text-danger ms-1">*</span>
                             </label>
-                            <input type="tel" class="form-control" placeholder="Введите Телефон" required>
+                            <input type="tel" class="form-control form-control-sm" placeholder="Введите Телефон"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">ИНН (если покупатель юр.лицо)</label>
-                            <input type="text" class="form-control" placeholder="Введите ИНН">
+                            <input type="text" class="form-control form-control-sm" placeholder="Введите ИНН">
                         </div>
                         <div class="d-flex justify-content-end">
                             <button type="submit" class="btn btn-primary">Сохранить</button>
@@ -1139,6 +1206,97 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Редактирование акции -->
+    <div class="modal fade" id="editing-shares" tabindex="-1" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Редактирование акции</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Номер заказа в "форточках"<span
+                                class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" value="F1123580" required>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label class="form-label">Дата кассового чека<span class="text-danger ms-1">*</span></label>
+                            <input type="date" class="form-control form-control-sm" value="2018-07-22" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Дата оказания услуг<span class="text-danger ms-1">*</span></label>
+                            <input type="date" class="form-control form-control-sm" value="2018-07-22" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Общая сумма чека<span class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" value="19200" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Марка шин<span class="text-danger ms-1">*</span></label>
+                        <select class="form-select form-select-sm" required>
+                            <option value="1">Accelera</option>
+                            <option value="2">Accelus</option>
+                            <option value="3">Advance</option>
+                            <option value="4">Aeolus</option>
+                            <option value="5">Altenzo</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Модель шин [вначале укажите марку]<span
+                                class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" value="th 201" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center">
+                            <label class="form-label">Время кассового чека<span
+                                    class="text-danger ms-1">*</span></label>
+                            <div type="button" class="p-0 ms-2" data-bs-trigger="hover focus" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="right"
+                                data-bs-content="Для отчетности по этой марке шин необходимо дополнительно указать время продажи (с чека)"
+                                data-bs-original-title="" title="">
+                                <svg width="14" height="14">
+                                    <use href="/svg/common.bundle.svg#info"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control form-control-sm" value="00:00" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Типоразмер<span class="text-danger ms-1">*</span></label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control form-control-sm" value="205" required>
+                            <span class="mx-2">/</span>
+                            <input type="text" class="form-control form-control-sm" value="55" required>
+                            <span class="mx-2">R</span>
+                            <input type="text" class="form-control form-control-sm" value="16" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">ФИО (Покупателя)<span class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" value="Сырников ПЕ" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">ИНН (если покупатель юр.лицо)<span
+                                class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Телефон (покупателя)<span class="text-danger ms-1">*</span></label>
+                        <input type="text" class="form-control form-control-sm" value="+7(918)962-8483" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Сохранить</button>
                 </div>
             </div>

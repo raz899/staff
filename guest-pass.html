@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/table.css">
     <title>Гостевые пароли</title>
 </head>
-
+<!-- все ок -->
 <body>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -127,21 +127,17 @@
                         <button class="nav-link p-3" id="add-pass-tab" data-id="2" data-bs-toggle="tab"
                             data-bs-target="#add-pass" type="button" role="tab" aria-controls="add-pass"
                             aria-selected="false">Добавить пароли</button>
-
                     </div>
                 </nav>
-                <div class="my-4 d-flex flex-md-row flex-column">
-                    <input type="text" class="form-control table-search" placeholder="Найти">
-                    <div class="d-flex flex-md-row flex-column ">
-                        <button type="button" class="btn btn-primary text-nowrap ms-md-4 ms-sm-0 mt-2 mt-md-0"
-                            data-bs-toggle="modal" data-bs-target="#issue-password">Выдать пароль</button>
-                        <button type="button" class="btn btn-primary text-nowrap ms-md-4 ms-sm-0 mt-2 mt-md-0"
-                            data-bs-toggle="modal" data-bs-target="#add-password">Добавить пароль</button>
-                    </div>
+                <div class="my-4">
+                    <input type="text" onkeyup="searchTable()" class="form-control table-search" placeholder="Найти">
                 </div>
+                    <button type="button" class="btn btn-success text-nowrap mt-1 mb-2"
+                        data-bs-toggle="modal" data-bs-target="#issue-password">Выдать пароль</button>
+                    <button type="button" class="btn btn-success text-nowrap mt-1 mb-2"
+                        data-bs-toggle="modal" data-bs-target="#add-password">Добавить пароль</button>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="all-pass" role="tabpanel" aria-labelledby="all-pass-tab">
-
                         <div class="table-container">
                             <table class="table table-striped">
                                 <thead>
@@ -189,7 +185,6 @@
                                         <td>
                                             <div class="table-content">Сиренко Виктор Викторович</div>
                                         </td>
-
                                         <td>Тест</td>
                                     </tr>
                                     <tr class="text-danger">
@@ -200,8 +195,7 @@
                                             <div class="table-content">Нет</div>
                                         </td>
                                         <td>
-                                            <div class="table-content">27.05.2022
-                                                14:28:15</div>
+                                            <div class="table-content">27.05.2022 14:28:15</div>
                                         </td>
                                         <td>
                                             <div class="table-content"></div>
@@ -216,8 +210,6 @@
                                             <div class="table-content"></div>
                                         </td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -278,7 +270,6 @@
                                             </button>
                                         </td>
                                     </tr>
-
                                     <tr class="text-success">
                                         <td>
                                             <div class="table-content"> dBPCUVUns2e </div>
