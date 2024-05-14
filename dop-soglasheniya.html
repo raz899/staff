@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/table.css">
     <title>Доп. соглашения</title>
 </head>
-
+<!-- все ок -->
 <body>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -300,64 +300,54 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex flex-column w-100">
-                                            <div class="dropdown">
-                                                <button
-                                                    class="btn btn-sm btn-secondary w-100 py-0 text-nowrap dropdown-toggle"
-                                                    type="button" id="dropdownDocs" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    Договор(ы)
-                                                    <svg width="10" height="10" class="ms-2">
-                                                        <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                    </svg>
-                                                </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownDocs">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#">Договор - предоплата 2024</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#">Договор о конфиденциальности и
-                                                            неразглашении инф. - 2024</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap"
-                                                type="button">Взять на проверку</button>
-
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column w-100">
+                                        <div class="btn-group">
+                                            <button class="btn btn-secondary btn-sm py-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                Договор(ы)
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Договор - предоплата 2024</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Договор о конфиденциальности и
+                                                        неразглашении инф. - 2024</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="table-content">
-                                            <div class="dropdown c-pointer ps-2">
-                                                <div class="dropdown-toggle" id="settings-table"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <svg width="19" height="19">
-                                                        <use href="/svg/common.bundle.svg#dots">
-                                                        </use>
-                                                    </svg>
-                                                </div>
-                                                <ul class="dropdown-menu" aria-labelledby="settings-table">
-                                                    <li>
-                                                        <button type="button"
-                                                            class="btn d-flex align-items-center dropdown-item"
-                                                            data-bs-toggle="modal" data-bs-target="#editing-contract">
-                                                            <svg class="text-warning me-2" width="16" height="16">
-                                                                <use href="/svg/common.bundle.svg#pen"></use>
-                                                            </svg>Редактировать
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button"
-                                                            class="btn d-flex align-items-center dropdown-item">
-                                                            <svg class="text-danger me-2" width="16" height="16">
-                                                                <use href="/svg/common.bundle.svg#del">
-                                                                </use>
-                                                            </svg>Удалить
-                                                        </button>
-                                                    </li>
-                                                </ul>
+                                        <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap" type="button">Взять на проверку</button>
+                                    </div>
+                                    <div class="table-content">
+                                        <div class="dropdown c-pointer ps-2">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg width="19" height="19">
+                                                    <use href="/svg/common.bundle.svg#dots">
+                                                    </use>
+                                                </svg>
                                             </div>
+                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                <li>
+                                                    <button type="button" class="btn d-flex align-items-center dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#editing-counterparty">
+                                                        <svg class="text-warning me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#pen"></use>
+                                                        </svg>Редактировать
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-danger me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#del">
+                                                            </use>
+                                                        </svg>Удалить
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
+                                </div>
                                 </td>
                             </tr>
                             <tr>
@@ -469,62 +459,51 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex flex-column w-100">
-                                            <div class="d-flex flex-column w-100">
-                                                <div class="dropdown">
-                                                    <button
-                                                        class="btn btn-sm btn-secondary w-100 py-0 text-nowrap dropdown-toggle"
-                                                        type="button" id="dropdownDocs" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        На проверке
-                                                        <svg width="10" height="10" class="ms-2">
-                                                            <use href="/svg/common.bundle.svg#dropdown-arrow"></use>
-                                                        </svg>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownDocs">
-                                                        <li>
-                                                            <span class="form-label p-2 text-nowrap">Договор на проверке
-                                                                (Щербина Лилия Сергеевна)</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap"
-                                                type="button">Снять с проверки</button>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column w-100">
+                                        <div class="btn-group">
+                                            <button class="btn btn-secondary btn-sm py-0 dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                На проверке
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                                                <li>
+                                                    <span class="form-label p-2 text-nowrap">Договор на проверке
+                                                        (Щербина Лилия Сергеевна)</span>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="table-content">
-                                            <div class="dropdown c-pointer ps-2">
-                                                <div class="dropdown-toggle" id="settings-table"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <svg width="19" height="19">
-                                                        <use href="/svg/common.bundle.svg#dots">
-                                                        </use>
-                                                    </svg>
-                                                </div>
-                                                <ul class="dropdown-menu" aria-labelledby="settings-table">
-                                                    <li>
-                                                        <button type="button"
-                                                            class="btn d-flex align-items-center dropdown-item"
-                                                            data-bs-toggle="modal" data-bs-target="#editing-contract">
-                                                            <svg class="text-warning me-2" width="16" height="16">
-                                                                <use href="/svg/common.bundle.svg#pen"></use>
-                                                            </svg>Редактировать
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button"
-                                                            class="btn d-flex align-items-center dropdown-item">
-                                                            <svg class="text-danger me-2" width="16" height="16">
-                                                                <use href="/svg/common.bundle.svg#del">
-                                                                </use>
-                                                            </svg>Удалить
-                                                        </button>
-                                                    </li>
-                                                </ul>
+                                        <button class="btn btn-sm btn-secondary mt-1 py-0 text-nowrap" type="button">Снять с проверки</button>
+                                    </div>
+                                    <div class="table-content">
+                                        <div class="dropdown c-pointer ps-2">
+                                            <div class="dropdown-toggle" id="settings-table" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg width="19" height="19">
+                                                    <use href="/svg/common.bundle.svg#dots">
+                                                    </use>
+                                                </svg>
                                             </div>
+                                            <ul class="dropdown-menu" aria-labelledby="settings-table">
+                                                <li>
+                                                    <button type="button" class="btn d-flex align-items-center dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#editing-counterparty">
+                                                        <svg class="text-warning me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#pen"></use>
+                                                        </svg>Редактировать
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btn d-flex align-items-center dropdown-item">
+                                                        <svg class="text-danger me-2" width="16" height="16">
+                                                            <use href="/svg/common.bundle.svg#del">
+                                                            </use>
+                                                        </svg>Удалить
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
+                                </div>
                                 </td>
                             </tr>
                         </tbody>
