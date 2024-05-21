@@ -22,6 +22,7 @@
     <title>Мониторинг склада</title>
 </head>
 <!-- нужно доделать -->
+
 <body>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -186,7 +187,6 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <!-- 1 -->
                     <div class="tab-pane fade" id="warehouse-general" role="tabpanel"
                         aria-labelledby="warehouse-general-tab">
                         <div class="row my-4">
@@ -801,7 +801,6 @@
                                                     <div class="occupancy-percent bg-success"></div>
                                                     <span class="ms-2">47%</span>
                                                 </div>
-
                                             </div>
                                         </td>
                                         <td data-date="18.04.2024">
@@ -3139,7 +3138,6 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 2 -->
                     <div class="tab-pane fade" id="warehouse-acceptance" role="tabpanel"
                         aria-labelledby="warehouse-tab">
                         <div class="col-12 my-4">
@@ -4238,7 +4236,6 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 3 -->
                     <div class="tab-pane fade" id="warehouse-shipment" role="tabpanel"
                         aria-labelledby="warehouse-shipment-tab">
                         <div class="col-12 my-4">
@@ -6347,8 +6344,7 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 4 -->
-                    <div class="tab-pane fade" id="warehouse-optimization" role="tabpanel"
+                    <div class="tab-pane fade show active" id="warehouse-optimization" role="tabpanel"
                         aria-labelledby="warehouse-optimization-tab">
                         <div class="col-12 my-4">
                             <form action="#">
@@ -7134,7 +7130,6 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 5 -->
                     <div class="tab-pane fade" id="warehouse-machines" role="tabpanel"
                         aria-labelledby="warehouse-machines-tab">
                         <div class="col-12 my-4">
@@ -7965,7 +7960,6 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 6 -->
                     <div class="tab-pane fade" id="warehouse-staff" role="tabpanel"
                         aria-labelledby="warehouse-staff-tab">
                         <div class="col-12 my-4">
@@ -8268,7 +8262,6 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 7 -->
                     <div class="tab-pane fade" id="warehouse-reserves" role="tabpanel"
                         aria-labelledby="warehouse-reserves-tab">
                         <div class="col-12 my-4">
@@ -9828,8 +9821,7 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 8 -->
-                    <div class="tab-pane fade show active" id="warehouse-capacity" role="tabpanel"
+                    <div class="tab-pane fade" id="warehouse-capacity" role="tabpanel"
                         aria-labelledby="warehouse-capacity-tab">
                         <div class="col-12 my-4">
                             <form action="#">
@@ -10311,9 +10303,849 @@
                             </table>
                         </div>
                     </div>
-                    <!-- 9 -->
                     <div class="tab-pane fade" id="warehouse-reports-statistics" role="tabpanel"
-                        aria-labelledby="warehouse-reports-statistics-tab">9</div>
+                        aria-labelledby="warehouse-reports-statistics-tab">
+                        <div class="col-12 my-4">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-sm-3 col-12">
+                                        <label class="form-label">Период С:</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-sm-3 col-12">
+                                        <label class="form-label">По:</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-sm-3 col-12">
+                                        <label class="form-label">ОП:</label>
+                                        <select class="form-select form-select-sm">
+                                            <option selected></option>
+                                            <option value="1">[Выбрать все]</option>
+                                            <option value="2">Великие Луки</option>
+                                            <option value="3">Воронеж</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-2">
+                                        <button type="button" class="btn btn-primary ms-0 m-1">Найти</button>
+                                        <button type="button" class="btn btn-primary ms-0 m-1" data-bs-toggle="modal"
+                                            data-bs-target="#inventory">Инвентаризация</button>
+                                        <a href="#" class="btn btn-outline-primary text-nowrap ms-0 m-1">Экспорт в
+                                            Excel</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="js-checkbox-universal-report">
+                            <div class="card p-2 mb-2">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntSob" type="checkbox" id="cntSob">
+                                            <label class="form-label" for="cntSob">
+                                                Количество собственного персонала
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntNaim" type="checkbox" id="cntNaim">
+                                            <label class="form-label" for="cntNaim">
+                                                Количество наемного персонала
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntTyre" type="checkbox" id="cntTyre">
+                                            <label class="form-label" for="cntTyre">
+                                                Количество шин
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntDisk" type="checkbox" id="cntDisk">
+                                            <label class="form-label" for="cntDisk">
+                                                Количество дисков
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input v3" type="checkbox" id="v3">
+                                            <label class="form-label" for="v3">
+                                                Объем товара
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input prc" type="checkbox" id="prc">
+                                            <label class="form-label" for="prc">
+                                                Процент загруженности персонала
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input sam" type="checkbox" id="sam">
+                                            <label class="form-label" for="sam">
+                                                Самовывоз (ед)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input samPrc" type="checkbox" id="samPrc">
+                                            <label class="form-label" for="samPrc">
+                                                Самовывоз (процент)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntOneSot" type="checkbox" id="cntOneSot">
+                                            <label class="form-label" for="cntOneSot">
+                                                Количество на одного сотрудника (ед)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input v3OneSot" type="checkbox" id="v3OneSot">
+                                            <label class="form-label" for="v3OneSot">
+                                                Объём на одного сотрудника (м&sup3;)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input cntNaimSot" type="checkbox" id="cntNaimSot">
+                                            <label class="form-label" for="cntNaimSot">
+                                                Количество наемного персонала (процент)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input opt" type="checkbox" id="opt">
+                                            <label class="form-label" for="opt">
+                                                Оптимизация (ед)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input optPrc" type="checkbox" id="optPrc">
+                                            <label class="form-label" for="optPrc">
+                                                Оптимизация (процент)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button type="button"
+                                        class="btn btn-sm btn-primary js-btn-checked-universal mt-1">Установить/снять
+                                        все галки</button>
+                                    <button type="button" class="btn btn-sm btn-primary mt-1">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Дата</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Подразделение</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Кол-во наемного <br>
+                                                персонала</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Кол-во собственного <br>
+                                                персонала</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Шины</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Диски</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Объём</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">% Загрузки</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Самовывоз</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">% Самовывоза</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Кол-во единиц <br> на 1 сотрудника</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Объём м3 на 1 сотрудника</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">% Наёмного персонала</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Оптимизация (ед)</div>
+                                        </th>
+                                        <th style="background:#dce9f9 !important;">
+                                            <div class="table-content">Оптимизация (процент)</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-success"></div>
+                                                    <span class="ms-2">23.38%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-orange"></div>
+                                                    <span class="ms-2">71.38%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-danger-red"></div>
+                                                    <span class="ms-2">1,987.50%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-danger"></div>
+                                                    <span class="ms-2">99.33%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-warning"></div>
+                                                    <span class="ms-2">50.38%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                13.05.2024
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                Великие Луки
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                178
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                9
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                16.743
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                <div class="d-flex align-items-center w-100">
+                                                    <div class="occupancy-percent bg-success"></div>
+                                                    <span class="ms-2">23.38%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                66
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                93.50
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                8.37
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                0.00%
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                187
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-content">
+                                                35.29%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-success">
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                                В среднем за день
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                7.13
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                2.88
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                2,860.88
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                638.75
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                413.66
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                413.66
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                55.92%
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                867.38
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                10.03%
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                98.65
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                1.30
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                30.36%
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                3,499.63
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                10.03%
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-success">
+                                        <td style="background:#dce9f9 !important;">
+                                            <div class="table-content">
+                                            Итого по ОП
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                               
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            0.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            14.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            16,727.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            2,315.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            1,621.34
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            221.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                               
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                               
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                               
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                            19,042.00
+                                            </div>
+                                        </td>
+                                        <td style="background:#c4c4c4 !important;">
+                                            <div class="table-content">
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

@@ -64,6 +64,19 @@ if (imgsgGallery.length > 0) {
     });
 }
 
+// Установить/снять все галки для checkbox
+const checkedButtonUniversal = document.querySelector('.js-btn-checked-universal');
+if (checkedButtonUniversal != null) {
+    checkedButtonUniversal.addEventListener('click', function () {
+        const checkboxes = document.querySelectorAll('.js-checkbox-universal-report input[type="checkbox"]');
+
+        if (checkboxes.length > 0) {
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = !checkbox.checked;
+            });
+        }
+    });
+}
 
 // // Заведение машины
 // const selectVehicle = document.querySelector('.js-select-vehicle');
@@ -142,7 +155,7 @@ if (imgsgGallery.length > 0) {
 
 // select.addEventListener('change', updateTextarea);
 
-// омена закрытия при клике в dropdown 
+// омена закрытия при клике в dropdown
 // document.addEventListener('DOMContentLoaded', function () {
 //     var dropdowns = document.querySelectorAll('.dropdown-menu');
 

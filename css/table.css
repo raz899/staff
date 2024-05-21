@@ -83,7 +83,7 @@ table tbody {
 }
 
 .occupancy-percent {
-    width        : 130px;
+    width        : 70px;
     height       : 16px;
     border       : 1px solid #64748B;
     border-radius: 2px;

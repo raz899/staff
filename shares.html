@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/card.css">
     <title>Информация по акции</title>
 </head>
-<!-- не ок, всплывашка(отчет) с организацией и маркой  -->
 
 <body>
     <!-- script -->
@@ -280,15 +279,16 @@
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
-                                                    data-bs-target="#order-documents">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-success d-flex align-items-center"
+                                                    data-bs-toggle="modal" data-bs-target="#order-documents">
                                                     <div class="text-nowrap">Документы:</div>
                                                     <div class="d-flex align-items-center">
-                                                        <svg class="ms-2 text-info" width="16" height="16">
+                                                        <svg class="ms-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#treaties"></use>
                                                         </svg>
                                                     </div>
-                                                </div>
+                                                </button>
                                             </div>
                                         </td>
                                         <td>
@@ -426,15 +426,16 @@
                                         </td>
                                         <td>
                                             <div class="table-content">
-                                                <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
-                                                    data-bs-target="#order-documents">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-success d-flex align-items-center"
+                                                    data-bs-toggle="modal" data-bs-target="#order-documents">
                                                     <div class="text-nowrap">Документы:</div>
                                                     <div class="d-flex align-items-center">
-                                                        <svg class="ms-2 text-info" width="16" height="16">
+                                                        <svg class="ms-2" width="16" height="16">
                                                             <use href="/svg/common.bundle.svg#treaties"></use>
                                                         </svg>
                                                     </div>
-                                                </div>
+                                                </button>
                                             </div>
                                         </td>
                                         <td>
@@ -495,7 +496,8 @@
                                     </select>
                                     <div class="mb-1">
                                         <label class="form-label">Укажите адрес или ФИО</label>
-                                        <input type="text" class="form-control form-control-sm" placeholder="Введите номер заказа">
+                                        <input type="text" class="form-control form-control-sm"
+                                            placeholder="Введите номер заказа">
                                     </div>
                                     <div class="row mb-1">
                                         <div class="col-6">
@@ -522,9 +524,12 @@
                                         <option value="2">Gislaved</option>
                                         <option value="3">Hankook</option>
                                     </select>
-                                    <div class="d-flex align-items-center justify-content-xl-between flex-wrap mt-1 mb-2">
-                                        <button type="button" class="btn btn-sm btn-primary mt-1 me-2">Сформировать</button>
-                                        <a href="#" class="btn btn-sm btn-outline-primary text-nowrap mt-1">Экспорт в Excel</a>
+                                    <div
+                                        class="d-flex align-items-center justify-content-xl-between flex-wrap mt-1 mb-2">
+                                        <button type="button"
+                                            class="btn btn-sm btn-primary mt-1 me-2">Сформировать</button>
+                                        <a href="#" class="btn btn-sm btn-outline-primary text-nowrap mt-1">Экспорт в
+                                            Excel</a>
                                     </div>
                                 </form>
                             </div>
@@ -654,7 +659,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
+                                                        <a href="#" class="d-flex flex-nowrap" data-bs-toggle="modal"
                                                             data-bs-target="#order-documents">
                                                             <div class="text-nowrap">Документы:</div>
                                                             <div class="d-flex align-items-center">
@@ -662,7 +667,7 @@
                                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                                 </svg>
                                                             </div>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -811,7 +816,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="table-content">
-                                                        <div class="d-flex flex-nowrap c-pointer" data-bs-toggle="modal"
+                                                        <a href="#" class="d-flex flex-nowrap" data-bs-toggle="modal"
                                                             data-bs-target="#order-documents">
                                                             <div class="text-nowrap">Документы:</div>
                                                             <div class="d-flex align-items-center">
@@ -819,7 +824,7 @@
                                                                     <use href="/svg/common.bundle.svg#treaties"></use>
                                                                 </svg>
                                                             </div>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </td>
                                                 <td>
