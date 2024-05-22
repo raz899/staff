@@ -9,14 +9,16 @@ $menuBtn.addEventListener('click', function (e) {
 });
 
 $menu.addEventListener('click', function (e) {
-    if (e.target.classList.contains('.burger__body')) {
-        $menu.classList.remove('active');
-        $menuBtn.classList.remove('active');
-        body.classList.remove('lock');
-    } else {
-        $menu.classList.remove('active');
-        $menuBtn.classList.remove('active');
-        body.classList.remove('lock');
+    if (!e.target.classList.contains('burger__list')) {
+        if (e.target.classList.contains('burger__body')) {
+            $menu.classList.remove('active');
+            $menuBtn.classList.remove('active');
+            body.classList.remove('lock');
+        } else {
+            $menu.classList.remove('active');
+            $menuBtn.classList.remove('active');
+            body.classList.remove('lock');
+        }
     }
 });
 
@@ -78,90 +80,91 @@ if (checkedButtonUniversal != null) {
     });
 }
 
-// // Заведение машины
-// const selectVehicle = document.querySelector('.js-select-vehicle');
-// const konteinerBlock = document.querySelector('.js-konteiner-block');
-// const selectInKonteiner = konteinerBlock.querySelector('select');
+// Заведение машины
+const selectVehicle = document.querySelector('.js-select-vehicle');
+const konteinerBlock = document.querySelector('.js-konteiner-block');
+const selectInKonteiner = konteinerBlock.querySelector('select');
 
-// const selectProduct = document.querySelector('.js-select-product');
-// const carTiresBlock = document.querySelector('.js-carTires-block');
-// const carDiskBlock = document.querySelector('.js-carDisk-block');
-// const checkboxTruck = document.querySelector('.js-checkbox-truck');
+const selectProduct = document.querySelector('.js-select-product');
+const carTiresBlock = document.querySelector('.js-carTires-block');
+const carDiskBlock = document.querySelector('.js-carDisk-block');
+const checkboxTruck = document.querySelector('.js-checkbox-truck');
 
-// const checkboxes = document.querySelectorAll('.js-checkbox');
-// const textarea = document.querySelector('.js-textarea');
-// const select = document.querySelector('.js-select-arrival');
+const checkboxes = document.querySelectorAll('.js-checkbox');
+const textarea = document.querySelector('.js-textarea');
+const select = document.querySelector('.js-select-arrival');
 
-// function updateTextarea() {
-//     let textToAdd = '';
-//     checkboxes.forEach(checkbox => {
-//         if (checkbox.checked) {
-//             textToAdd += checkbox.nextElementSibling.textContent.trim() + '. ';
-//         }
-//     });
+function updateTextarea() {
+    let textToAdd = '';
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            textToAdd += checkbox.nextElementSibling.textContent.trim() + '. ';
+        }
+    });
 
-//     const selectedValue = select.value;
-//     if (selectedValue && !konteinerBlock.classList.contains('d-none')) {
-//         const arrivalText = `Прибытие: ${selectedValue}.`;
-//         textToAdd += arrivalText;
-//     }
+    const selectedValue = select.value;
+    if (selectedValue && !konteinerBlock.classList.contains('d-none')) {
+        const arrivalText = `Прибытие: ${selectedValue}.`;
+        textToAdd += arrivalText;
+    }
 
-//     textarea.value = textToAdd;
-// }
+    textarea.value = textToAdd;
+}
 
-// selectVehicle.addEventListener('change', function () {
-//     if (selectVehicle.value === 'konteiner') {
-//         konteinerBlock.classList.toggle('d-none', false);
-//     } else {
-//         konteinerBlock.classList.toggle('d-none', true);
-//         // Обнуляем значения внутри select, если блок скрыт
-//         if (selectInKonteiner) {
-//             selectInKonteiner.value = '';
-//         }
-//     }
+selectVehicle.addEventListener('change', function () {
+    if (selectVehicle.value === 'konteiner') {
+        konteinerBlock.classList.toggle('d-none', false);
+    } else {
+        konteinerBlock.classList.toggle('d-none', true);
+        // Обнуляем значения внутри select, если блок скрыт
+        if (selectInKonteiner) {
+            selectInKonteiner.value = '';
+        }
+    }
 
-//     updateTextarea();
-// });
+    updateTextarea();
+});
 
-// selectProduct.addEventListener('change', function () {
-//     if (selectProduct.value === 'carTires') {
-//         carTiresBlock.classList.remove('d-none');
-//         carDiskBlock.classList.add('d-none');
-//         checkboxTruck.classList.remove('d-none');
-//     } else if (selectProduct.value === 'carDisk') {
-//         carDiskBlock.classList.remove('d-none');
-//         carTiresBlock.classList.add('d-none');
-//         checkboxTruck.classList.add('d-none');
-//     } else {
-//         carTiresBlock.classList.add('d-none');
-//         carDiskBlock.classList.add('d-none');
-//         checkboxTruck.classList.add('d-none');
-//     }
+selectProduct.addEventListener('change', function () {
+    if (selectProduct.value === 'carTires') {
+        carTiresBlock.classList.remove('d-none');
+        carDiskBlock.classList.add('d-none');
+        checkboxTruck.classList.remove('d-none');
+    } else if (selectProduct.value === 'carDisk') {
+        carDiskBlock.classList.remove('d-none');
+        carTiresBlock.classList.add('d-none');
+        checkboxTruck.classList.add('d-none');
+    } else {
+        carTiresBlock.classList.add('d-none');
+        carDiskBlock.classList.add('d-none');
+        checkboxTruck.classList.add('d-none');
+    }
 
-//     // Обнуляем значения внутри input, если блок скрыт
-//     if (carTiresBlock.classList.contains('d-none')) {
-//         carTiresBlock.querySelector('input').value = '';
-//     }
-//     if (carDiskBlock.classList.contains('d-none')) {
-//         carDiskBlock.querySelector('input').value = '';
-//     }
+    // Обнуляем значения внутри input, если блок скрыт
+    if (carTiresBlock.classList.contains('d-none')) {
+        carTiresBlock.querySelector('input').value = '';
+    }
+    if (carDiskBlock.classList.contains('d-none')) {
+        carDiskBlock.querySelector('input').value = '';
+    }
 
-//     updateTextarea();
-// });
+    updateTextarea();
+});
 
-// checkboxes.forEach(checkbox => {
-//     checkbox.addEventListener('change', updateTextarea);
-// });
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updateTextarea);
+});
 
-// select.addEventListener('change', updateTextarea);
+select.addEventListener('change', updateTextarea);
+
 
 // омена закрытия при клике в dropdown
-// document.addEventListener('DOMContentLoaded', function () {
-//     var dropdowns = document.querySelectorAll('.dropdown-menu');
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
 
-//     dropdowns.forEach(function (dropdown) {
-//         dropdown.addEventListener('click', function (event) {
-//             event.stopPropagation();
-//         });
-//     });
-// });
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    });
+});

@@ -11,6 +11,11 @@
     z-index         : 100;
     background-color: #fff;
 }
+.dropdown-profile {
+    display: block;
+    text-decoration: none;
+    color: #64748B;
+}
 
 /* nav */
 .nav-list {
@@ -135,9 +140,7 @@
     }
 
     .burger__list {
-        flex-direction  : column;
         padding         : 21px;
-        gap             : 0;
         height          : 100%;
         width           : 80%;
         background-color: #fff;
