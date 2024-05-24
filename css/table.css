@@ -36,7 +36,7 @@ table {
     border-bottom: 1px solid #6d6d6e;
 }
 
-.table-bordered .table-content {
+.table-bordered td .table-content {
     justify-content: center;
 }
 
