@@ -26,7 +26,7 @@ $menu.addEventListener('click', function (e) {
 // добавление svg к link в классе .section-files
 function addSvgIcon(selector, iconId) {
     document.querySelectorAll(selector).forEach(function (link) {
-        link.insertAdjacentHTML('afterbegin', '<svg width="18" height="18"><use href="/svg/common.bundle.svg#' + iconId + '"></use></svg>');
+        link.insertAdjacentHTML('afterbegin', '<svg width="18" height="18"><use href="./svg/common.bundle.svg#' + iconId + '"></use></svg>');
     });
 }
 
@@ -83,7 +83,7 @@ if (checkedButtonUniversal != null) {
 // Заведение машины
 const selectVehicle = document.querySelector('.js-select-vehicle');
 const konteinerBlock = document.querySelector('.js-konteiner-block');
-const selectInKonteiner = konteinerBlock.querySelector('select');
+const selectInKonteiner = document.querySelectorAll('.js-konteiner-block select');
 
 const selectProduct = document.querySelector('.js-select-product');
 const carTiresBlock = document.querySelector('.js-carTires-block');
@@ -110,53 +110,56 @@ function updateTextarea() {
 
     textarea.value = textToAdd;
 }
-
-selectVehicle.addEventListener('change', function () {
-    if (selectVehicle.value === 'konteiner') {
-        konteinerBlock.classList.toggle('d-none', false);
-    } else {
-        konteinerBlock.classList.toggle('d-none', true);
-        // Обнуляем значения внутри select, если блок скрыт
-        if (selectInKonteiner) {
-            selectInKonteiner.value = '';
+if (selectVehicle !== null) {
+    selectVehicle.addEventListener('change', function () {
+        if (selectVehicle.value === 'konteiner') {
+            konteinerBlock.classList.toggle('d-none', false);
+        } else {
+            konteinerBlock.classList.toggle('d-none', true);
+            // Обнуляем значения внутри select, если блок скрыт
+            if (selectInKonteiner) {
+                selectInKonteiner.value = '';
+            }
         }
-    }
 
-    updateTextarea();
-});
+        updateTextarea();
+    });
+}
+if (selectProduct !== null) {
+    selectProduct.addEventListener('change', function () {
+        if (selectProduct.value === 'carTires') {
+            carTiresBlock.classList.remove('d-none');
+            carDiskBlock.classList.add('d-none');
+            checkboxTruck.classList.remove('d-none');
+        } else if (selectProduct.value === 'carDisk') {
+            carDiskBlock.classList.remove('d-none');
+            carTiresBlock.classList.add('d-none');
+            checkboxTruck.classList.add('d-none');
+        } else {
+            carTiresBlock.classList.add('d-none');
+            carDiskBlock.classList.add('d-none');
+            checkboxTruck.classList.add('d-none');
+        }
 
-selectProduct.addEventListener('change', function () {
-    if (selectProduct.value === 'carTires') {
-        carTiresBlock.classList.remove('d-none');
-        carDiskBlock.classList.add('d-none');
-        checkboxTruck.classList.remove('d-none');
-    } else if (selectProduct.value === 'carDisk') {
-        carDiskBlock.classList.remove('d-none');
-        carTiresBlock.classList.add('d-none');
-        checkboxTruck.classList.add('d-none');
-    } else {
-        carTiresBlock.classList.add('d-none');
-        carDiskBlock.classList.add('d-none');
-        checkboxTruck.classList.add('d-none');
-    }
+        // Обнуляем значения внутри input, если блок скрыт
+        if (carTiresBlock.classList.contains('d-none')) {
+            carTiresBlock.querySelector('input').value = '';
+        }
+        if (carDiskBlock.classList.contains('d-none')) {
+            carDiskBlock.querySelector('input').value = '';
+        }
 
-    // Обнуляем значения внутри input, если блок скрыт
-    if (carTiresBlock.classList.contains('d-none')) {
-        carTiresBlock.querySelector('input').value = '';
-    }
-    if (carDiskBlock.classList.contains('d-none')) {
-        carDiskBlock.querySelector('input').value = '';
-    }
-
-    updateTextarea();
-});
+        updateTextarea();
+    });
+}
 
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', updateTextarea);
 });
 
-select.addEventListener('change', updateTextarea);
-
+if (selectVehicle !== null) {
+    select.addEventListener('change', updateTextarea);
+}
 
 // омена закрытия при клике в dropdown
 document.addEventListener('DOMContentLoaded', function () {
@@ -168,3 +171,39 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// меняем url в зависимости от tabs
+
+// const navTabs = document.querySelector('.nav-tabs');
+// if (navTabs !== null) {
+
+//     const navLinks = navTabs.querySelectorAll('.nav-link');
+//     const activeLoadingLink = document.querySelector('.nav-tabs .nav-link.active');
+//     const activeLoadingLinkId = activeLoadingLink.getAttribute('id');
+//     console.log('Активный id при загрузрузке:', activeLoadingLinkId);
+
+//     if (window.location.hash > 0) {
+//         const hash = window.location.hash;
+//         console.log('Активный # при загрузрузке:', hash);
+//     }
+
+//     // const id = hash.substring(1);
+//     if (activeLoadingLink !== null) {
+
+//         navLinks.forEach(function (navLink) {
+//             navLink.addEventListener('show.bs.tab', function (event) {
+//                 if (event.target === navLink) {
+//                     const activeClickLinkId = navLink.getAttribute('id');
+//                     console.log('id при клике:', activeClickLinkId);
+
+//                     history.pushState(null, null, `#${activeClickLinkId}`);
+
+//                     const hash = activeClickLinkId;
+//                     console.log('# при клике:', hash);
+//                     // const id = hash.substring(1);
+//                 }
+//             });
+//         });
+//     }
+// }
