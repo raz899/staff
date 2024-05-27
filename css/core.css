@@ -232,14 +232,16 @@ body {
 
 /* media */
 @media (max-width: 1921.98px) {
-    .container {max-width: 1720px;
-        padding: 0px;
+    .container {
+        max-width: 1720px;
+        padding  :0 15px;
     }
 }
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
     .container {
-        padding: 0px;
+        /* padding: 0px; */
     }
 }
 

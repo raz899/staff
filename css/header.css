@@ -27,7 +27,9 @@
     justify-content: center;
 
 }
-
+.envelope {
+    position: relative;
+}
 .envelope::before {
     content         : "";
     position        : absolute;
@@ -36,7 +38,7 @@
     border-radius   : 50%;
     background-color: red;
     top             : 2px;
-    left            : 20px;
+    left            : 2px;
     display         : flex;
     align-items     : center;
     justify-content : center;
