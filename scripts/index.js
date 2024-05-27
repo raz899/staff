@@ -24,15 +24,15 @@ $menu.addEventListener('click', function (e) {
 
 
 // добавление svg к link в классе .section-files
-function addSvgIcon(selector, iconId) {
-    document.querySelectorAll(selector).forEach(function (link) {
-        link.insertAdjacentHTML('afterbegin', '<svg width="18" height="18"><use href="./svg/common.bundle.svg#' + iconId + '"></use></svg>');
-    });
-}
+// function addSvgIcon(selector, iconId) {
+//     document.querySelectorAll(selector).forEach(function (link) {
+//         link.insertAdjacentHTML('afterbegin', '<svg width="18" height="18"><use href="./svg/common.bundle.svg#' + iconId + '"></use></svg>');
+//     });
+// }
 
-addSvgIcon('.section-files a[href$=".pdf"], .section-files a[href$=".PDF"], .section-files__link[href$=".pdf"]', 'pdf');
-addSvgIcon('a[href$=".doc"],  a[href$=".docx"],  a[href$=".rtf"]', 'word');
-addSvgIcon('.section-files a:not([href$=".pdf"]):not([href$=".PDF"]):not([href$=".doc"]):not([href$=".docx"]):not([href$=".rtf"])', 'other-links');
+// addSvgIcon('.section-files a[href$=".pdf"], .section-files a[href$=".PDF"], .section-files__link[href$=".pdf"]', 'pdf');
+// addSvgIcon('a[href$=".doc"],  a[href$=".docx"],  a[href$=".rtf"]', 'word');
+// addSvgIcon('.section-files a:not([href$=".pdf"]):not([href$=".PDF"]):not([href$=".doc"]):not([href$=".docx"]):not([href$=".rtf"])', 'other-links');
 
 
 
